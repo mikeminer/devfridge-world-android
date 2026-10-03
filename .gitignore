@@ -1,3 +1,5 @@
 node_modules/
 scan/public/world/game-v2/
+build-world-source/
+dependency-audit.json
 .DS_Store

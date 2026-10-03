@@ -45,6 +45,8 @@ SKR is optional: after disclosure and MWA authorization, the app checks the sele
 
 ## Evidence and limits
 
+The portal audit completed a partial source review at `7ff05bc` and reported findings without assigning a security score. Subsequent development-tool upgrades and the remaining findings are documented in [SECURITY-REVIEW.md](SECURITY-REVIEW.md). The original Android assets and application source remain unchanged; the reference game's tool lockfile is updated separately.
+
 On 2026-10-03 this focused export passed Android debug assembly, unit tests and lint. Its JavaScript suite passed 23 tests with three generated-registration-bundle tests skipped. All 81 packaged upstream asset hashes were checked. These are build and test results, not live gameplay or wallet evidence.
 
 On 2026-10-02 the original development build passed debug assembly, Android unit tests, lint and five Android 15/API 35 instrumentation tests. These tests cover renderer/bridge behavior and recovery paths; they do not establish a live wallet signature or completed production run.
