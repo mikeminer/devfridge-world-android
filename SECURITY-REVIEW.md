@@ -2,6 +2,8 @@
 
 The portal audit analyzed commit `7ff05bc1780bf2a92514585ae67123c5f3270f88`. It reported 18 findings (7 high, 7 medium, 4 low), did not complete every check and assigned no security score. It is an advisory source review, not a completed independent audit. Later source changes do not erase that report or imply another portal audit was performed.
 
+The original downloaded [Clock In report](CLOCK-IN-AUDIT-7ff05bc.md) is preserved verbatim. It states that 112 files were read. The portal's status remains authoritative about its incomplete checks; the report is not a clearance certificate. On 3 October the AI Coach still showed `CODE NONE` despite the portal's audit panel showing this report. The mismatch is unresolved.
+
 ## Dependency remediation after that snapshot
 
 The reference web game's development tools were upgraded to Vite 8.3.2, sharp 0.35.5 and glTF Transform CLI 4.5.1. `npm audit fix` updated the compatible brace-expansion dependency. The reference game's Vite production compilation passed using a separate output directory. The existing Android game distribution remains pinned to its original asset hashes; it was not silently replaced by this reference-source rebuild.
