@@ -22,6 +22,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.webkit.*
 import com.solana.mobilewalletadapter.clientlib.*
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
@@ -42,6 +43,7 @@ class MainActivity : ComponentActivity() {
     private var lastHaptic = 0L
     private var pendingRegistrationReturn: BridgePolicy.RegistrationReturn? = null
     private var gameDocumentReady = false
+    @Volatile private var localPractice = false
     private val prefs by lazy { getSharedPreferences("mobile", MODE_PRIVATE) }
     private val green = Color.rgb(193, 236, 115)
     private fun dp(value: Int) = (value * resources.displayMetrics.density).toInt()
@@ -97,7 +99,7 @@ class MainActivity : ComponentActivity() {
             mediaPlaybackRequiresUserGesture = true
             setSupportMultipleWindows(true)
             javaScriptCanOpenWindowsAutomatically = false
-            userAgentString += " DevFridgeAndroid/0.3.1-beta.1"
+            userAgentString += " DevFridgeAndroid/0.3.2-beta.1"
         }
         CookieManager.getInstance().setAcceptCookie(true)
         CookieManager.getInstance().setAcceptThirdPartyCookies(web, false)
@@ -122,11 +124,16 @@ class MainActivity : ComponentActivity() {
                 if (WebViewFeature.isFeatureSupported(WebViewFeature.WEB_MESSAGE_LISTENER)) reply.postMessage(response.toString())
             }
             val method = req.optString("method")
+            if (BridgePolicy.isPracticeDocument(web.url) && method in setOf("connect", "signMessage", "disconnect", "openRegistration")) {
+                respond(error = "Local practice has no wallet authorization, ranked scores or prize registration.")
+                return@addWebMessageListener
+            }
             if (method in setOf("connect", "signMessage", "disconnect")) {
                 if (walletBusy) { respond(error = "Finish the current wallet request first."); return@addWebMessageListener }
                 walletBusy = true
                 lifecycleScope.launch {
-                    try { respond(walletRequest(method, req.optJSONObject("params") ?: JSONObject())) }
+                    try { respond(walletRequest(method, req.optJSONObject("params") ?: JSONObject(), epoch)) }
+                    catch (e: CancellationException) { throw e }
                     catch (e: Exception) { respond(error = e.message ?: "The wallet request was not completed.") }
                     finally { walletBusy = false }
                 }
@@ -145,6 +152,12 @@ class MainActivity : ComponentActivity() {
         web.webViewClient = object : WebViewClient() {
             override fun shouldInterceptRequest(view: WebView, request: WebResourceRequest): WebResourceResponse? {
                 val uri = request.url
+                if (request.isForMainFrame && BridgePolicy.isPracticeDocument(uri.toString())) {
+                    return handler.handle("game/practice/index.html") ?: WebResourceResponse("text/plain", "UTF-8", 404, "Not bundled", emptyMap(), "Practice unavailable".byteInputStream())
+                }
+                if (localPractice && (uri.scheme != "https" || uri.host != "world.devfridge.cool" || uri.path?.startsWith(BridgePolicy.GAME_PATH) != true)) {
+                    return WebResourceResponse("text/plain", "UTF-8", 403, "Local practice", emptyMap(), "Network unavailable in local practice".byteInputStream())
+                }
                 if (uri.scheme == "https" && uri.host == "world.devfridge.cool" && uri.path?.startsWith(BridgePolicy.GAME_PATH) == true) {
                     // Missing bundled files fail closed instead of silently loading a newer website script.
                     return loader.shouldInterceptRequest(uri) ?: WebResourceResponse("text/plain", "UTF-8", 404, "Not bundled", emptyMap(), "Asset unavailable".byteInputStream())
@@ -163,6 +176,7 @@ class MainActivity : ComponentActivity() {
                 openExternal(request.url.toString()); return true
             }
             override fun onPageStarted(view: WebView, url: String, favicon: android.graphics.Bitmap?) {
+                localPractice = BridgePolicy.isPracticeDocument(url)
                 gameDocumentReady = false
                 generation++
                 // A new document must authenticate again; no wallet account is silently inherited.
@@ -217,13 +231,23 @@ class MainActivity : ComponentActivity() {
                 web.evaluateJavascript("window.DevFridgeMobile?.back() || false") { handled -> if (handled != "true") showMenu() }
             }
         })
-        web.loadUrl(BridgePolicy.GAME_URL)
+        web.loadUrl(if (prefs.getBoolean("practice", false) && pendingRegistrationReturn == null) BridgePolicy.PRACTICE_URL else BridgePolicy.GAME_URL)
     }
 
-    private suspend fun walletRequest(method: String, params: JSONObject): JSONObject {
+    private fun walletDocumentIsCurrent(requestGeneration: Int): Boolean {
+        if (isDestroyed || isFinishing) return false
+        return BridgePolicy.acceptsLiveWalletResult(requestGeneration, generation, web.url)
+    }
+
+    private suspend fun walletRequest(method: String, params: JSONObject, requestGeneration: Int): JSONObject {
+        fun requireCurrentDocument() {
+            if (!walletDocumentIsCurrent(requestGeneration)) throw CancellationException("The requesting game document was replaced.")
+        }
+        requireCurrentDocument()
         when (method) {
             "connect" -> when (val result = wallet.connect(sender)) {
                 is TransactionResult.Success -> {
+                    requireCurrentDocument()
                     val key = result.authResult.accounts.first().publicKey
                     require(key.size == 32) { "The wallet returned an invalid Solana account." }
                     web.evaluateJavascript("window.DevFridgeMobile?.setSkrPerk(false)", null)
@@ -245,6 +269,7 @@ class MainActivity : ComponentActivity() {
                     signMessagesDetached(arrayOf(bytes), arrayOf(expected))
                 }) {
                     is TransactionResult.Success -> {
+                        requireCurrentDocument()
                         val signature = result.payload.messages.first().signatures.first()
                         require(signature.size == 64) { "The wallet returned an invalid signature." }
                         return JSONObject().put("signature", Base64.encodeToString(signature, Base64.NO_WRAP))
@@ -255,7 +280,7 @@ class MainActivity : ComponentActivity() {
             }
             "disconnect" -> {
                 when (val result = wallet.disconnect(sender)) {
-                    is TransactionResult.Success -> { connectedKey = null; web.evaluateJavascript("window.DevFridgeMobile?.setSkrPerk(false)", null); return JSONObject() }
+                    is TransactionResult.Success -> { requireCurrentDocument(); connectedKey = null; web.evaluateJavascript("window.DevFridgeMobile?.setSkrPerk(false)", null); return JSONObject() }
                     is TransactionResult.NoWalletFound -> error("Open your wallet to revoke this connection.")
                     is TransactionResult.Failure -> error(result.message)
                 }
@@ -314,15 +339,15 @@ class MainActivity : ComponentActivity() {
         pauseGame()
         val haptics = prefs.getBoolean("haptics", true)
         val italian = Locale.getDefault().language == "it"
-        val items = arrayOf("Return to game", "Share game", if (haptics) "Turn haptics off" else "Turn haptics on", "Game guide", "Reload game", "About this build", "Close app", "Saved scores / Robinhood registration", if (italian) "Regole TopShelf" else "TopShelf rules", if (italian) "Dati su questo dispositivo" else "Data on this device", if (italian) "Verifica SKR · tema Aurora" else "Check SKR · Aurora theme")
+        val items = arrayOf("Return to game", "Share game", if (haptics) "Turn haptics off" else "Turn haptics on", "Game guide", "Reload game", "About this build", "Close app", "Saved scores / Robinhood registration", if (italian) "Regole TopShelf" else "TopShelf rules", if (italian) "Dati su questo dispositivo" else "Data on this device", if (italian) "Verifica SKR · tema Aurora" else "Check SKR · Aurora theme", "Local practice · no wallet or prizes", "Live game · timelock access", "Recent sessions")
         AlertDialog.Builder(this).setTitle("Cold Storage").setItems(items) { _, which ->
             when (which) {
-                1 -> share(JSONObject().put("text", "Play Cold Storage on DevFridge World: ${BridgePolicy.ORIGIN}/world/game-v2"))
+                1 -> share(JSONObject().put("text", "Play Cold Storage on DevFridge World: ${BridgePolicy.ORIGIN}/game"))
                 2 -> prefs.edit().putBoolean("haptics", !haptics).apply()
                 3 -> openExternal("https://docs.devfridge.cool/world")
                 4 -> AlertDialog.Builder(this).setTitle("Reload the game?").setMessage("Your current run will end. Your saved collection stays on this device.")
                     .setPositiveButton("Reload") { _, _ -> web.reload() }.setNegativeButton("Cancel", null).show()
-                5 -> AlertDialog.Builder(this).setTitle("DevFridge World 0.3.1-beta.1")
+                5 -> AlertDialog.Builder(this).setTitle("DevFridge World 0.3.2-beta.1")
                     .setMessage("Bundled Cold Storage v2\nNative Solana Mobile Wallet Adapter, haptics and sharing.\n\nApprove TopShelf with your original Solana wallet, including Seed Vault. Review and pay separately with your Robinhood wallet in Phantom. Completed verified scores are saved for retry. Online access is required.")
                     .setPositiveButton("OK", null).show()
                 6 -> AlertDialog.Builder(this).setTitle("Close the game?").setMessage("The current run will end. Saved scores and collection stay on this device.")
@@ -331,12 +356,38 @@ class MainActivity : ComponentActivity() {
                 8 -> showDocument(if (italian) "Regole TopShelf" else "TopShelf rules", "topshelf")
                 9 -> showDocument(if (italian) "Dati su questo dispositivo" else "Data on this device", "device-data")
                 10 -> confirmSkrCheck()
+                11 -> confirmModeChange(true)
+                12 -> confirmModeChange(false)
+                13 -> web.evaluateJavascript("window.DevFridgeAdaptiveCoach?.showHistory?.()", null)
             }
         }.show()
     }
 
+    private fun confirmModeChange(practice: Boolean) {
+        if (isDestroyed || isFinishing) return
+        if (walletBusy) { Toast.makeText(this, "Finish the current wallet request first.", Toast.LENGTH_LONG).show(); return }
+        AlertDialog.Builder(this).setTitle(if (practice) "Open local practice?" else "Open live game?")
+            .setMessage(if (practice) "Your current run will end. Practice uses the game engine on this device. Its scores are local and cannot enter a ranking or claim prizes." else "Your current practice run will end. Live character access requires your eligible Solana timelock.")
+            .setPositiveButton("Open") { _, _ ->
+                // Another request can start while this confirmation is visible.
+                if (!isDestroyed && !isFinishing) {
+                    if (walletBusy) Toast.makeText(this, "Finish the current wallet request first.", Toast.LENGTH_LONG).show()
+                    else { prefs.edit().putBoolean("practice", practice).apply(); web.loadUrl(if (practice) BridgePolicy.PRACTICE_URL else BridgePolicy.GAME_URL) }
+                }
+            }
+            .setNegativeButton("Cancel", null).show()
+    }
+
     private fun confirmSkrCheck() {
+        if (isDestroyed || isFinishing) return
         val italian = Locale.getDefault().language == "it"
+        if (BridgePolicy.isPracticeDocument(web.url)) {
+            AlertDialog.Builder(this).setTitle(if (italian) "Pratica locale" else "Local practice")
+                .setMessage(if (italian) "La pratica locale non collega wallet e non interroga servizi blockchain. Passa al gioco live per verificare il vantaggio SKR con il tuo consenso. Il risultato della pratica resta locale." else "Local practice does not connect wallets or query blockchain services. Switch to the live game to check the SKR perk with your consent. Your practice result stays local.")
+                .setPositiveButton(if (italian) "Gioco live" else "Live game") { _, _ -> confirmModeChange(false) }
+                .setNegativeButton(if (italian) "Resta in pratica" else "Keep practicing", null).show()
+            return
+        }
         val message = if (italian)
             "Con il tuo consenso, DevFridge legge il saldo pubblico del token SKR dell'account Solana selezionato tramite l'RPC pubblico mainnet di Solana. Il provider RPC può vedere l'indirizzo e l'indirizzo IP. Non viene inviata alcuna transazione. Un saldo SKR positivo sblocca solo il tema cosmetico Aurora; non cambia accesso ai personaggi, punteggi verificati o premi. L'RPC pubblico può essere limitato o temporaneamente indisponibile."
         else
@@ -348,12 +399,22 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun verifySkrPerk() {
+        if (isDestroyed || isFinishing) return
+        // Also recheck at execution time; a consent dialog cannot authorize a practice request.
+        if (BridgePolicy.isPracticeDocument(web.url)) {
+            Toast.makeText(this, "Switch to the live game to check SKR. Practice uses no wallet or blockchain service.", Toast.LENGTH_LONG).show()
+            return
+        }
         if (walletBusy) { Toast.makeText(this, "Finish the current wallet request first.", Toast.LENGTH_LONG).show(); return }
+        val requestGeneration = generation
+        fun requestIsCurrent() = walletDocumentIsCurrent(requestGeneration)
+        if (!requestIsCurrent()) return
         walletBusy = true
         lifecycleScope.launch {
             try {
                 val key = connectedKey?.copyOf() ?: when (val result = wallet.connect(sender)) {
                     is TransactionResult.Success -> {
+                        if (!requestIsCurrent()) return@launch
                         val selected = result.authResult.accounts.first().publicKey
                         require(selected.size == 32) { "The wallet returned an invalid Solana account." }
                         connectedKey = selected.copyOf(); selected
@@ -361,8 +422,10 @@ class MainActivity : ComponentActivity() {
                     is TransactionResult.NoWalletFound -> error("Install an MWA-compatible Solana wallet, then try again.")
                     is TransactionResult.Failure -> error(result.message)
                 }
+                if (!requestIsCurrent()) return@launch
                 val address = BridgePolicy.base58(key)
                 val unlocked = withContext(Dispatchers.IO) { SkrBalance.eligible(address, readSkrAccounts(address)) }
+                if (!requestIsCurrent()) return@launch
                 web.evaluateJavascript("window.DevFridgeMobile?.setSkrPerk($unlocked)", null)
                 val italian = Locale.getDefault().language == "it"
                 val resultText = if (unlocked)
@@ -371,11 +434,15 @@ class MainActivity : ComponentActivity() {
                     if (italian) "Nessun saldo SKR positivo trovato per il wallet selezionato. Il gioco resta invariato." else "No positive SKR balance was found for the selected wallet. The game remains unchanged."
                 AlertDialog.Builder(this@MainActivity).setTitle(if (unlocked) "Aurora unlocked" else "SKR not found")
                     .setMessage(resultText).setPositiveButton("OK", null).show()
+            } catch (e: CancellationException) {
+                throw e
             } catch (e: Exception) {
+                if (!requestIsCurrent()) return@launch
                 val italian = Locale.getDefault().language == "it"
                 val fallback = if (italian) "Impossibile verificare SKR adesso. Riprova più tardi; nessun dato di accesso o punteggio è stato modificato." else "SKR could not be checked right now. Try again later; game access and scores were not changed."
                 AlertDialog.Builder(this@MainActivity).setTitle("SKR check unavailable")
-                    .setMessage(e.message ?: fallback).setPositiveButton("OK", null).show()
+                    .setMessage(fallback).setPositiveButton("Retry") { _, _ -> confirmSkrCheck() }.setNegativeButton("Close", null).show()
+                android.util.Log.w("DevFridgeSkr", "Read-only SKR query unavailable", e)
             } finally { walletBusy = false }
         }
     }
@@ -446,7 +513,15 @@ class MainActivity : ComponentActivity() {
     }
     private fun deliverRegistrationReturn() {
         val pending = pendingRegistrationReturn ?: return
-        if (!::web.isInitialized || !gameDocumentReady || !BridgePolicy.isGameDocument(web.url)) return
+        if (!::web.isInitialized) return
+        BridgePolicy.registrationDocumentForReturn(web.url, pending)?.let { liveUrl ->
+            // Preserve the identifiers until the live document finishes; no local score is promoted.
+            gameDocumentReady = false
+            prefs.edit().putBoolean("practice", false).apply()
+            web.loadUrl(liveUrl)
+            return
+        }
+        if (!gameDocumentReady || !BridgePolicy.isGameDocument(web.url)) return
         pendingRegistrationReturn = null
         // Links carry only identifiers. The page retrieves a server-validated challenge for a locally saved run;
         // no signature or payment occurs until the user reviews and explicitly approves it.

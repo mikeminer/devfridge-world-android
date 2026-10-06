@@ -1,6 +1,6 @@
 {
   "source": "devfridge/scan/public/world/game-v2",
-  "copiedAt": "2026-10-02T11:50:42.166Z",
+  "copiedAt": "2026-10-06T09:00:35.397Z",
   "files": [
     {
       "path": "assets/cold-storage.css",
@@ -422,12 +422,12 @@
     {
       "path": "adaptive-coach.js",
       "reason": "On-device adaptive gameplay coaching; local run history and feedback only",
-      "sha256": "71dee6a3a3aa748a8ef24688d82afc541a7243e421b7d8cec10120ee8cdceda3"
+      "sha256": "c61b4b07837f4bf407637b8e7f88726f2712c169557105b86e923bc58b1cd6da"
     },
     {
       "path": "android.css",
       "reason": "Native touch-target styling, SKR Aurora cosmetic, and adaptive-coach UI",
-      "sha256": "072ee8edacf01f63d8d4e6c6085981be06b6ae4de5d78ee61a12ab2ad707fb1f"
+      "sha256": "6f24857de3a279de0bd9d8bf855be674325050244e18ab02b7fc5efef8724caf"
     }
   ]
 }

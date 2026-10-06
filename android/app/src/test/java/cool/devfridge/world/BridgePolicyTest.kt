@@ -4,6 +4,44 @@ import org.junit.Assert.*
 import org.junit.Test
 
 class BridgePolicyTest {
+    @Test fun skrResultIsRejectedAfterReloadEvenWhenTheUrlIsUnchanged() {
+        assertTrue(BridgePolicy.acceptsLiveWalletResult(4, 4, BridgePolicy.GAME_URL))
+        assertFalse("A completed query must not update a replacement session at the same URL",
+            BridgePolicy.acceptsLiveWalletResult(4, 5, BridgePolicy.GAME_URL))
+    }
+    @Test fun skrResultCannotUnlockPracticeOrAnUntrustedDocument() {
+        listOf(BridgePolicy.PRACTICE_URL, "https://evil.test/world/game-v2/index.html", null,
+            "https://world.devfridge.cool/android", "http://world.devfridge.cool/world/game-v2/index.html").forEach { url ->
+            assertFalse(BridgePolicy.acceptsLiveWalletResult(8, 8, url))
+        }
+        assertFalse("Returning to live does not restore an earlier document's request",
+            BridgePolicy.acceptsLiveWalletResult(8, 10, BridgePolicy.GAME_URL))
+    }
+    @Test fun aValidWarmRegistrationReturnLeavesPracticeWithoutLosingItsIdentifiers() {
+        val request = "a".repeat(43); val run = "0x" + "ab".repeat(32)
+        val pending = BridgePolicy.registrationReturn("devfridgeworld://registration?request=$request&run=$run")
+        assertNotNull(pending)
+        assertEquals(BridgePolicy.GAME_URL, BridgePolicy.registrationDocumentForReturn(BridgePolicy.PRACTICE_URL, pending))
+        assertEquals(request, pending!!.request)
+        assertEquals(run, pending.run)
+        assertNull("The loaded live page must deliver the same return instead of reloading again",
+            BridgePolicy.registrationDocumentForReturn(BridgePolicy.GAME_URL, pending))
+        assertEquals(BridgePolicy.GAME_URL,
+            BridgePolicy.registrationDocumentForReturn(BridgePolicy.PRACTICE_URL, BridgePolicy.RegistrationReturn()))
+    }
+    @Test fun invalidRegistrationReturnsNeverForcePracticeToNavigate() {
+        listOf("devfridgeworld://registration?request=bad&run=0x00", "devfridgeworld://user@registration",
+            "https://registration", "devfridgeworld://registration#untrusted").forEach { url ->
+            val pending = BridgePolicy.registrationReturn(url)
+            assertNull(pending)
+            assertNull(BridgePolicy.registrationDocumentForReturn(BridgePolicy.PRACTICE_URL, pending))
+        }
+        assertNull(BridgePolicy.registrationDocumentForReturn("https://evil.test/world/game-v2/index.html?mode=practice", BridgePolicy.RegistrationReturn()))
+    }
+    @Test fun practiceModeRequiresExactTrustedRoute() {
+        assertTrue(BridgePolicy.isPracticeDocument(BridgePolicy.PRACTICE_URL))
+        listOf(BridgePolicy.GAME_URL, "https://evil.test/world/game-v2/index.html?mode=practice", BridgePolicy.PRACTICE_URL + "&mode=live", BridgePolicy.GAME_URL + "?mode=%70ractice").forEach { assertFalse(BridgePolicy.isPracticeDocument(it)) }
+    }
     @Test fun registrationLinksCarryIdentifiersOnly() {
         val request = "a".repeat(43); val run = "0x" + "ab".repeat(32)
         assertEquals(BridgePolicy.RegistrationReturn(request, run), BridgePolicy.registrationReturn("devfridgeworld://registration?run=$run&request=$request"))

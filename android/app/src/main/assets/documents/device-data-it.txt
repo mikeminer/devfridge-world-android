@@ -1,7 +1,9 @@
 DATI SU QUESTO DISPOSITIVO
-Aggiornato il 28 settembre 2026
+Aggiornato il 6 ottobre 2026
 
 L'app conserva sul dispositivo collezione, preferenze e riferimenti ai punteggi verificati completati. Il backup Android dell'app è disabilitato. Cancellare i dati dell'app o disinstallarla elimina i dati locali e può rimuovere riferimenti ancora necessari alla registrazione. Una partita in corso non viene ripristinata se Android termina l'app.
+
+La pratica locale usa un archivio separato e non può entrare in una classifica verificata o richiedere premi. Partite recenti conserva sul dispositivo fino a 20 risultati completati, con punteggio, ora e modalità. Puoi cancellare questo elenco in Partite recenti; questa azione non cancella il record personale o la collezione separati del gioco. Il coach adattivo conserva localmente punteggi recenti e valutazioni facoltative dei consigli. La pratica non collega wallet e non interroga servizi blockchain.
 
 L'app non richiede accesso a contatti, posizione, microfono o fotocamera. La connessione nativa chiede al wallet di autorizzare il collegamento e firmare messaggi; chiavi private e frasi di recupero restano nel wallet. Il wallet può conservare le proprie autorizzazioni: disconnettile o revocale dal wallet quando necessario.
 
@@ -19,4 +21,4 @@ Per gestire i dati locali: Impostazioni Android → App → DevFridge World → 
 
 Pubblicata da pastaman: https://x.com/AnonimoCommando. Contatto per assistenza e richieste sui dati: welcome@devfridge.cool.
 
-Questa è una nota tecnica dell'anteprima. L'informativa completa del publisher è in preparazione per la release.
+Informativa completa del publisher: https://world.devfridge.cool/android/privacy

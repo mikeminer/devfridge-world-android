@@ -1,0 +1,9 @@
+{
+  "repository": "mikeminer/devfridge",
+  "commit": "9b58d31f7ef9a3f23bb2a03a11341e3290e0c76c",
+  "basePath": "scan/public/demo-player",
+  "files": [
+    { "path": "assets/index-BDGfDI-6.js", "bytes": 3007045, "sha256": "5d8ccc87855b55da282c50824068c42301339777d15bf9fd3d74de7d3b75363d" },
+    { "path": "assets/index-COJjlG3h.css", "bytes": 42725, "sha256": "60be0beb58eab3742ad45ebe7174b43b5b16f938e8a954e54679af9bb2ae0217" }
+  ]
+}

@@ -1,7 +1,9 @@
 DATA ON THIS DEVICE
-Updated 28 September 2026
+Updated 6 October 2026
 
 The app stores your collection, preferences and completed verified-score references on this device. Android backup for this app is disabled. Clearing app storage or uninstalling removes local data and can remove registration references you still need. An unfinished run is not restored after Android kills the app.
+
+Local practice uses separate game storage and cannot enter a verified leaderboard or claim prizes. Recent sessions keeps up to 20 completed results with score, completion time and mode on this device. You can clear this list in Recent sessions; this does not clear the game's separate personal best or collection. The adaptive coach keeps recent scores and voluntary tip ratings locally. Practice does not connect a wallet or query blockchain services.
 
 The app does not request contacts, location, microphone or camera permission. The native wallet connection asks your wallet app to authorize connections and sign messages; recovery phrases and private keys stay in the wallet. The wallet may retain its own connection authorization. Disconnect or revoke it through the wallet as needed.
 
@@ -19,4 +21,4 @@ To manage device data, open Android Settings → Apps → DevFridge World → St
 
 Published by pastaman: https://x.com/AnonimoCommando. Support and data-request contact: welcome@devfridge.cool.
 
-This is a technical notice for the preview. The full publisher privacy policy is being prepared for release.
+Full publisher privacy policy: https://world.devfridge.cool/android/privacy

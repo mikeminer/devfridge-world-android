@@ -25,6 +25,19 @@
 .native-android .native-adaptive-coach button { min-height: 40px; padding: 6px 12px; border: 1px solid #667b52; border-radius: 7px; background: #34442e; color: #eef2df; }
 .native-android .native-adaptive-coach button:disabled { opacity: .55; }
 .native-android .native-adaptive-coach small { grid-column: 1 / -1; color: #c1ec73; }
+.native-android .native-session-history { margin: 16px 0; padding: 0 14px 12px; border: 1px solid #536742; border-radius: 10px; background: #202a21; color: #e0e9d5; text-align: left; }
+.native-android .native-session-history summary { min-height: 48px; display: flex; align-items: center; cursor: pointer; font-size: 15px; font-weight: 600; color: #c1ec73; }
+.native-android .native-session-history summary::before { content: '▸'; margin-right: 8px; }
+.native-android .native-session-history[open] summary::before { content: '▾'; }
+.native-android .native-session-history p { margin: 8px 0; font-size: 13px; line-height: 1.5; }
+.native-android .native-session-goal { color: #c1ec73; }
+.native-android .native-session-list { list-style: none; margin: 12px 0; padding: 0; max-height: 240px; overflow-y: auto; }
+.native-android .native-session-list li { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px 12px; padding: 10px 0; border-bottom: 1px solid #42513d; }
+.native-android .native-session-list time { color: #b3bea6; font-size: 12px; }
+.native-android .native-session-history button { width: 100%; min-height: 48px; padding: 8px 12px; border: 1px solid #667b52; border-radius: 7px; background: #34442e; color: #eef2df; }
+.native-android .native-session-dialog { width: min(90vw, 520px); max-height: 80vh; overflow: auto; padding: 20px; border: 1px solid #8ba85c; border-radius: 16px; background: #17231c; color: #eef4e6; font: 16px/1.5 system-ui; }
+.native-android .native-session-dialog::backdrop { background: #000b; }
+.native-android .native-session-dialog .dialog-close { position: static; width: 100%; min-height: 48px; height: auto; padding: 10px; border: 1px solid #667b52; border-radius: 10px; background: #34442e; color: #eef2df; }
 .native-android .native-score-dialog { width: min(90vw, 520px); max-height: 80vh; overflow: auto; background: #17231c; color: #eef4e6; border: 1px solid #8ba85c; border-radius: 16px; padding: 20px; font: 16px/1.5 system-ui; }
 .native-android .native-score-dialog::backdrop { background: #000b; }
 .native-android .native-score-dialog button { width: 100%; padding: 10px; margin: 6px 0; border-radius: 10px; background: #c1ec73; color: #17231c; }

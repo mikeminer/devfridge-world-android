@@ -3,6 +3,7 @@ import { resolve, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { patchGateForAndroid } from './patch-gate.mjs';
+import { preparePractice } from './prepare-practice.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const source = resolve(process.argv[2] || join(root, '../devfridge/scan/public/world/game-v2'));
@@ -35,3 +36,4 @@ async function inventory(path) {
 await inventory(source);
 await writeFile(join(root, 'game-provenance.json'), JSON.stringify({ source: 'devfridge/scan/public/world/game-v2', copiedAt: new Date().toISOString(), files, androidOverrides: [{ path: 'assets/gate-2.js', reason: 'Bounded network requests, visible retryable errors, date validation and accurate TopShelf disclosures', sha256: createHash('sha256').update(androidGate).digest('hex') }, { path: 'index.html', reason: 'Native bridge scripts, Android styling and accurate TopShelf metadata', sha256: createHash('sha256').update(mobileHtml).digest('hex') }, { path: 'adaptive-coach.js', reason: 'On-device adaptive gameplay coaching; local run history and feedback only', sha256: createHash('sha256').update(await readFile(join(root, 'mobile/adaptive-coach.js'))).digest('hex') }, { path: 'android.css', reason: 'Native touch-target styling, SKR Aurora cosmetic, and adaptive-coach UI', sha256: createHash('sha256').update(await readFile(join(root, 'mobile/android.css'))).digest('hex') }] }, null, 2) + '\n');
 console.log(`Bundled ${files.length} game files (${(files.reduce((n, f) => n + f.bytes, 0) / 1048576).toFixed(1)} MiB). Original game JavaScript is unchanged.`);
+await preparePractice();

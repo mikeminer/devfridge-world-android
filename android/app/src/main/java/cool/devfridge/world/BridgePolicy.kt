@@ -8,6 +8,7 @@ object BridgePolicy {
     const val ORIGIN = "https://world.devfridge.cool"
     const val GAME_PATH = "/world/game-v2/"
     const val GAME_URL = "$ORIGIN${GAME_PATH}index.html"
+    const val PRACTICE_URL = "$GAME_URL?mode=practice"
     const val MAX_MESSAGE_BYTES = 16_384
     fun validRegistrationId(id: String) = id.matches(Regex("[A-Za-z0-9_-]{43}"))
     data class RegistrationReturn(val request: String? = null, val run: String? = null)
@@ -36,6 +37,18 @@ object BridgePolicy {
         val uri = URI(url ?: "")
         uri.scheme == "https" && !uri.host.isNullOrBlank() && uri.rawUserInfo == null
     } catch (_: Exception) { false }
+
+    fun isPracticeDocument(url: String?): Boolean = try {
+        isGameDocument(url) && URI(url).rawQuery == "mode=practice"
+    } catch (_: Exception) { false }
+
+    /** A valid return must reach the live registration handler, which practice never loads. */
+    fun registrationDocumentForReturn(currentUrl: String?, pending: RegistrationReturn?): String? =
+        if (pending != null && isPracticeDocument(currentUrl)) GAME_URL else null
+
+    /** A wallet/RPC result belongs to the document that requested it, even across same-URL reloads. */
+    fun acceptsLiveWalletResult(requestGeneration: Int, currentGeneration: Int, currentUrl: String?): Boolean =
+        requestGeneration == currentGeneration && isGameDocument(currentUrl) && !isPracticeDocument(currentUrl)
 
     fun base58(bytes: ByteArray): String {
         val alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"

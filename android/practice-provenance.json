@@ -1,0 +1,85 @@
+{
+  "source": {
+    "repository": "mikeminer/devfridge",
+    "commit": "9b58d31f7ef9a3f23bb2a03a11341e3290e0c76c",
+    "basePath": "scan/public/demo-player",
+    "files": [
+      {
+        "path": "assets/index-BDGfDI-6.js",
+        "bytes": 3007045,
+        "sha256": "5d8ccc87855b55da282c50824068c42301339777d15bf9fd3d74de7d3b75363d"
+      },
+      {
+        "path": "assets/index-COJjlG3h.css",
+        "bytes": 42725,
+        "sha256": "60be0beb58eab3742ad45ebe7174b43b5b16f938e8a954e54679af9bb2ae0217"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "path": "practice/practice-game.js",
+      "sha256": "b5ab540af4a3cd94885a3af79e9174ba52cbb7741d40b85c719fe3809be0a023",
+      "replacements": [
+        {
+          "reason": "Use the existing pinned model, portrait and audio files",
+          "occurrences": 1,
+          "beforeSha256": "270565647b74e45bc9849dcf450cb42f3245ee857048e11e263eba047589da36",
+          "afterSha256": "8a7dbed69527ef241f44db8399c823658ec8b4f03624b893026f4f33cc02a117"
+        },
+        {
+          "reason": "Isolate all demo engine storage from ranked and browser sessions",
+          "occurrences": 11,
+          "beforeSha256": "d960c402d89d6334eb51b82eaea9ad092b96e2527eaf8b6d33f2ac7ffed753ff",
+          "afterSha256": "0f7387ae04f5f0a62d3f92c3b4030f187ed5caa56678c2e77562f8f318e6a083"
+        },
+        {
+          "reason": "Replace destructive demo reset with an explicit local practice timer and completion",
+          "occurrences": 1,
+          "beforeSha256": "c07950cb45cb493ffd0447dc0fd6cf4851ad17630541274a767ef685856c7222",
+          "afterSha256": "e3dcfaf5dee540f019b7285df218c57c0c939f8fa55ce783d03a46309c1f617d"
+        },
+        {
+          "reason": "Never call ranked finish from a practice result",
+          "occurrences": 1,
+          "beforeSha256": "a80ce53cc66006d348ebd2ef33188afca9eff5f4842bd934d79cf9ffa1056a87",
+          "afterSha256": "2a176c9077b05d5283306b3f5ee6be35498b9317bc71209ab80c78912ffa7387"
+        },
+        {
+          "reason": "Expose actual engine score and local completion without a ranked ticket",
+          "occurrences": 1,
+          "beforeSha256": "cb6c46323a633bb094d97db3fe8d11f5a051b1ee32e9660dd0b236686f76ab1b",
+          "afterSha256": "431b6d8c7c872afd29574fad5d9d3b686fd311baf06417a308f8e27248eda974"
+        },
+        {
+          "reason": "Mark the exported score image as practice",
+          "occurrences": 1,
+          "beforeSha256": "a08611f9b16299b2ea5af0931609eedf4733fcaa5b62f1454f2ff71b2508803a",
+          "afterSha256": "6b61f93b9cd310400e299ae3750a57b23c92033ca634d95a664f412f343c9f05"
+        },
+        {
+          "reason": "Mark the score image replay invitation as practice",
+          "occurrences": 1,
+          "beforeSha256": "212aeaa5a2f6f3c052486e16730e60d56863ff752d9cd85ff069c35808fdcd43",
+          "afterSha256": "ea8f6fd53ea9d928279d4b66eb42469f1fe4f3ac7b14ef5e7b24a8b100782f82"
+        },
+        {
+          "reason": "Mark the sharing caption as an unranked local result",
+          "occurrences": 1,
+          "beforeSha256": "abc1696cc4d8ae61a57b530ec0e22bd7e480a8e900c04ca241648de6ba089114",
+          "afterSha256": "909c19c80c3d81cc246680438b5ab6ef28e0f31a0d02f481dbb9825607e116e5"
+        }
+      ]
+    },
+    {
+      "path": "practice/practice.js",
+      "sha256": "13113f670b23f077830c50cab502e00e2dd9894bdb37ee218190b23ade627025"
+    },
+    {
+      "path": "practice/index.html",
+      "sha256": "8c0e4a57594c0533d74a98b57b7fa3f99b43287e520a4112849374bc680ec8d1"
+    }
+  ],
+  "mode": "Local practice only: no ranking, fee, prizes or timelock authorization",
+  "sharedAssets": "The existing hash-pinned game-provenance.json files provide models, portraits and audio"
+}
