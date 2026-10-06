@@ -71,7 +71,7 @@ The manual MWA diagnostic completed one instrumentation test with the official F
 
 The production Digital Asset Links endpoint returned HTTP 200 and the release certificate. The emulator's debug wallet identity warning remains distinct from the release identity. This PC also uses HTTPS interception: `scripts/prepare-local-emulator-tls.ps1` can validate/export its existing Windows-trusted public root for an explicitly opted-in debug build with `-PlocalEmulatorTls=true`. Those local resources are ignored and excluded from default debug and all release builds; normal TLS validation remains enabled.
 
-The publisher-signed `DevFridge-World-0.3.2-beta.1.apk` retains the existing release certificate and excludes the local emulator CA. Its SHA-256 is `7c8bfc6417c94596b11f1431741e7ff7b2eaf89236bd497a1f2228dc76c23b84`. Candidate release target: [Android 0.3.2-beta.1](https://github.com/mikeminer/devfridge-world-android/releases/tag/android-v0.3.2-beta.1). Default local Gradle output is not that signed artifact.
+The publisher-signed `DevFridge-World-0.3.2-beta.1.apk` retains the existing release certificate and excludes the local emulator CA. Its SHA-256 is `7c8bfc6417c94596b11f1431741e7ff7b2eaf89236bd497a1f2228dc76c23b84`. Published tester beta: [Android 0.3.2-beta.1](https://github.com/mikeminer/devfridge-world-android/releases/tag/android-v0.3.2-beta.1). The published APK download was verified HTTP 200 on 6 October 2026; release source/evidence snapshot is `de54d8736838827de79d7cef0e3fc4931bbf5839`. Default local Gradle output is not that signed artifact.
 
 ## Design references
 
@@ -80,3 +80,5 @@ The publisher-signed `DevFridge-World-0.3.2-beta.1.apk` retains the existing rel
 [Solana Mobile Kotlin quickstart](https://docs.solanamobile.com/get-started/kotlin/quickstart)
 
 [Android WebView bridge guidance](https://developer.android.com/develop/ui/views/layout/webapps/native-api-access-jsbridge)
+
+The [published Android demo on YouTube](https://youtube.com/shorts/LRDAhJhFfLI?feature=share) is unlisted and shows actual emulator practice, sharing, restart persistence and the separate SDK test-wallet diagnostic. The [English descriptive transcript](../evidence/2026-10-06/android-demo.transcript.md), captions and source cut/hash receipt are public in this repository. Raw screen recordings and the uploaded original MP4 remain preserved locally; raw-video downloads are not published.

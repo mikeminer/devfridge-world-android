@@ -174,16 +174,15 @@
       "segment": "demo-segment-14.mp4"
     }
   ],
-  "publicationStatus": "Prepared artifacts; release upload and URL checks are recorded separately by the publisher.",
-  "expectedPublicationUrls": {
-    "DevFridge-World-Android-Demo-2026-10-06.mp4": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/DevFridge-World-Android-Demo-2026-10-06.mp4",
-    "DevFridge-World-Android-Demo-2026-10-06.en.srt": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/DevFridge-World-Android-Demo-2026-10-06.en.srt",
-    "DevFridge-World-Android-Demo-2026-10-06.transcript.md": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/DevFridge-World-Android-Demo-2026-10-06.transcript.md",
-    "practice-final-evidence-20261006.mp4": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/practice-final-evidence-20261006.mp4",
-    "clockin-wallet-skr-final-20261006.mp4": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/clockin-wallet-skr-final-20261006.mp4",
-    "wallet-skr-cfr30.mp4": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/wallet-skr-cfr30.mp4"
-  },
+  "publicationStatus": "Final presentation published as an unlisted YouTube video. Original upload source and raw recordings preserved locally; raw MP4 downloads are not published. Captions, transcript, hashes and source cuts are in the public repository.",
   "originalWalletRecordingSha256": "558bb856100c62e3c2f138ee6cf59fcbd661b918417574c60da6c2b8d250075a",
   "captionsSha256": "2393ea77bf2848231646afca83c3e2c955d34b126d8dc32011285e94b19324df",
-  "transcriptSha256": "13e1d778a3af42421dc1d2f7f52915503de76575729078716c99c4a3cf39551c"
+  "transcriptSha256": "13e1d778a3af42421dc1d2f7f52915503de76575729078716c99c4a3cf39551c",
+  "publishedVideo": {
+    "url": "https://youtube.com/shorts/LRDAhJhFfLI?feature=share",
+    "videoId": "LRDAhJhFfLI",
+    "visibility": "unlisted",
+    "displayedDuration": "2:49",
+    "sourceSha256AppliesTo": "preserved local MP4 uploaded to YouTube; not transcoded playback bytes"
+  }
 }

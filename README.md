@@ -72,4 +72,6 @@ The original [Clock In audit](CLOCK-IN-AUDIT-7ff05bc.md) applies to commit `7ff0
 
 Official app page: [world.devfridge.cool/android](https://world.devfridge.cool/android).
 
-The publisher-signed `DevFridge-World-0.3.2-beta.1.apk` retains the existing release certificate and excludes the local emulator CA. APK SHA-256: `7c8bfc6417c94596b11f1431741e7ff7b2eaf89236bd497a1f2228dc76c23b84`. Candidate release target: [Android 0.3.2-beta.1](https://github.com/mikeminer/devfridge-world-android/releases/tag/android-v0.3.2-beta.1); publication receipt is recorded in the Android evidence report.
+The publisher-signed `DevFridge-World-0.3.2-beta.1.apk` retains the existing release certificate and excludes the local emulator CA. APK SHA-256: `7c8bfc6417c94596b11f1431741e7ff7b2eaf89236bd497a1f2228dc76c23b84`. Published tester beta: [Android 0.3.2-beta.1](https://github.com/mikeminer/devfridge-world-android/releases/tag/android-v0.3.2-beta.1); the APK download was verified HTTP 200 on 6 October 2026. Release source/evidence snapshot: `de54d8736838827de79d7cef0e3fc4931bbf5839`.
+
+The [published Android demo on YouTube](https://youtube.com/shorts/LRDAhJhFfLI?feature=share) is unlisted and shows actual emulator practice, sharing, restart persistence and the separate SDK test-wallet diagnostic. The [English descriptive transcript](evidence/2026-10-06/android-demo.transcript.md), captions and source cut/hash receipt are public in this repository. Raw screen recordings and the uploaded original MP4 remain preserved locally; raw-video downloads are not published.
