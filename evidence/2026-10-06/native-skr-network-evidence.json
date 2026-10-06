@@ -1,0 +1,29 @@
+{
+  "kind": "native SKR network\/parser verification; instrumentation only",
+  "startedAt": "2026-10-06T15:25:57.721439Z",
+  "packageName": "cool.devfridge.world",
+  "installedVersionName": "0.3.2-beta.1",
+  "installedVersionCode": 8,
+  "androidApi": 35,
+  "deviceModel": "sdk_gphone64_x86_64",
+  "rpcEndpoint": "https:\/\/api.mainnet.solana.com",
+  "method": "getTokenAccountsByOwner",
+  "commitment": "finalized",
+  "publicAccount": "CQDmky2kNKNae5yjDxhrD5eu3mKvYui4AcqZxzr1B5oQ",
+  "accountProvenance": "Public address in the earlier official SDK Fake Wallet diagnostic",
+  "mint": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+  "mockedResponse": false,
+  "walletAuthorizationDemonstrated": false,
+  "walletSigningDemonstrated": false,
+  "visibleSkrDialogDemonstrated": false,
+  "scope": "Uses the installed app's unchanged private readSkrAccounts function off the UI thread. Standard HttpsURLConnection certificate validation remains enabled. Does not prove gameplay, a wallet consent flow, an Aurora unlock or a release APK run. Parsed account count is not the raw RPC value count; HTTP status and slot are not exported by this function.",
+  "resolvedRpcAddresses": [
+    "64.130.50.23"
+  ],
+  "parsedTokenAccountCount": 0,
+  "rawSkrBalance": "0",
+  "eligible": false,
+  "status": "passed",
+  "finishedAt": "2026-10-06T15:26:02.304998Z",
+  "elapsedMs": 4583
+}
