@@ -1,0 +1,87 @@
+{
+  "recordedAtUtc": "2026-10-06T12:16:54.4636628Z",
+  "auditedCommit": "de54d8736838827de79d7cef0e3fc4931bbf5839",
+  "originalReportSha256": "2902aebe8d9c9771394a3649ae0c64bdd8b650fac13085df6b4fa1dfeae3779f",
+  "before": {
+    "exportedActivityCount": 4,
+    "instrumentationStubCount": 3,
+    "sha256": "7c8bfc6417c94596b11f1431741e7ff7b2eaf89236bd497a1f2228dc76c23b84",
+    "versionCode": 8,
+    "versionName": "0.3.2-beta.1",
+    "file": "DevFridge-World-0.3.2-beta.1.apk"
+  },
+  "after": {
+    "versionName": "0.3.2-beta.2",
+    "activities": [
+      {
+        "name": "cool.devfridge.world.MainActivity",
+        "exported": "true"
+      }
+    ],
+    "providers": [
+      {
+        "name": "androidx.core.content.FileProvider",
+        "authority": "cool.devfridge.world.files",
+        "exported": "false"
+      },
+      {
+        "name": "androidx.startup.InitializationProvider",
+        "authority": "cool.devfridge.world.androidx-startup",
+        "exported": "false"
+      }
+    ],
+    "file": "app-release-unsigned.apk",
+    "signed": false,
+    "versionCode": 9,
+    "sha256": "636e99bdc935a01e9a2d787658c0eadb4cb4840a07f9d1e513e4f186078cdf2b",
+    "receivers": [
+      {
+        "permission": "android.permission.DUMP",
+        "name": "androidx.profileinstaller.ProfileInstallReceiver",
+        "exported": "true"
+      }
+    ]
+  },
+  "commonEntryCount": 181,
+  "changedCommonEntries": [
+    "AndroidManifest.xml"
+  ],
+  "removedEntries": [
+    "META-INF/DEVFRIDG.RSA",
+    "META-INF/DEVFRIDG.SF",
+    "META-INF/MANIFEST.MF"
+  ],
+  "addedEntries": [],
+  "gameAssetEntryCount": 89,
+  "changedGameAssetEntries": [],
+  "dexEntries": [
+    {
+      "unchanged": true,
+      "sha256": "85f1d0aaad391cb9c0131cf15a8ff8620d9f4207d131197ab3326c2757907a92",
+      "path": "classes.dex"
+    }
+  ],
+  "checks": {
+    "releaseLintWarnings": 19,
+    "releaseJvmFailures": 0,
+    "walletBehaviorRetestedAfterOverlay": false,
+    "releaseJvmTests": 11,
+    "newDeviceExecution": false,
+    "releaseLintErrors": 0,
+    "releaseAssembly": "success",
+    "debugManifestInstrumentationStubCount": 3
+  },
+  "scope": "Only release manifest declarations and package version changed. Static packaging comparison and JVM/lint checks do not establish end-to-end wallet behavior or complete security.",
+  "debugInstrumentationActivities": [
+    "androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity",
+    "androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity",
+    "androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+  ],
+  "dependencyChain": [
+    "com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.7",
+    "androidx.test.ext:junit-ktx:1.2.1",
+    "androidx.test.ext:junit:1.2.1",
+    "androidx.test:core:1.6.1"
+  ],
+  "hardeningSourceCommit": "f2408f43af4446bcd082c93574f14c6f24eb3af6"
+}
