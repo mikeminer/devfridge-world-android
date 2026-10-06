@@ -60,7 +60,7 @@ The server files are reference excerpts that depend on the original monorepo; th
 
 ## Recorded evidence and limits — 6 October 2026
 
-The current development build passed 11 Android JVM unit tests, debug lint with zero errors, debug assembly and release assembly. The JavaScript suite passed 38 tests; three generated registration-bundle tests remain skipped. The [Android evidence report](ANDROID-EVIDENCE-2026-10-06.md) records the commands, artifacts and actual emulator checks.
+The recorded beta.1 development build passed 11 Android JVM unit tests, debug lint with zero errors, debug assembly and release assembly. The JavaScript suite passed 38 tests; three generated registration-bundle tests remain skipped. For the beta.2 release-manifest follow-up, all 11 JVM tests, release lint with zero errors and release assembly passed again. The [Android evidence report](ANDROID-EVIDENCE-2026-10-06.md) records the commands, artifacts and actual emulator checks.
 
 An Android 15/API 35 emulator ran the actual practice engine: touch fusion displayed “MERGED Aperitivo” and score 20, followed by a labelled “Practice complete” result. After force-stopping and reopening the app, the local best remained 20 and Recent sessions showed the completed 20-point results. Result-layout and texture defects found during play were corrected. The native share chooser delivered the actual 20-point PNG to a local Android test receiver, which read the 1080 × 1350 image with its temporary URI permission. Nothing was posted externally. The full live eligible-game flow remains unverified.
 
