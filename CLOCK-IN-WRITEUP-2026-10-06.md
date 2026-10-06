@@ -47,3 +47,7 @@ Readable English transcript, 15 descriptive SRT cues and original source cut/has
 Public wallet signature and native share receipts: https://github.com/mikeminer/devfridge-world-android/tree/main/evidence/2026-10-06
 
 Runtime captures: https://github.com/mikeminer/devfridge-world-android/tree/main/evidence/2026-10-06 — actual touch score 20, completed result, native PNG receiver and persisted history after force-stop/reopen.
+
+## Compact portal writeup
+
+The [saved porting-features field](evidence/2026-10-06/clockin-porting-features.txt) is 4,970 characters, within the portal's 5,000-character limit. It includes the concrete source-triage boundaries, publisher-signed APK hash, exact release source commit, signing verification, test scope and Digital Asset Links status directly. It retains the distinction between the beta.1 debug/emulator recording and beta.2 release-manifest hardening, with no new live-wallet, positive-SKR, physical-device or retention claim.
