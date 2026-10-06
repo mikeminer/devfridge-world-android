@@ -1,0 +1,722 @@
+{
+  "cliVersion": "4.5.1",
+  "fixtures": [
+    {
+      "id": "rugarugo",
+      "options": {
+        "compress": "meshopt"
+      },
+      "inputHash": "d45afd7fcc1a89b1e070930180a7b79466ab28789a0c40362ec046e19d07c859",
+      "output": {
+        "bytes": 2093508,
+        "sha256": "2f54b69a205ed79b422c61e4600d505906d56475920209a5e74078e175387bf6",
+        "meshes": 24,
+        "primitives": 24,
+        "vertices": 37723,
+        "materials": 9,
+        "textures": [
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "7a13257f01af72b79aae0ab117888b74d96058ede64cf810b1eb4099fd131865"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "1893e53fae8dd61baf5a4e16ee4e2a03c067a59588379e2c86bf48ba92a3b3bb"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "e969b1c451739a17de5c8ca4a6483e8ecf929e52041d328994af2ae8f961bb06"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "6a2e44ad5c983d0a8b186455b64ff6f5c16088785d3c63ab714cca94ae1c410d"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "a2192a4d93be7c5518f69973fb87b2033f3d85fdb66da4f013d8a4deecdf33af"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "c741d72b9d30aafade018d55f61149217766a58e1cc488f583a4992ec113a0bd"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "7ccfb415659fef82c4416540ad32eeb7468e3c7d91b2a525e545ac1f03e6bd76"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "7b4c0e7de5aa59675ed82ff99f372eac4542c3d0b3dacecaa3bc649d64b8c5aa"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "cc80b187dd47371c578e730c5d2b8e0d6a3966db789692bcd2d6d91a6b6d7886"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "ac9489e4a242ac5a4c2f562c08955bd18d1657929dead74597cdb4a3d77bf923"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "a00e8d46e81375729f9272bcbc28700a51bf2828d9679f13d49bb21554753fa9"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "4f094d910fc8eed20fcc6fb359d2060e5599e7f7d3366c5e7b24751c9ec09f85"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              32,
+              4
+            ],
+            "sha256": "57228c3f7568728c6e72cf0ff4391df626c4c15b3a55ba57fce106f39e754432"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              32,
+              4
+            ],
+            "sha256": "04990822799c482b160cbb2619d57df193e5057ed6b40655b49abccc981959cc"
+          }
+        ],
+        "skins": 0,
+        "animations": 12,
+        "extensions": [
+          "EXT_meshopt_compression",
+          "KHR_mesh_quantization"
+        ]
+      }
+    },
+    {
+      "id": "rugarugo",
+      "options": {
+        "compress": "draco",
+        "textureFormat": "webp"
+      },
+      "inputHash": "d45afd7fcc1a89b1e070930180a7b79466ab28789a0c40362ec046e19d07c859",
+      "output": {
+        "bytes": 300492,
+        "sha256": "bb31af4215a17126df3353648f14ef3dd97ea3c70d5a1ac06ef42af78c2b7768",
+        "meshes": 24,
+        "primitives": 24,
+        "vertices": 36746,
+        "materials": 9,
+        "textures": [
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "89c23ca17fdf713d28885879fa8632d34945f63453ac4df0e6f39ca0c2832eb5"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "dc41e5ebeab0f791c2765928a6d0968cf708e22f6188d5e64fbec6e1822c9a68"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "632cfed64af63ff48ab32a5e03973dfd5165484273a58f441f33ed46a79f894c"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "89357c55f4f1dbd645dfa71b6748b3b3ec932e4a0ba8735d9ef7b3bbd21fe7b4"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "fd3f9146df5e142f4b846b827988eef5128664de8a4754f490d3be9e9db00c8a"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "1eeb4e7889c210deebe3f5a35ae41eeea5b932793b7e75223f67f572fba4c6c3"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "c4d0e925ba72814c204bed0e5a482f5fbad9f5d48f832323e41b02e19c7c1de7"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "e45f105304c26b64e8f756fb30cd673cd78c906cc2ac9387005eb5b5014a5717"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "ef661263541e6804068d60e5edc3c6492f0a9544c887f3ed69f8bd11c5fb7a6d"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "0a7d96c0b439bd5bb94a112ecf6240aec4827f452429340ab2ea20e3d474b029"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "fd5e4c1dc3366881900395bb450fb0b0135ce4b318a7f8ccc33088b1e741f959"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "0e954fa90eecb3f8c76affbe2fa7d2b40d8dbb062231f3e645d9304ba6a26cd2"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              32,
+              4
+            ],
+            "sha256": "a754b4305ec3e0be20de22f8c8cf644d20cb97a8a41ec99e035641be9e39435e"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              32,
+              4
+            ],
+            "sha256": "f916f2f0d7c7bb6b265f1815fe7648f68600d00d820f65c115946ce65a600a57"
+          }
+        ],
+        "skins": 0,
+        "animations": 12,
+        "extensions": [
+          "EXT_texture_webp",
+          "KHR_draco_mesh_compression"
+        ]
+      }
+    },
+    {
+      "id": "gmgnocco",
+      "options": {
+        "compress": "meshopt"
+      },
+      "inputHash": "28c07e8a450387a204afe95cdaccdee9c91231f020045626e67f324559c95cec",
+      "output": {
+        "bytes": 1334924,
+        "sha256": "d78aa30c327eb01e7051b9ae47bcc2e7a8cb85347e48ae8a202bb2c69862529e",
+        "meshes": 22,
+        "primitives": 22,
+        "vertices": 22633,
+        "materials": 6,
+        "textures": [
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "7a13257f01af72b79aae0ab117888b74d96058ede64cf810b1eb4099fd131865"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "1893e53fae8dd61baf5a4e16ee4e2a03c067a59588379e2c86bf48ba92a3b3bb"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "e969b1c451739a17de5c8ca4a6483e8ecf929e52041d328994af2ae8f961bb06"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "ac9489e4a242ac5a4c2f562c08955bd18d1657929dead74597cdb4a3d77bf923"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "a00e8d46e81375729f9272bcbc28700a51bf2828d9679f13d49bb21554753fa9"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "4f094d910fc8eed20fcc6fb359d2060e5599e7f7d3366c5e7b24751c9ec09f85"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              64,
+              4
+            ],
+            "sha256": "35dbb45df40d1b5e25739fd26dbe920786f884a523d577950712d2143eb44fc4"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              64,
+              4
+            ],
+            "sha256": "42eaa6e9eac8683798d341b897f190cec1ea26ae3e3d17aea6caf7c1290b79e4"
+          }
+        ],
+        "skins": 0,
+        "animations": 12,
+        "extensions": [
+          "EXT_meshopt_compression",
+          "KHR_mesh_quantization"
+        ]
+      }
+    },
+    {
+      "id": "gmgnocco",
+      "options": {
+        "compress": "draco",
+        "textureFormat": "webp"
+      },
+      "inputHash": "28c07e8a450387a204afe95cdaccdee9c91231f020045626e67f324559c95cec",
+      "output": {
+        "bytes": 228612,
+        "sha256": "59bd037ddad3a3b39695605168d44c85fb700750098e21f1fd7097acc6e32988",
+        "meshes": 22,
+        "primitives": 22,
+        "vertices": 21556,
+        "materials": 6,
+        "textures": [
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "89c23ca17fdf713d28885879fa8632d34945f63453ac4df0e6f39ca0c2832eb5"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "dc41e5ebeab0f791c2765928a6d0968cf708e22f6188d5e64fbec6e1822c9a68"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "632cfed64af63ff48ab32a5e03973dfd5165484273a58f441f33ed46a79f894c"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "0a7d96c0b439bd5bb94a112ecf6240aec4827f452429340ab2ea20e3d474b029"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "fd5e4c1dc3366881900395bb450fb0b0135ce4b318a7f8ccc33088b1e741f959"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "0e954fa90eecb3f8c76affbe2fa7d2b40d8dbb062231f3e645d9304ba6a26cd2"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              64,
+              4
+            ],
+            "sha256": "6f2829ab305f8768d5cd4f1e4f1f73b6ddbe4b0b432a9552a6d4ae80fc2a1b00"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              64,
+              4
+            ],
+            "sha256": "d68a4f9863159f45500a90d031cc0dd34b3e8b2415108e0a84a84696fa79ff6d"
+          }
+        ],
+        "skins": 0,
+        "animations": 12,
+        "extensions": [
+          "EXT_texture_webp",
+          "KHR_draco_mesh_compression"
+        ]
+      }
+    },
+    {
+      "id": "moonzarella",
+      "options": {
+        "compress": "meshopt"
+      },
+      "inputHash": "7f3d235fb9daae8cdb99f3c2bacc54799e7ba70263efd65e1fb4c11c43b55bdb",
+      "output": {
+        "bytes": 1798976,
+        "sha256": "6f4aa0ff7e9be226748298ea49542d83fe118a90e5ae825443bb97a6931005ef",
+        "meshes": 24,
+        "primitives": 24,
+        "vertices": 25685,
+        "materials": 11,
+        "textures": [
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "90cc435f236ecbff506c068004491566100acf8f304d1bc7fd23655d43da1e3e"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "31b4651b3dc99fa8edbdac3fb03f4df469aaf74a9d047a8e54249d083ecdc962"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "9b8122eb6f159f49bc76ba723ec96f4ea5f7aebb03c46aba69c51a335d227c57"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "ac7b2f3ffbdc132590a576c42d3069c7fd45d76754f7a4064d8cbdfa655abbd3"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "bdbc8cf0b3a93b8a3b956a89189554cac04c8053937dba6730c1cc046696b131"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "ff6cf7327538b9f8fac4cd3ea2da926bfbc37c66271754388c55fce9045f3a8e"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "ac9489e4a242ac5a4c2f562c08955bd18d1657929dead74597cdb4a3d77bf923"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "a00e8d46e81375729f9272bcbc28700a51bf2828d9679f13d49bb21554753fa9"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "4f094d910fc8eed20fcc6fb359d2060e5599e7f7d3366c5e7b24751c9ec09f85"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "7ccfb415659fef82c4416540ad32eeb7468e3c7d91b2a525e545ac1f03e6bd76"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "7b4c0e7de5aa59675ed82ff99f372eac4542c3d0b3dacecaa3bc649d64b8c5aa"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "cc80b187dd47371c578e730c5d2b8e0d6a3966db789692bcd2d6d91a6b6d7886"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              64,
+              4
+            ],
+            "sha256": "8558d6321cb0a11f2dded832e0d03267ecb84e32250989676789201d3d919222"
+          },
+          {
+            "type": "image/png",
+            "size": [
+              64,
+              4
+            ],
+            "sha256": "b7b863f93cb9c694a1519d60f65d20781a3767010882c90cc26c70d86a783fe1"
+          }
+        ],
+        "skins": 0,
+        "animations": 12,
+        "extensions": [
+          "EXT_meshopt_compression",
+          "KHR_mesh_quantization"
+        ]
+      }
+    },
+    {
+      "id": "moonzarella",
+      "options": {
+        "compress": "draco",
+        "textureFormat": "webp"
+      },
+      "inputHash": "7f3d235fb9daae8cdb99f3c2bacc54799e7ba70263efd65e1fb4c11c43b55bdb",
+      "output": {
+        "bytes": 252244,
+        "sha256": "69c2c1399b016db32abdbb6074c048d0b0d4f353606b4213f35fb678b5ba690d",
+        "meshes": 24,
+        "primitives": 24,
+        "vertices": 24561,
+        "materials": 11,
+        "textures": [
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "38fcd231e8a3ece72e3adc506ebe55cd19e8117f3c7226ecad3e7b1680f7c993"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "ae72a1bf9029f3cc255c625357ea0cffe1e6e5dbd3fa758c2be9b415cdc9e2a3"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "3d4d52e99457a629d5cbc29eb7e9f59fde4760be2641a800119fdd975bca2527"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "4e7bc5ccc01f9487d6bb46b735e3fd07c1af601e8c9ca2d11d592de2044d9f64"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "1d00c7d724773e41524f80774eb362e8d279f51d01c1a65e254a54d71c40badc"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "d04dde30208216d9350c6b0a8ca1bf529955d16854c74f232a7cc8ebda9de5f1"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "0a7d96c0b439bd5bb94a112ecf6240aec4827f452429340ab2ea20e3d474b029"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "fd5e4c1dc3366881900395bb450fb0b0135ce4b318a7f8ccc33088b1e741f959"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "0e954fa90eecb3f8c76affbe2fa7d2b40d8dbb062231f3e645d9304ba6a26cd2"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "c4d0e925ba72814c204bed0e5a482f5fbad9f5d48f832323e41b02e19c7c1de7"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "e45f105304c26b64e8f756fb30cd673cd78c906cc2ac9387005eb5b5014a5717"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              512,
+              512
+            ],
+            "sha256": "ef661263541e6804068d60e5edc3c6492f0a9544c887f3ed69f8bd11c5fb7a6d"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              64,
+              4
+            ],
+            "sha256": "0d4bdfd6aaba3f4bcf868288acb4a28ff71f2df993802186897363c5c6e353a6"
+          },
+          {
+            "type": "image/webp",
+            "size": [
+              64,
+              4
+            ],
+            "sha256": "0306b17cfb8597a328c342dabbb35a38631e174f292ec9aa879e1231aee0a203"
+          }
+        ],
+        "skins": 0,
+        "animations": 12,
+        "extensions": [
+          "EXT_texture_webp",
+          "KHR_draco_mesh_compression"
+        ]
+      }
+    }
+  ]
+}

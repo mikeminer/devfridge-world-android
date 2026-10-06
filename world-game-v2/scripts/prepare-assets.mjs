@@ -4,6 +4,7 @@ import { mkdir, copyFile, writeFile, access } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { optimizeModel } from "./optimize-model.mjs";
 
 const require = createRequire(import.meta.url);
 const ffmpeg = require("ffmpeg-static") || join(root, "../node_modules/ffmpeg-static/ffmpeg.exe");
@@ -52,22 +53,11 @@ await mkdir(join(out, "portraits"), { recursive: true });
 await mkdir(join(out, "audio"), { recursive: true });
 await mkdir(join(out, "vendor"), { recursive: true });
 
-const gltfBin = join(root, "../node_modules/@gltf-transform/cli/bin/cli.js");
-
 await limit(ids, 8, async (id) => {
   const srcGlb = join(v1, "models", `${id}.glb`);
   const dstGlb = join(out, "models", `${id}.glb`);
   try {
-    await run(process.execPath, [
-      gltfBin,
-      "optimize",
-      srcGlb,
-      dstGlb,
-      "--compress",
-      "draco",
-      "--texture-compress",
-      "webp",
-    ]);
+    await optimizeModel(srcGlb, dstGlb, { compress: "draco", textureFormat: "webp" });
   } catch (err) {
     console.warn("draco failed, copying original", id, err.message);
     await copyFile(srcGlb, dstGlb);
