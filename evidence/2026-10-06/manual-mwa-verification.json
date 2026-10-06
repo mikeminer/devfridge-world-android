@@ -1,0 +1,9 @@
+{
+  "algorithm": "Ed25519",
+  "signatureValid": true,
+  "evidenceSha256": "0afc0e895a7e6f83337787b0eac44a1e1ce23ff0758e5957ccbbdfa51c47286d",
+  "messageSha256": "1418cce401ebe901b761e363ddc6b186328c263fe72dea755861f3009b30fdc7",
+  "publicKeyBytes": 32,
+  "signatureBytes": 64,
+  "scope": "Actual MWA signature from an unfunded official SDK test wallet. This does not verify game eligibility, ranked score authorization or a payment."
+}

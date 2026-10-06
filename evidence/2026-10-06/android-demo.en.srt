@@ -1,0 +1,74 @@
+1
+00:00:00,000 --> 00:00:06,000
+Descriptive captions; no spoken narration.
+Android emulator · edited real-speed segments.
+
+2
+00:00:06,000 --> 00:00:25,000
+Local 3D touch play: merge score 20.
+Home and return trigger pause.
+
+3
+00:00:25,000 --> 00:00:36,000
+20 local points; on-device adaptive advice appears.
+Photo preparation follows.
+
+4
+00:00:36,000 --> 00:00:39,000
+Later retry follows. Idle/no-op waits trimmed.
+No gameplay or successful result is recreated.
+
+5
+00:00:39,000 --> 00:00:46,000
+The actual 20-point practice image appears.
+Local score · no ranking or prizes.
+
+6
+00:00:46,000 --> 00:00:53,000
+Android chooser delivers PNG to a test app.
+1080 × 1350 · 20 points · read permission granted.
+
+7
+00:00:53,000 --> 00:01:12,000
+App reopened after force-stop.
+Best 20 and completed local sessions persist.
+
+8
+00:01:12,000 --> 00:01:15,000
+Separate wallet diagnostic with unfunded keys.
+No ranked or financial authorization.
+
+9
+00:01:15,000 --> 00:01:21,000
+The instrumentation panel identifies the test.
+The production access gate remains untouched.
+
+10
+00:01:21,000 --> 00:01:44,000
+Official SDK Fake Wallet authorizes a test account.
+Debug identity warning is visible.
+
+11
+00:01:44,000 --> 00:02:07,000
+One purpose-specific message is approved.
+The app receives a 64-byte signature.
+
+12
+00:02:07,000 --> 00:02:13,000
+Ed25519 verification: true (separate public JSON).
+Diagnostic only · not eligibility or payment.
+
+13
+00:02:13,000 --> 00:02:39,000
+Consent precedes a real mainnet query attempt.
+DNS failure: Retry/Close · no perk granted.
+
+14
+00:02:39,000 --> 00:02:42,700
+The unavailable dialog is closed.
+No balance or cosmetic unlock is claimed.
+
+15
+00:02:42,700 --> 00:02:48,700
+Actual emulator evidence; source and receipts public.
+SKR success and a live ranked run remain unverified.

@@ -1,12 +1,14 @@
 # DevFridge World Android
 
-Focused source export for the Clock In Solana Mobile hackathon. DevFridge World preserves a Three.js/Rapier physics game and adds Kotlin Mobile Wallet Adapter authorization and message signing, multitouch controls, optional haptics, Android sharing, lifecycle handling, saved server-verified runs and an optional read-only SKR cosmetic check.
+DevFridge World brings a Three.js/Rapier physics game to Android with Kotlin Mobile Wallet Adapter authorization and exact-message signing, touch controls, optional haptics, native sharing, lifecycle handling, saved server-verified runs, local session history and an optional read-only SKR cosmetic check.
 
-This repository contains public source exported from [mikeminer/devfridge](https://github.com/mikeminer/devfridge/tree/10ec57e6076c7f132757b76e3d9c4570733efc83), commit `10ec57e6076c7f132757b76e3d9c4570733efc83`. Application source is unchanged. Export adaptations: two JavaScript test dependency paths now resolve this Android package rather than an adjacent `cold-storage` project; `esbuild` and a lockfile are included; this README and asset-fetch script are added. It excludes unrelated monorepo projects and large game media so the source can be audited. It is an evidence snapshot, not a replacement development history. Original development history: [PR 113](https://github.com/mikeminer/devfridge/pull/113).
+The app is for Solana community players who want short, playable sessions and a familiar wallet on their phone. The Android layer addresses small browser controls, interrupted wallet handoffs and friction when keeping or sharing a completed run. A local practice mode provides a way to learn the game before choosing token-timelock access to the live game. Character eligibility and optional paid TopShelf registration remain separate from practice.
+
+This focused repository started as an export from [mikeminer/devfridge at 10ec57e](https://github.com/mikeminer/devfridge/tree/10ec57e6076c7f132757b76e3d9c4570733efc83), with the original development history in [PR 113](https://github.com/mikeminer/devfridge/pull/113). Subsequent commits contain dependency remediation and Android 0.3.2-beta.1 development. It excludes unrelated monorepo projects and restores large game media through hash-checked asset fetchers.
 
 ## Build the Android app
 
-Requirements: Node.js 22+, JDK 17, Android SDK platform 36 and build tools 36.0.0. Set `ANDROID_HOME` or create `android/local.properties` with your SDK path. Android 9+ is required to install.
+Requirements: Node.js 22+, JDK 17, Android SDK platform 36 and build tools 36.0.0. Set `ANDROID_HOME` or create `android/local.properties` with your SDK path. Installation requires Android 9 or newer.
 
 ```powershell
 node scripts/fetch-game-assets.mjs
@@ -14,45 +16,60 @@ Set-Location android
 npm ci --no-audit --no-fund
 npm run prepare:game
 npm test
-.\gradlew.bat :app:testDebugUnitTest :app:lintDebug :app:assembleDebug
+.\gradlew.bat :app:testDebugUnitTest :app:lintDebug :app:assembleDebug :app:assembleRelease
 ```
 
-The download script fetches the original game distribution from the pinned public commit and checks every file against the SHA-256 hashes in `android/game-provenance.json`. It fails on a mismatch. No TLS exception is used. Generated assets, build outputs, local SDK configuration, signing keys and credentials are excluded from Git. Output: `android/app/build/outputs/apk/debug/app-debug.apk`, a debug APK for testing.
+`prepare:game` packages the pinned live-game distribution and fetches/prepares the separate practice distribution. Both fetchers validate source-file bytes and SHA-256 hashes. `android/game-provenance.json` records live assets and mobile overrides; `android/practice-source.json` pins the practice source, and `android/practice-provenance.json` records its explicit adapters. The practice preparation fails when the reviewed source hash or expected patch boundaries differ.
+
+The debug APK is `android/app/build/outputs/apk/debug/app-debug.apk`. Default release assembly creates an unsigned artifact; publisher signing is a separate step. Signing keys, credentials, local SDK paths, generated assets and local emulator certificates are excluded from Git. [Android build and testing details](android/README.md) cover the optional manual MWA diagnostic and generated registration-page tests.
+
+## Mobile experience and local progression
+
+Version 0.3.2-beta.1 adds a native menu route to a clearly labelled 60-second local practice mode. It uses the actual pinned 3D renderer and physics engine, with explicit adaptations for local completion, isolated engine storage and practice-labelled sharing. The native route is the exact first-party game URL with `?mode=practice`. Practice page requests cannot authorize wallet connections, signatures or TopShelf registration through the native bridge. Practice scores cannot enter a verified leaderboard or claim prizes. The live game retains its compliance and token-timelock access checks.
+
+“Recent sessions” is available from the native menu, game menu and result screen. Up to 20 completed local results, their mode and completion time stay on this device. A personal replay goal compares scores in the same mode. Fresh installations show an empty state; the player can clear recent sessions, and storage failures are visible. This is an implemented reason to return, not measured retention or evidence of a player community.
+
+The on-device coach selects localized tips from recent scores and collection progress, then adapts using optional helpfulness ratings. It is lightweight adaptive personalization rather than a generative AI service. Session history and coaching feedback are not sent to a model provider.
+
+## Solana and optional TopShelf
+
+The selected wallet retains its private key. The Android bridge supports account authorization and exact-message signing through MWA, without exposing a general transaction-signing interface. Live eligibility and server-verified runs continue to use the existing backend.
+
+After disclosure and consent, the optional SKR flow authorizes a selected Solana account and queries the official SKR mint on mainnet. A positive balance enables the Aurora cosmetic for the session. No transaction is sent; access, scores, rankings and prizes are unaffected. The RPC provider can observe the public wallet address and IP address.
+
+TopShelf remains an optional, separate Robinhood/EVM flow in Phantom. It may charge a registration fee and offer seasonal token prizes under its rules. Local practice creates neither an eligible run nor a payment authorization. [Mobile registration architecture](android/MOBILE-REGISTRATION.md) describes the original-wallet authorization and saved-run handoff.
 
 ## Source map
 
 | Behavior | Source |
 | --- | --- |
-| Android WebView, MWA authorize/signMessage, native share chooser, lifecycle and haptics | `android/app/src/main/java/cool/devfridge/world/MainActivity.kt` |
-| Trusted origin and bridge limits | `android/app/src/main/java/cool/devfridge/world/BridgePolicy.kt` |
+| Android WebView, MWA, share chooser, lifecycle, haptics and mode menu | `android/app/src/main/java/cool/devfridge/world/MainActivity.kt` |
+| Trusted origin, exact practice route and bridge limits | `android/app/src/main/java/cool/devfridge/world/BridgePolicy.kt` |
 | SKR mint and positive raw token-balance check | `android/app/src/main/java/cool/devfridge/world/SkrBalance.kt` |
 | Wallet bridge, controls and cosmetic state | `android/mobile/native-bridge.js` |
-| Local adaptive advice | `android/mobile/adaptive-coach.js` |
-| Saved-run and registration handoff | `android/mobile/registration-handoff.js`, `android/mobile/native-signing.ts` |
-| Android input and safe-area styles | `android/mobile/android.css` |
-| Build provenance and age-gate adaptation | `android/scripts/prepare-game.mjs`, `android/scripts/patch-gate.mjs` |
-| Original game source | `world-game-v2/src/` |
-| Existing server compliance and TopShelf entry points | `scan/app/api/world/`, `scan/lib/topshelf/` |
-| Tests | `android/tests/`, `android/app/src/test/`, `android/app/src/androidTest/` |
+| Local adaptive advice and recent-session history | `android/mobile/adaptive-coach.js` |
+| Practice timer, completion and API isolation | `android/mobile/practice.js` |
+| Saved verified runs and registration handoff | `android/mobile/registration-handoff.js`, `android/mobile/native-signing.ts` |
+| Android touch and result/history styles | `android/mobile/android.css` |
+| Asset provenance and explicit mobile adapters | `android/scripts/prepare-game.mjs`, `android/scripts/prepare-practice.mjs` |
+| Reference live-game source | `world-game-v2/src/` |
+| Existing server compliance and TopShelf excerpts | `scan/app/api/world/`, `scan/lib/topshelf/` |
+| JavaScript, JVM and instrumentation tests | `android/tests/`, `android/app/src/test/`, `android/app/src/androidTest/` |
 
-The server files are reference excerpts and depend on the original monorepo. They are not a standalone server deployment. Android uses the existing production service. The separate optional Robinhood/EVM registration-page build also depends on the original `cold-storage` source; it is not required for Android debug assembly. Its three generated-bundle tests are skipped unless `REGISTRATION_BUNDLE` is supplied. See `android/README.md` and `android/MOBILE-REGISTRATION.md`.
+The server files are reference excerpts that depend on the original monorepo; this export is not a standalone server deployment. Android uses the existing production service. The optional Robinhood/EVM registration-page build also depends on the original `cold-storage` source. Its three generated-bundle tests are skipped unless `REGISTRATION_BUNDLE` is supplied.
 
-## User and mobile rationale
+## Recorded evidence and limits — 6 October 2026
 
-The app is for casual Solana community players who want short physics rounds on Android. Browser play adds small touch targets, wallet switching and friction when saving or sharing a completed run. The Android layer keeps the game familiar while adding native feedback, sharing and wallet selection. Character access remains subject to the existing token-timelock eligibility checks.
+The current development build passed 11 Android JVM unit tests, debug lint with zero errors, debug assembly and release assembly. The JavaScript suite passed 38 tests; three generated registration-bundle tests remain skipped. The [Android evidence report](ANDROID-EVIDENCE-2026-10-06.md) records the commands, artifacts and actual emulator checks.
 
-SKR is optional: after disclosure and MWA authorization, the app checks the selected account's balance for the official mint on Solana mainnet. A positive balance enables the Aurora cosmetic for that session. No transaction is sent, and access, scores and prizes are unaffected. The RPC can observe the public wallet address and IP. Local advice learns from optional ratings; it is lightweight adaptive personalization, not a generative AI service.
+An Android 15/API 35 emulator ran the actual practice engine: touch fusion displayed “MERGED Aperitivo” and score 20, followed by a labelled “Practice complete” result. After force-stopping and reopening the app, the local best remained 20 and Recent sessions showed the completed 20-point results. Result-layout and texture defects found during play were corrected. The native share chooser delivered the actual 20-point PNG to a local Android test receiver, which read the 1080 × 1350 image with its temporary URI permission. Nothing was posted externally. The full live eligible-game flow remains unverified.
 
-## Evidence and limits
+The opt-in `ManualMwaEvidenceTest` completed one instrumentation test on API 35 using the official Solana Mobile SDK Fake Wallet and unfunded test keys. It connected through the app's actual wallet bridge and signed a purpose-specific diagnostic message containing the domain, account, nonce and issue time. The returned 64-byte signature independently passed Ed25519 verification. This proves the recorded diagnostic authorization/signing flow, rather than live character eligibility, ranked score authorization or a financial transaction. No physical-device or Seed Vault execution is claimed.
 
-The portal audit completed a partial source review at `7ff05bc` and reported findings without assigning a security score. Subsequent development-tool upgrades and the remaining findings are documented in [SECURITY-REVIEW.md](SECURITY-REVIEW.md). The original Android assets and application source remain unchanged; the reference game's tool lockfile is updated separately.
+The real SKR disclosure and consent flow was exercised, but the emulator's DNS failure prevented a successful balance query. The app displayed a retryable failure without granting the cosmetic or changing game access and scores. Positive SKR balance verification remains unproven. The production Digital Asset Links endpoint returned HTTP 200 with the release certificate; the debug identity warning remains distinct from that release configuration.
 
-On 2026-10-03 this focused export passed Android debug assembly, unit tests and lint. Its JavaScript suite passed 23 tests with three generated-registration-bundle tests skipped. All 81 packaged upstream asset hashes were checked. These are build and test results, not live gameplay or wallet evidence.
+The original [Clock In audit](CLOCK-IN-AUDIT-7ff05bc.md) applies to commit `7ff05bc`, with incomplete coverage and 18 findings. Dependency remediation through `8f03b16` produced a dated `npm audit` result with zero known advisories in the reference web-tool dependency tree. [Dependency evidence](DEPENDENCY-EVIDENCE-2026-10-06.md) and [security follow-up](SECURITY-REVIEW.md) preserve the upgrade and remaining source-review boundaries. This is not a new independent program audit or proof of complete security.
 
-On 2026-10-02 the original development build passed debug assembly, Android unit tests, lint and five Android 15/API 35 instrumentation tests. These tests cover renderer/bridge behavior and recovery paths; they do not establish a live wallet signature or completed production run.
+Official app page: [world.devfridge.cool/android](https://world.devfridge.cool/android).
 
-The observed emulator launch reached the age gate but could not validate the production compliance endpoint's TLS chain on this PC. Live gameplay, MWA signing, SKR results, score sharing and restart persistence still need a working Android recording. The existing YouTube video is an earlier desktop/web walkthrough. No physical Seed Vault test is claimed. The practice preview at https://world.devfridge.cool/demo is separate from Android evidence.
-
-App page: https://world.devfridge.cool/android
-
-Existing signed beta: https://github.com/mikeminer/devfridge/releases/download/android-v0.3.1-beta.1/DevFridge-World-0.3.1-beta.1.apk
+The publisher-signed `DevFridge-World-0.3.2-beta.1.apk` retains the existing release certificate and excludes the local emulator CA. APK SHA-256: `7c8bfc6417c94596b11f1431741e7ff7b2eaf89236bd497a1f2228dc76c23b84`. Candidate release target: [Android 0.3.2-beta.1](https://github.com/mikeminer/devfridge-world-android/releases/tag/android-v0.3.2-beta.1); publication receipt is recorded in the Android evidence report.

@@ -1,0 +1,17 @@
+{
+  "receivedAtUtc": "2026-10-06T10:36:47.401227Z",
+  "testTarget": true,
+  "sentExternally": false,
+  "action": "android.intent.action.SEND",
+  "mimeType": "image\/png",
+  "caption": "I scored 20 points in local practice on DevFridge World. No ranking or prizes.\nCan you beat my score?\nhttps:\/\/world.devfridge.cool\/",
+  "streamUri": "content:\/\/cool.devfridge.world.files\/shares\/fridge-1791283003344.png",
+  "readPermissionGranted": true,
+  "explicitGrantFlag": true,
+  "pngBytes": 272027,
+  "pngWidth": 1080,
+  "pngHeight": 1350,
+  "pngSha256": "2bb53e2ff7b92414f1f63adde37031e09effda0026223be7b7bd73d153900594",
+  "outputPng": "share-receipt.png",
+  "accepted": true
+}

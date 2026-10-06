@@ -1,0 +1,42 @@
+{
+  "context": "Android instrumentation diagnostic; official Fake Wallet test keys",
+  "productionAuthorization": false,
+  "financialTransactionRequested": false,
+  "startedAt": "2026-10-06T08:57:49.555Z",
+  "status": "skrDialog completed",
+  "events": [
+    {
+      "action": "connect",
+      "at": "2026-10-06T08:58:42.885Z",
+      "address": "CQDmky2kNKNae5yjDxhrD5eu3mKvYui4AcqZxzr1B5oQ"
+    },
+    {
+      "action": "signMessage",
+      "at": "2026-10-06T08:59:11.005Z",
+      "signatureBytes": 64
+    },
+    {
+      "action": "skrDialog",
+      "at": "2026-10-06T08:59:45.046Z",
+      "title": "SKR check unavailable",
+      "visibleText": "SKR check unavailable  SKR could not be checked right now. Try again later; game access and scores were not changed. CLOSE RETRY"
+    }
+  ],
+  "account": {
+    "address": "CQDmky2kNKNae5yjDxhrD5eu3mKvYui4AcqZxzr1B5oQ",
+    "publicKey": "qWNbFV6FOug5MXgnJVXf3m+bMSTnTUnEidYKVRm8kgM="
+  },
+  "signature": {
+    "message": "DevFridge World Android MWA diagnostic\nDomain: https:\/\/world.devfridge.cool\nAccount: CQDmky2kNKNae5yjDxhrD5eu3mKvYui4AcqZxzr1B5oQ\nNonce: 6f34cfd2-767c-4495-bb8b-1fc7b207f355\nIssued at: 2026-10-06T08:58:58.942Z\nPurpose: verify message signing with an unfunded SDK test wallet.\nThis is not game access, score registration, a transaction or a payment.",
+    "messageBase64": "RGV2RnJpZGdlIFdvcmxkIEFuZHJvaWQgTVdBIGRpYWdub3N0aWMKRG9tYWluOiBodHRwczovL3dvcmxkLmRldmZyaWRnZS5jb29sCkFjY291bnQ6IENRRG1reTJrTktOYWU1eWpEeGhyRDVldTNtS3ZZdWk0QWNxWnh6cjFCNW9RCk5vbmNlOiA2ZjM0Y2ZkMi03NjdjLTQ0OTUtYmI4Yi0xZmM3YjIwN2YzNTUKSXNzdWVkIGF0OiAyMDI2LTEwLTA2VDA4OjU4OjU4Ljk0MloKUHVycG9zZTogdmVyaWZ5IG1lc3NhZ2Ugc2lnbmluZyB3aXRoIGFuIHVuZnVuZGVkIFNESyB0ZXN0IHdhbGxldC4KVGhpcyBpcyBub3QgZ2FtZSBhY2Nlc3MsIHNjb3JlIHJlZ2lzdHJhdGlvbiwgYSB0cmFuc2FjdGlvbiBvciBhIHBheW1lbnQu",
+    "signatureBase64": "degug\/Y0fct8+nDOsseiUfafCYDt7KI+oWKva93g0wGrm8AqVNu+1P\/sufbNJ7PQU260z3hhPv62r+fPOjXpDw==",
+    "address": "CQDmky2kNKNae5yjDxhrD5eu3mKvYui4AcqZxzr1B5oQ",
+    "publicKeyBase64": "qWNbFV6FOug5MXgnJVXf3m+bMSTnTUnEidYKVRm8kgM=",
+    "independentlyVerified": false
+  },
+  "finishedAt": "2026-10-06T09:00:06.330221Z",
+  "manualFinish": true,
+  "observedWalletPackages": [
+    "com.solana.mobilewalletadapter.fakewallet"
+  ]
+}

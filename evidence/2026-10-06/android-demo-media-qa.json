@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-06",
+  "video": "DevFridge-World-Android-Demo-2026-10-06.mp4",
+  "sha256": "3b02733967e6d33351f37eae35265220e2de971222f86747095655f3deadd9ad",
+  "bytes": 3161301,
+  "width": 540,
+  "height": 1360,
+  "fps": 30,
+  "durationSeconds": 168.7,
+  "audioStreams": 0,
+  "fullFfmpegDecode": "passed; 5061 frames; exit 0",
+  "srt": { "cues": 15, "nonoverlapping": true, "lastEndMs": 168700, "sha256": "2393ea77bf2848231646afca83c3e2c955d34b126d8dc32011285e94b19324df" },
+  "transcriptSha256": "13e1d778a3af42421dc1d2f7f52915503de76575729078716c99c4a3cf39551c",
+  "rawPracticeUnchanged": "808cf229a7463d955f1ed36fa41418cdd41b7453cdfba4ad162441046cf22474",
+  "rawWalletUnchanged": "558bb856100c62e3c2f138ee6cf59fcbd661b918417574c60da6c2b8d250075a",
+  "visualReview": "Touch score 0 to 20, pause/resume, Practice complete and visible adaptive advice, actual PNG receiver, reopened history, debug wallet identity warning, 64-byte signature, distinct verifier card, SKR Retry/Close failure. Intro/verifier/outro cards read clearly and last six seconds.",
+  "limits": "No APK installation, physical device, funded eligible wallet, positive SKR balance, ranked run or financial transaction is claimed. Sharing is to a local test receiver. Idle/no-op waits are cut with explicit labels; source event speed is preserved."
+}

@@ -1,0 +1,189 @@
+{
+  "output": "DevFridge-World-Android-Demo-2026-10-06.mp4",
+  "width": 540,
+  "height": 1360,
+  "fps": 30,
+  "durationSeconds": 168.7,
+  "audio": false,
+  "outputSha256": "3b02733967e6d33351f37eae35265220e2de971222f86747095655f3deadd9ad",
+  "outputBytes": 3161301,
+  "sourceSha256": {
+    "practice-final-evidence-20261006.mp4": "808cf229a7463d955f1ed36fa41418cdd41b7453cdfba4ad162441046cf22474",
+    "wallet-skr-cfr30.mp4": "2c5ca63d5b1f454ae94b8df402558112ba0ac550f790e0556c4b25627c5a81d7"
+  },
+  "edits": "Idle/no-op waits trimmed with explicit cards. Every source segment runs at original speed. Source pixels remain uncropped; header/footer labels are outside the original frame. Card segments are clearly separate from Android screens.",
+  "segments": [
+    {
+      "card": "DEVFRIDGE\nWORLD",
+      "body": "ANDROID EVIDENCE\n0.3.2-beta.1 · 6 October 2026\n\nAndroid 15 emulator\nActual game + SDK test wallet\n\nEdited for length. Visible actions stay\nat their original speed. No install,\nphysical device or ranked run claimed.",
+      "duration": 6.0,
+      "phase": "ANDROID DEMO",
+      "caption": "Descriptive captions; no spoken narration.\nAndroid emulator · edited real-speed segments.",
+      "outputStart": 0,
+      "outputEnd": 6.0,
+      "segment": "demo-segment-00.mp4"
+    },
+    {
+      "source": "practice-final-evidence-20261006.mp4",
+      "start": 12,
+      "end": 31,
+      "phase": "01 · ACTUAL ANDROID PRACTICE",
+      "caption": "Local 3D touch play: merge score 20.\nHome and return trigger pause.",
+      "outputStart": 6.0,
+      "outputEnd": 25.0,
+      "duration": 19.0,
+      "segment": "demo-segment-01.mp4"
+    },
+    {
+      "source": "practice-final-evidence-20261006.mp4",
+      "start": 47,
+      "end": 58,
+      "phase": "01 · RESUME AND COMPLETE",
+      "caption": "20 local points; on-device adaptive advice appears.\nPhoto preparation follows.",
+      "outputStart": 25.0,
+      "outputEnd": 36.0,
+      "duration": 11.0,
+      "segment": "demo-segment-02.mp4"
+    },
+    {
+      "card": "LATER SHARE\nRETRY",
+      "body": "Idle waits and repeated taps removed.\nThe next segment is the later\nsuccessful local-practice share attempt.\n\nNo external post was sent.",
+      "duration": 3.0,
+      "phase": "VISIBLE CUT · LATER RETRY",
+      "caption": "Later retry follows. Idle/no-op waits trimmed.\nNo gameplay or successful result is recreated.",
+      "outputStart": 36.0,
+      "outputEnd": 39.0,
+      "segment": "demo-segment-03.mp4"
+    },
+    {
+      "source": "practice-final-evidence-20261006.mp4",
+      "start": 90,
+      "end": 97,
+      "phase": "01 · LOCAL SCORE CARD",
+      "caption": "The actual 20-point practice image appears.\nLocal score · no ranking or prizes.",
+      "outputStart": 39.0,
+      "outputEnd": 46.0,
+      "duration": 7.0,
+      "segment": "demo-segment-04.mp4"
+    },
+    {
+      "source": "practice-final-evidence-20261006.mp4",
+      "start": 115,
+      "end": 122,
+      "phase": "01 · NATIVE ANDROID SHARE",
+      "caption": "Android chooser delivers PNG to a test app.\n1080 × 1350 · 20 points · read permission granted.",
+      "outputStart": 46.0,
+      "outputEnd": 53.0,
+      "duration": 7.0,
+      "segment": "demo-segment-05.mp4"
+    },
+    {
+      "source": "practice-final-evidence-20261006.mp4",
+      "start": 122,
+      "end": 141,
+      "phase": "01 · FORCE-STOP AND REOPEN",
+      "caption": "App reopened after force-stop.\nBest 20 and completed local sessions persist.",
+      "outputStart": 53.0,
+      "outputEnd": 72.0,
+      "duration": 19.0,
+      "segment": "demo-segment-06.mp4"
+    },
+    {
+      "card": "SEPARATE\nWALLET TEST",
+      "body": "Official Solana Mobile SDK Fake Wallet\nUnfunded test keys\n\nPurpose-specific MWA diagnostic\nNot game access, a ranked score\nor a payment.\n\nDebug identity warning remains visible.",
+      "duration": 3.0,
+      "phase": "02 · MWA DIAGNOSTIC",
+      "caption": "Separate wallet diagnostic with unfunded keys.\nNo ranked or financial authorization.",
+      "outputStart": 72.0,
+      "outputEnd": 75.0,
+      "segment": "demo-segment-07.mp4"
+    },
+    {
+      "source": "wallet-skr-cfr30.mp4",
+      "start": 0,
+      "end": 6,
+      "phase": "02 · REAL MWA DIAGNOSTIC",
+      "caption": "The instrumentation panel identifies the test.\nThe production access gate remains untouched.",
+      "outputStart": 75.0,
+      "outputEnd": 81.0,
+      "duration": 6.0,
+      "segment": "demo-segment-08.mp4"
+    },
+    {
+      "source": "wallet-skr-cfr30.mp4",
+      "start": 10,
+      "end": 33,
+      "phase": "02 · WALLET AUTHORIZATION",
+      "caption": "Official SDK Fake Wallet authorizes a test account.\nDebug identity warning is visible.",
+      "outputStart": 81.0,
+      "outputEnd": 104.0,
+      "duration": 23.0,
+      "segment": "demo-segment-09.mp4"
+    },
+    {
+      "source": "wallet-skr-cfr30.mp4",
+      "start": 43,
+      "end": 66,
+      "phase": "02 · EXACT MESSAGE SIGNING",
+      "caption": "One purpose-specific message is approved.\nThe app receives a 64-byte signature.",
+      "outputStart": 104.0,
+      "outputEnd": 127.0,
+      "duration": 23.0,
+      "segment": "demo-segment-10.mp4"
+    },
+    {
+      "card": "SIGNATURE\nVERIFIED",
+      "body": "Independent Node.js Ed25519 verification\nreturned true.\n\n32-byte public key · 64-byte signature\nExact diagnostic message bytes\n\nSeparate verification receipt.\nPublic JSON and checker are in the source.",
+      "duration": 6.0,
+      "phase": "INDEPENDENT VERIFICATION RECEIPT",
+      "caption": "Ed25519 verification: true (separate public JSON).\nDiagnostic only · not eligibility or payment.",
+      "outputStart": 127.0,
+      "outputEnd": 133.0,
+      "segment": "demo-segment-11.mp4"
+    },
+    {
+      "source": "wallet-skr-cfr30.mp4",
+      "start": 70,
+      "end": 96,
+      "phase": "03 · OPTIONAL READ-ONLY SKR",
+      "caption": "Consent precedes a real mainnet query attempt.\nDNS failure: Retry/Close · no perk granted.",
+      "outputStart": 133.0,
+      "outputEnd": 159.0,
+      "duration": 26.0,
+      "segment": "demo-segment-12.mp4"
+    },
+    {
+      "source": "wallet-skr-cfr30.mp4",
+      "start": 108,
+      "end": 111.7,
+      "phase": "03 · GRACEFUL SKR FAILURE",
+      "caption": "The unavailable dialog is closed.\nNo balance or cosmetic unlock is claimed.",
+      "outputStart": 159.0,
+      "outputEnd": 162.7,
+      "duration": 3.7,
+      "segment": "demo-segment-13.mp4"
+    },
+    {
+      "card": "RECORDED\nRESULTS",
+      "body": "Actual touch practice · score 20\nLocal history after restart\nNative PNG delivered to a local test app\nReal MWA diagnostic signature\n\nSKR query unavailable in this emulator\nLive timelock / ranked flow unverified\nNo physical-device execution claimed.",
+      "duration": 6.0,
+      "phase": "EVIDENCE AND LIMITS",
+      "caption": "Actual emulator evidence; source and receipts public.\nSKR success and a live ranked run remain unverified.",
+      "outputStart": 162.7,
+      "outputEnd": 168.7,
+      "segment": "demo-segment-14.mp4"
+    }
+  ],
+  "publicationStatus": "Prepared artifacts; release upload and URL checks are recorded separately by the publisher.",
+  "expectedPublicationUrls": {
+    "DevFridge-World-Android-Demo-2026-10-06.mp4": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/DevFridge-World-Android-Demo-2026-10-06.mp4",
+    "DevFridge-World-Android-Demo-2026-10-06.en.srt": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/DevFridge-World-Android-Demo-2026-10-06.en.srt",
+    "DevFridge-World-Android-Demo-2026-10-06.transcript.md": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/DevFridge-World-Android-Demo-2026-10-06.transcript.md",
+    "practice-final-evidence-20261006.mp4": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/practice-final-evidence-20261006.mp4",
+    "clockin-wallet-skr-final-20261006.mp4": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/clockin-wallet-skr-final-20261006.mp4",
+    "wallet-skr-cfr30.mp4": "https://github.com/mikeminer/devfridge-world-android/releases/download/android-v0.3.2-beta.1/wallet-skr-cfr30.mp4"
+  },
+  "originalWalletRecordingSha256": "558bb856100c62e3c2f138ee6cf59fcbd661b918417574c60da6c2b8d250075a",
+  "captionsSha256": "2393ea77bf2848231646afca83c3e2c955d34b126d8dc32011285e94b19324df",
+  "transcriptSha256": "13e1d778a3af42421dc1d2f7f52915503de76575729078716c99c4a3cf39551c"
+}
