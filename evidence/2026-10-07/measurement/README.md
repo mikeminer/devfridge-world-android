@@ -1,6 +1,14 @@
-# Cookie-free token commitment measurement
+# Cookie-free on-chain adoption measurement
 
-This standalone Node utility reads the published, dated on-chain evidence. It sends no requests, signs no transactions, reads no private credentials, sets no cookies, and adds no tracking to the game. Its scope is the tradeoff of locking a token to gain game access. It does not measure gameplay sessions or identify individual people.
+This standalone Node utility reads the published, dated on-chain evidence. It sends no requests, signs no transactions, reads no private credentials, sets no cookies, and adds no tracking to the game. Its business scope is adoption of the game's access model through the tradeoff of locking a token to gain access, independently of rounds played. The measurement unit is a distinct qualifying wallet.
+
+## Adoption definition
+
+`eligibleWalletCount` measures **current adoption of the game's token-gated access model**: the number of distinct wallets holding qualifying active locks of an accepted game mint at the dated snapshot. Multiple locks of the same mint can jointly reach its threshold; multiple character unlocks still count as one adopted wallet. Playing a round is not required for this business definition. This is a wallet-level eligibility metric, rather than evidence of distinct human identities, installation, or the reason each wallet originally locked its tokens.
+
+Renewal measures **retained or repeated adoption after expiry**: the same wallet makes a new qualifying commitment for the same accepted mint after its previous qualifying position expires, within a stated observation window. Locked quantity per mint and locked-supply percentages complement wallet adoption by describing its economic intensity. Quantities remain separate for each mint, and the active account fraction describes the state of observed locks; renewal retention uses its own expiry cohort.
+
+Declared treasury exclusions preserve both the gross adoption count and the subtotal after exclusion. The dated evidence contains one qualifying treasury wallet and zero observed qualifying wallets after that exclusion; it does not establish external human adoption. Missing claimed/closed-account history continues to limit historical renewal percentages.
 
 ## Reproduce
 
@@ -27,9 +35,9 @@ Older SDK-based access paths used a one-day original-duration plan. Current Cold
 
 ## Exported calculations
 
-`perGameLockMetrics(snapshot, policy)` reports accepted-mint accounts, the fraction `active / (active + expired-unclaimed)` among existing accounts, amounts separately for each mint, and the union of currently eligible wallets. Matching address duplicates are ignored; conflicting duplicates, unsafe numeric amounts, invalid dates, and future creation dates are rejected. BigInt handles raw amounts without floating-point conversion. The utility trusts the adjacent raw-receipt decoder for account-owner/discriminator provenance; it does not independently query or validate the chain.
+`perGameLockMetrics(snapshot, policy)` reports accepted-mint accounts, the fraction `active / (active + expired-unclaimed)` among existing accounts, amounts separately for each mint, and the union of currently eligible wallets used for the adoption count. Matching address duplicates are ignored; conflicting duplicates, unsafe numeric amounts, invalid dates, and future creation dates are rejected. BigInt handles raw amounts without floating-point conversion. The utility trusts the adjacent raw-receipt decoder for account-owner/discriminator provenance; it does not independently query or validate the chain.
 
-`timelockRenewalMetrics(snapshot, policy, { renewalWindowDays, coverage })` reconstructs economic commitment renewal. A qualifying loss occurs when expiries reduce a wallet's active balance for a particular accepted mint from at least the threshold to below it. It need not lose access through other character mints. A new deposit at/after this expiry renews that commitment only if the same wallet's same-mint sum reaches the threshold again within the explicit, inclusive window. Deposits made before expiry, other mints, and later balances below the threshold are not renewals. At the same second, expiry is processed before a new deposit.
+`timelockRenewalMetrics(snapshot, policy, { renewalWindowDays, coverage })` reconstructs economic commitment renewal as retained or repeated adoption. A qualifying loss occurs when expiries reduce a wallet's active balance for a particular accepted mint from at least the threshold to below it. It need not lose access through other character mints. A new deposit at/after this expiry renews that commitment only if the same wallet's same-mint sum reaches the threshold again within the explicit, inclusive window. Deposits made before expiry, other mints, and later balances below the threshold are not renewals. At the same second, expiry is processed before a new deposit.
 
 The wallet denominator is fixed at each wallet's **first observed qualifying mint-loss**; later cycles do not add the wallet again. If several mints lose qualification at that first instant, reacquisition of any of those mints qualifies. Only fully elapsed observation windows enter the wallet denominator. The report calculates both 7 and 30 days, explicitly. Episode counts include all observed matched cycles and are separate from the deduplicated first-loss wallet cohort. For account-level reporting each matched expiry group pairs old/new account addresses one-to-one. A single new account cannot become several purported lock renewals. These pairs are conservative inferred links, not evidence that specific old funds were recycled.
 
