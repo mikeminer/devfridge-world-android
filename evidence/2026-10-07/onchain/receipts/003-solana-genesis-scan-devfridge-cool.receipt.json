@@ -1,0 +1,32 @@
+{
+  "name": "003-solana-genesis-scan-devfridge-cool",
+  "startedAt": "2026-10-07T08:58:14.243Z",
+  "finishedAt": "2026-10-07T08:58:14.599Z",
+  "url": "https://scan.devfridge.cool/api/rpc",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "getGenesisHash",
+    "params": []
+  },
+  "status": 200,
+  "headers": {
+    "access-control-allow-headers": "content-type, solana-client",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "cache-control": "no-store",
+    "content-encoding": "br",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 08:58:14 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/rpc",
+    "x-vercel-cache": "MISS",
+    "x-vercel-id": "fra1::iad1::llgl4-1791363494009-c8d7a026d625"
+  },
+  "error": null,
+  "bodyFile": "003-solana-genesis-scan-devfridge-cool.body.txt"
+}

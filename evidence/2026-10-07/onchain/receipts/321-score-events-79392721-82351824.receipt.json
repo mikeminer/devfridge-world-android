@@ -1,0 +1,38 @@
+{
+  "name": "321-score-events-79392721-82351824",
+  "startedAt": "2026-10-07T09:02:33.671Z",
+  "finishedAt": "2026-10-07T09:02:33.814Z",
+  "url": "https://rpc.mainnet.chain.robinhood.com",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0xc1DB49694E0DB50778c333350C8A553fDE221989",
+        "fromBlock": "0x4bb6fd1",
+        "toBlock": "0x4e896d0",
+        "topics": [
+          "0xa3830084c9d43012fe46609bb07dcfc365f17b345ac8da48d583cb1b6ab90af3"
+        ]
+      }
+    ]
+  },
+  "status": 200,
+  "headers": {
+    "cache-control": "no-cache",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a46bba4259dbed4c-MXP",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "61",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 09:02:33 GMT",
+    "server": "cloudflare",
+    "vary": "Origin, accept-encoding",
+    "x-envoy-upstream-service-time": "2"
+  },
+  "error": null,
+  "bodyFile": "321-score-events-79392721-82351824.body.txt"
+}

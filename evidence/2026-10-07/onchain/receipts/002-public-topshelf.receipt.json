@@ -1,0 +1,25 @@
+{
+  "name": "002-public-topshelf",
+  "startedAt": "2026-10-07T08:58:14.241Z",
+  "finishedAt": "2026-10-07T08:58:14.957Z",
+  "url": "https://world.devfridge.cool/api/world/topshelf",
+  "method": "GET",
+  "request": null,
+  "status": 200,
+  "headers": {
+    "age": "0",
+    "cache-control": "no-store",
+    "content-encoding": "br",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 08:58:14 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/world/topshelf",
+    "x-vercel-cache": "MISS",
+    "x-vercel-id": "fra1::iad1::zz8qh-1791363494155-75e5b941dff4"
+  },
+  "error": null,
+  "bodyFile": "002-public-topshelf.body.txt"
+}

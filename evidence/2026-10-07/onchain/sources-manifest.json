@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-10-07T09:10:11.182Z",
+  "files": [
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/lib/constants.ts",
+      "sha256": "c7893a2202cda5702ffd0f1f35cb4fcad6c1746c1b0358956dbdbe0ff80fd516",
+      "hashNormalization": "UTF-8 with CRLF converted to LF to match committed source",
+      "byteCount": 2074,
+      "workingTreeSha256": "295f3e7428106c9963eb6ceca7cc8232a1b22279427549be817ec94e6199bce1",
+      "workingTreeByteCount": 2124,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/constants.ts"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/lib/fridge.ts",
+      "sha256": "9f7d226fdbcfa422b371074eb654218b691b58bfcf4105d10366189a37130e1f",
+      "hashNormalization": "UTF-8 with CRLF converted to LF to match committed source",
+      "byteCount": 4720,
+      "workingTreeSha256": "38d9faab393a68fa219641debb2bd69a1e153bda5dd4fb60792cc7626971f291",
+      "workingTreeByteCount": 4869,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/fridge.ts"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/lib/stats.ts",
+      "sha256": "fe52753ddd71c7914eee3cfee1273b633276262ef73d4885ebb5be5ef7d54eb2",
+      "hashNormalization": "UTF-8 with CRLF converted to LF to match committed source",
+      "byteCount": 5009,
+      "workingTreeSha256": "5ca380e3a3a22df7d7649c6a8aec6b73dc2a14f0116b1d51ec6bb4e2288b3f86",
+      "workingTreeByteCount": 5170,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/stats.ts"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/lib/topshelf/registration.ts",
+      "sha256": "54d711f538fddf17a64e71240b80acfc5ae036200bc13b6bcf0dc23f49d50bb3",
+      "hashNormalization": "UTF-8 with CRLF converted to LF to match committed source",
+      "byteCount": 11369,
+      "workingTreeSha256": "7854ce42818f85fb9a0c1280791be2730d50f5c47c7bd5100c0ff46da849a804",
+      "workingTreeByteCount": 11517,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/topshelf/registration.ts"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/lib/topshelf/engine/tokens.json",
+      "sha256": "132b7c10b336ef6721df13f6e600e921be954da6684be72aa73cf720ac887806",
+      "hashNormalization": "UTF-8 with CRLF converted to LF to match committed source",
+      "byteCount": 2738,
+      "workingTreeSha256": "bcd87e83bc56b0f3837e5275b9ef3cf39e7ffa642655dddef8f2fc414f11f19a",
+      "workingTreeByteCount": 2839,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/topshelf/engine/tokens.json"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/lib/topshelf/artifact.json",
+      "sha256": "3088d8e3105ef83d46917c2d4ee5474442e517db52375f80c8c6cb07cfb6258e",
+      "hashNormalization": "UTF-8 with CRLF converted to LF to match committed source",
+      "byteCount": 90922,
+      "workingTreeSha256": "6a578eff0efa36e081b0aa810da3a145e25c5ad76bf2ff88323a494a35a9fcac",
+      "workingTreeByteCount": 92313,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/topshelf/artifact.json"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "world-game-v2/src/wallet.js",
+      "sha256": "067a65d498ee38d934e4fe701212c68646eba861cd952119c7bbf5770367fd96",
+      "hashNormalization": "UTF-8 with CRLF converted to LF to match committed source",
+      "byteCount": 1697,
+      "workingTreeSha256": "4c016746f857bf6bbe68378308161188f86dd32c2e2122c67313580aaf7a0496",
+      "workingTreeByteCount": 1749,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/world-game-v2/src/wallet.js"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/public/sdk/devfridge-sdk.js",
+      "sha256": "cad31b18ff0a9adc32241d341d37f9920f492ab63a321fea266d01b26966dc07",
+      "hashNormalization": "UTF-8 with CRLF converted to LF to match committed source",
+      "byteCount": 9770,
+      "workingTreeSha256": "1a84a095caa93425c4d4e12d3252e6a7b5d584836705f43a60b95910d27792df",
+      "workingTreeByteCount": 10067,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/public/sdk/devfridge-sdk.js"
+    }
+  ]
+}

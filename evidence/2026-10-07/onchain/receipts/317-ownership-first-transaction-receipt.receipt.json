@@ -1,0 +1,31 @@
+{
+  "name": "317-ownership-first-transaction-receipt",
+  "startedAt": "2026-10-07T09:02:33.042Z",
+  "finishedAt": "2026-10-07T09:02:33.197Z",
+  "url": "https://rpc.mainnet.chain.robinhood.com",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getTransactionReceipt",
+    "params": [
+      "0x8e3aea48be89848525aa73532f5702d79b2eec0cfa0a93841f38a2f11faa0400"
+    ]
+  },
+  "status": 200,
+  "headers": {
+    "cache-control": "no-cache",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a46bba3e7fdded4c-MXP",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "976",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 09:02:32 GMT",
+    "server": "cloudflare",
+    "vary": "Origin, accept-encoding",
+    "x-envoy-upstream-service-time": "6"
+  },
+  "error": null,
+  "bodyFile": "317-ownership-first-transaction-receipt.body.txt"
+}

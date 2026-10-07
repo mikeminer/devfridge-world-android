@@ -1,0 +1,26 @@
+{
+  "name": "001-public-protocol-stats",
+  "startedAt": "2026-10-07T08:58:14.192Z",
+  "finishedAt": "2026-10-07T08:58:15.056Z",
+  "url": "https://scan.devfridge.cool/api/stats",
+  "method": "GET",
+  "request": null,
+  "status": 200,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "0",
+    "cache-control": "public",
+    "content-encoding": "br",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 08:58:14 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/stats",
+    "x-vercel-cache": "MISS",
+    "x-vercel-id": "fra1::iad1::9kpjr-1791363493986-acdfb619b303"
+  },
+  "error": null,
+  "bodyFile": "001-public-protocol-stats.body.txt"
+}

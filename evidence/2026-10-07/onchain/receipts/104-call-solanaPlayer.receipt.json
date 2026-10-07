@@ -1,0 +1,35 @@
+{
+  "name": "104-call-solanaPlayer",
+  "startedAt": "2026-10-07T09:00:54.013Z",
+  "finishedAt": "2026-10-07T09:00:54.253Z",
+  "url": "https://rpc.mainnet.chain.robinhood.com",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xc1DB49694E0DB50778c333350C8A553fDE221989",
+        "data": "0x9c0cbdc4ed1006dd3f8f6776407eaa5f8ff5caaa35c74c2a5f467bb1218c0c49c484c307"
+      },
+      "0x4e8930d"
+    ]
+  },
+  "status": 200,
+  "headers": {
+    "cache-control": "no-cache",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a46bb7d3bd914c50-MXP",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "104",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 09:00:53 GMT",
+    "server": "cloudflare",
+    "vary": "Origin, accept-encoding",
+    "x-envoy-upstream-service-time": "3"
+  },
+  "error": null,
+  "bodyFile": "104-call-solanaPlayer.body.txt"
+}

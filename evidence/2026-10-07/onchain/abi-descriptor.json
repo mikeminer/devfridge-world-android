@@ -1,0 +1,255 @@
+{
+  "functions": [
+    {
+      "inputs": [],
+      "name": "currentSeason",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "currentSeason()",
+      "selector": "0xbcb39621"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "owner()",
+      "selector": "0x8da5cb5b"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "playerSolana",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "playerSolana(address)",
+      "selector": "0x291b5883"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "players",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "bestScore",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "runs",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "bestAt",
+          "type": "uint64"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "bestRun",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "previous",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "next",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "players(uint256,address)",
+      "selector": "0xc0f80921"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "seasons",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "playerCount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "registrations",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "winnerCount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "captured",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalScore",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "head",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "nextWinner",
+          "type": "address"
+        },
+        {
+          "internalType": "enum TopShelf.Phase",
+          "name": "phase",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "seasons(uint256)",
+      "selector": "0xf5d709a1"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "solanaPlayer",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "solanaPlayer(bytes32)",
+      "selector": "0x9c0cbdc4"
+    }
+  ],
+  "event": {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "runId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "player",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "season",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "score",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "replayHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ScoreRegistered",
+    "type": "event",
+    "signature": "ScoreRegistered(bytes32,address,uint256,address,uint64,uint256,bytes32)",
+    "topic": "0xa3830084c9d43012fe46609bb07dcfc365f17b345ac8da48d583cb1b6ab90af3"
+  },
+  "ownershipEvent": {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event",
+    "signature": "OwnershipTransferred(address,address)",
+    "topic": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+  }
+}

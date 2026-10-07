@@ -1,0 +1,32 @@
+{
+  "name": "323-event-block-59506358",
+  "startedAt": "2026-10-07T09:02:33.970Z",
+  "finishedAt": "2026-10-07T09:02:34.123Z",
+  "url": "https://rpc.mainnet.chain.robinhood.com",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getBlockByNumber",
+    "params": [
+      "0x38bfeb6",
+      false
+    ]
+  },
+  "status": 200,
+  "headers": {
+    "cache-control": "no-cache",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a46bba443eaaed4c-MXP",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "1471",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 09:02:33 GMT",
+    "server": "cloudflare",
+    "vary": "Origin, accept-encoding",
+    "x-envoy-upstream-service-time": "3"
+  },
+  "error": null,
+  "bodyFile": "323-event-block-59506358.body.txt"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "309-ownership-events-10000000-19999999",
+  "startedAt": "2026-10-07T09:02:31.794Z",
+  "finishedAt": "2026-10-07T09:02:31.952Z",
+  "url": "https://rpc.mainnet.chain.robinhood.com",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_getLogs",
+    "params": [
+      {
+        "address": "0xc1DB49694E0DB50778c333350C8A553fDE221989",
+        "fromBlock": "0x989680",
+        "toBlock": "0x1312cff",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+        ]
+      }
+    ]
+  },
+  "status": 200,
+  "headers": {
+    "cache-control": "no-cache",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a46bba36aa37ed4c-MXP",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "61",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 09:02:31 GMT",
+    "server": "cloudflare",
+    "vary": "Origin, accept-encoding",
+    "x-envoy-upstream-service-time": "12"
+  },
+  "error": null,
+  "bodyFile": "309-ownership-events-10000000-19999999.body.txt"
+}

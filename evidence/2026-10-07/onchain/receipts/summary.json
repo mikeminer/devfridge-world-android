@@ -1,0 +1,776 @@
+{
+  "schemaVersion": 1,
+  "beganAt": "2026-10-07T08:58:14.189Z",
+  "completedAt": "2026-10-07T09:02:36.528Z",
+  "readOnly": true,
+  "cookiesUsed": false,
+  "signaturesRequested": false,
+  "walletsExcluded": [
+    {
+      "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+      "scope": "game eligibility external-wallet subtotal",
+      "reason": "Public TREASURY constant; not presented as independent player",
+      "source": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/constants.ts"
+    },
+    {
+      "wallet": "0x5d69c42a3a481d0ccfd88cfa8a2a08e2bf456134",
+      "scope": "TopShelf external-participant subtotal",
+      "reason": "Contract owner at pinned block; not presented as independent participant",
+      "receipt": "302-call-owner"
+    }
+  ],
+  "source": {
+    "program": "9RY54dNPYTzDyh3TfFqDdt2b2KMM56KW1tw9erRTGQo6",
+    "accountSize": 105,
+    "accountDiscriminator": [
+      8,
+      255,
+      36,
+      202,
+      210,
+      22,
+      57,
+      137
+    ],
+    "sourceRepo": "https://github.com/mikeminer/devfridge",
+    "sourceCommit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+    "eligibilitySource": "scan/lib/topshelf/registration.ts:34",
+    "gameTokensSource": "scan/lib/topshelf/engine/tokens.json",
+    "eligibleRule": "At least 500000 token units summed across unique active lock accounts of the same game mint for a depositor, using the mint decimals; unlockAt > snapshot completion time.",
+    "eligibilityClientRule": "The game SDK play plan additionally qualifies each active account only if its original floor((unlockAt-createdAt)/86400)>=1; renewalThresholdDays=0. All 13 active game-token accounts in this snapshot meet the original-duration filter. This does not establish wallet authorization, app execution or individual compliance eligibility.",
+    "sourcesManifest": "sources-manifest.json"
+  },
+  "solana": {
+    "status": "available",
+    "genesisHash": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+    "slot": 454175939,
+    "commitment": "confirmed",
+    "asOfUtc": "2026-10-07T08:58:15.000Z",
+    "accountReceipt": "004-solana-program-locks-scan-devfridge-cool",
+    "protocol": {
+      "existingLockAccounts": 139,
+      "activeLockAccounts": 84,
+      "expiredUnclaimedLockAccounts": 55,
+      "uniqueDepositorWallets": 4,
+      "uniqueMints": 21,
+      "invalidOrUnrecognizedAccounts": 0
+    },
+    "game": {
+      "existingGameTokenLockAccounts": 19,
+      "activeGameTokenLockAccounts": 13,
+      "uniqueGameTokenDepositorWallets": 1,
+      "activeUniqueGameTokenDepositorWallets": 1,
+      "eligibleWalletCount": 1,
+      "eligibleWallets": [
+        "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+      ],
+      "perMint": [
+        {
+          "tier": 1,
+          "chain": "solana",
+          "cluster": "mainnet-beta",
+          "mint": "An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump",
+          "symbol": "RUGARUGO",
+          "decimals": 6,
+          "program": "token-2022",
+          "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "existingLockAccounts": 2,
+          "activeLockAccounts": 2,
+          "uniqueDepositorWallets": 1,
+          "activeUniqueDepositorWallets": 1,
+          "thresholdRaw": "500000000000",
+          "eligibleWallets": [
+            "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+          ],
+          "eligibleWalletCount": 1,
+          "activeAmountRaw": "600000000000"
+        },
+        {
+          "tier": 2,
+          "chain": "solana",
+          "cluster": "mainnet-beta",
+          "mint": "B31GwpFQco9R4HX1GrfyXgdmLArBN9pBBinqRn8Jpump",
+          "symbol": "APE",
+          "decimals": 6,
+          "program": "token-2022",
+          "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "existingLockAccounts": 1,
+          "activeLockAccounts": 1,
+          "uniqueDepositorWallets": 1,
+          "activeUniqueDepositorWallets": 1,
+          "thresholdRaw": "500000000000",
+          "eligibleWallets": [
+            "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+          ],
+          "eligibleWalletCount": 1,
+          "activeAmountRaw": "500000000000"
+        },
+        {
+          "tier": 3,
+          "chain": "solana",
+          "cluster": "mainnet-beta",
+          "mint": "3Pg4b7wtcYTGacRzyRFGLBG4s6eeJ2d5jxK2jjz4pump",
+          "symbol": "FIFO",
+          "decimals": 6,
+          "program": "token-2022",
+          "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "existingLockAccounts": 2,
+          "activeLockAccounts": 1,
+          "uniqueDepositorWallets": 1,
+          "activeUniqueDepositorWallets": 1,
+          "thresholdRaw": "500000000000",
+          "eligibleWallets": [
+            "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+          ],
+          "eligibleWalletCount": 1,
+          "activeAmountRaw": "500000000000"
+        },
+        {
+          "tier": 4,
+          "chain": "solana",
+          "cluster": "mainnet-beta",
+          "mint": "4ZbHvh5xPMB3vTbURzQfDPPH6iy5KNXg7pTdySNtpump",
+          "symbol": "FUSILLI",
+          "decimals": 6,
+          "program": "token-2022",
+          "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "existingLockAccounts": 1,
+          "activeLockAccounts": 1,
+          "uniqueDepositorWallets": 1,
+          "activeUniqueDepositorWallets": 1,
+          "thresholdRaw": "500000000000",
+          "eligibleWallets": [
+            "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+          ],
+          "eligibleWalletCount": 1,
+          "activeAmountRaw": "500000000000"
+        },
+        {
+          "tier": 5,
+          "chain": "solana",
+          "cluster": "mainnet-beta",
+          "mint": "HAUTWMn41Qg1RvtwLFC3SEK7JSc19gns2vJL7TgRpump",
+          "symbol": "LAMBOCELLO",
+          "decimals": 6,
+          "program": "token-2022",
+          "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "existingLockAccounts": 1,
+          "activeLockAccounts": 1,
+          "uniqueDepositorWallets": 1,
+          "activeUniqueDepositorWallets": 1,
+          "thresholdRaw": "500000000000",
+          "eligibleWallets": [
+            "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+          ],
+          "eligibleWalletCount": 1,
+          "activeAmountRaw": "500000000000"
+        },
+        {
+          "tier": 6,
+          "chain": "solana",
+          "cluster": "mainnet-beta",
+          "mint": "8RBcBZkdM8U4eoAi1MsftW7RcXYryobawfPz3Nuupump",
+          "symbol": "GMGN",
+          "decimals": 6,
+          "program": "token-2022",
+          "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "existingLockAccounts": 1,
+          "activeLockAccounts": 1,
+          "uniqueDepositorWallets": 1,
+          "activeUniqueDepositorWallets": 1,
+          "thresholdRaw": "500000000000",
+          "eligibleWallets": [
+            "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+          ],
+          "eligibleWalletCount": 1,
+          "activeAmountRaw": "500000000000"
+        },
+        {
+          "tier": 7,
+          "chain": "solana",
+          "cluster": "mainnet-beta",
+          "mint": "AHZMcoqA53trX8JcuoCRsQqWpeSk415cE4p7AsrZpump",
+          "symbol": "SESU",
+          "decimals": 6,
+          "program": "token-2022",
+          "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "existingLockAccounts": 1,
+          "activeLockAccounts": 1,
+          "uniqueDepositorWallets": 1,
+          "activeUniqueDepositorWallets": 1,
+          "thresholdRaw": "500000000000",
+          "eligibleWallets": [
+            "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+          ],
+          "eligibleWalletCount": 1,
+          "activeAmountRaw": "500000000000"
+        },
+        {
+          "tier": 8,
+          "chain": "solana",
+          "cluster": "mainnet-beta",
+          "mint": "6ZbWBzH9TyQdGhhxjJ573M9p59SVfRaX25FCFY3spump",
+          "symbol": "MOONZARELL",
+          "decimals": 6,
+          "program": "token-2022",
+          "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "existingLockAccounts": 1,
+          "activeLockAccounts": 1,
+          "uniqueDepositorWallets": 1,
+          "activeUniqueDepositorWallets": 1,
+          "thresholdRaw": "500000000000",
+          "eligibleWallets": [
+            "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+          ],
+          "eligibleWalletCount": 1,
+          "activeAmountRaw": "500000000000"
+        },
+        {
+          "tier": 9,
+          "chain": "solana",
+          "cluster": "mainnet-beta",
+          "mint": "HivTCtHY1GbC8ws9jwCh3Km5EH4CGtnTdDeo3SdKpump",
+          "symbol": "BONKATINO",
+          "decimals": 6,
+          "program": "token-2022",
+          "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "existingLockAccounts": 1,
+          "activeLockAccounts": 1,
+          "uniqueDepositorWallets": 1,
+          "activeUniqueDepositorWallets": 1,
+          "thresholdRaw": "500000000000",
+          "eligibleWallets": [
+            "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+          ],
+          "eligibleWalletCount": 1,
+          "activeAmountRaw": "500000000000"
+        },
+        {
+          "tier": 10,
+          "chain": "solana",
+          "cluster": "mainnet-beta",
+          "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+          "symbol": "CICCIA",
+          "decimals": 6,
+          "program": "token-2022",
+          "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "existingLockAccounts": 8,
+          "activeLockAccounts": 3,
+          "uniqueDepositorWallets": 1,
+          "activeUniqueDepositorWallets": 1,
+          "thresholdRaw": "500000000000",
+          "eligibleWallets": [
+            "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+          ],
+          "eligibleWalletCount": 1,
+          "activeAmountRaw": "610000156028"
+        }
+      ],
+      "repeatedExistingLockWalletCount": 1,
+      "repeatExistingLocks": [
+        {
+          "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+          "existingGameTokenLocks": 19,
+          "distinctCreationUtcDates": 4,
+          "firstExistingLockAt": "2026-08-19T07:18:28.000Z",
+          "lastExistingLockAt": "2026-09-08T16:15:21.000Z"
+        }
+      ],
+      "platformAttribution": "unavailable",
+      "gameplayAndReturnAttribution": "unavailable",
+      "eligibleWalletsExcludingLabelledTreasury": [],
+      "eligibleWalletCountExcludingLabelledTreasury": 0,
+      "sdkClientRule": {
+        "originalMinLockDays": 1,
+        "renewalThresholdDays": 0,
+        "source": "world-game-v2/src/wallet.js:32; scan/public/sdk/devfridge-sdk.js:147",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "eligibleWalletCountExcludingLabelledTreasury": 0
+      }
+    }
+  },
+  "publicProtocolStats": {
+    "status": 200,
+    "httpReceipt": "001-public-protocol-stats",
+    "data": {
+      "lockCount": 139,
+      "depositors": 4,
+      "mints": 21,
+      "activeLocks": 84,
+      "boostVaultLamports": 890880,
+      "pastaBurned": "876026.010648",
+      "pastaPrice": null,
+      "liquidity": {
+        "pool": "5o5JBdWZd3zKE3JC8Tb81D3bph7bwxftvwLLRoZ1EqL5",
+        "usd": null,
+        "quoteSol": null,
+        "baseTokens": null,
+        "lpMint": "9Yi9cwm3Non7LoFkxC6eKgp38CSbbXPvYH3VTrz2KC4V",
+        "lpSupply": "0",
+        "lpBurned": true
+      },
+      "ts": 1791363494638
+    },
+    "warning": "The source API catches program-account errors as an empty array, has a 60-second cache, and does not report slot; use independently captured withContext RPC accounts for counts."
+  },
+  "topshelf": {
+    "status": "api_available",
+    "apiReceipt": "002-public-topshelf",
+    "api": {
+      "configured": true,
+      "address": "0xc1DB49694E0DB50778c333350C8A553fDE221989",
+      "owner": "0x5D69C42A3a481d0CCFd88CFA8a2a08e2BF456134",
+      "currentSeason": 1,
+      "season": 1,
+      "activeDistribution": 0,
+      "winnerCount": 8,
+      "phase": 0,
+      "players": 1,
+      "registrations": 15,
+      "captured": 0,
+      "selectedWinners": 0,
+      "totalScore": "0",
+      "rows": [
+        {
+          "address": "0x5D69C42A3a481d0CCFd88CFA8a2a08e2BF456134",
+          "score": "49460",
+          "rank": 1,
+          "name": "Pastaman"
+        }
+      ],
+      "next": "0x0000000000000000000000000000000000000000",
+      "tokens": [
+        {
+          "address": "0x5c845330b41D9Bef68B46DC254353A770f44dee8",
+          "symbol": "TMC",
+          "decimals": 18,
+          "fee": "100000000000000000000000",
+          "enabled": true,
+          "balance": "400000000000000000000000",
+          "reserved": "0",
+          "available": "400000000000000000000000",
+          "claimable": "0"
+        },
+        {
+          "address": "0x12B8Cba33606a4F7B85ee30620784c5a1015E816",
+          "symbol": "RUGARUGO",
+          "decimals": 18,
+          "fee": "50000000000000000000000",
+          "enabled": true,
+          "balance": "0",
+          "reserved": "0",
+          "available": "0",
+          "claimable": "0"
+        },
+        {
+          "address": "0x6AF70B8487CD47dEf373c4A9eB58F990A3eDba37",
+          "symbol": "APE",
+          "decimals": 18,
+          "fee": "50000000000000000000000",
+          "enabled": true,
+          "balance": "0",
+          "reserved": "0",
+          "available": "0",
+          "claimable": "0"
+        },
+        {
+          "address": "0x2AAa6d9e59734bb37EBc123Fe5dF797853F43AaC",
+          "symbol": "FIFO",
+          "decimals": 18,
+          "fee": "50000000000000000000000",
+          "enabled": true,
+          "balance": "0",
+          "reserved": "0",
+          "available": "0",
+          "claimable": "0"
+        },
+        {
+          "address": "0xF7aca11cDB86115eEDce7da43C5326A12408201e",
+          "symbol": "FUSILLI",
+          "decimals": 18,
+          "fee": "50000000000000000000000",
+          "enabled": true,
+          "balance": "50000000000000000000000",
+          "reserved": "0",
+          "available": "50000000000000000000000",
+          "claimable": "0"
+        },
+        {
+          "address": "0x8CfF8a877Ec7f5A63840143e9a1AF2c024A7e87E",
+          "symbol": "LAMBOCELLO",
+          "decimals": 18,
+          "fee": "50000000000000000000000",
+          "enabled": true,
+          "balance": "0",
+          "reserved": "0",
+          "available": "0",
+          "claimable": "0"
+        },
+        {
+          "address": "0x0713636AAe9DC16921F3f862fba52AF6DB5d1db3",
+          "symbol": "GMGN",
+          "decimals": 18,
+          "fee": "50000000000000000000000",
+          "enabled": true,
+          "balance": "0",
+          "reserved": "0",
+          "available": "0",
+          "claimable": "0"
+        },
+        {
+          "address": "0x2A4e9362AB5fDcAb06A4A56B76dcBb286ea7D0FE",
+          "symbol": "SESU",
+          "decimals": 18,
+          "fee": "50000000000000000000000",
+          "enabled": true,
+          "balance": "100000000000000000000000",
+          "reserved": "0",
+          "available": "100000000000000000000000",
+          "claimable": "0"
+        },
+        {
+          "address": "0x29A13F8219d1D54424F1F9f1F90E85448488b2DE",
+          "symbol": "MOONZARELLA",
+          "decimals": 18,
+          "fee": "50000000000000000000000",
+          "enabled": true,
+          "balance": "200000000000000000000000",
+          "reserved": "0",
+          "available": "200000000000000000000000",
+          "claimable": "0"
+        },
+        {
+          "address": "0xC1c1ecB7596f8bc364E397Aaf987e4F11f88557c",
+          "symbol": "BONKATINO",
+          "decimals": 18,
+          "fee": "50000000000000000000000",
+          "enabled": true,
+          "balance": "100000000000000000000000",
+          "reserved": "0",
+          "available": "100000000000000000000000",
+          "claimable": "0"
+        },
+        {
+          "address": "0x575634d01aEeb4421c5EC4E06d861DFb0Da6df7a",
+          "symbol": "CICCIA",
+          "decimals": 18,
+          "fee": "50000000000000000000000",
+          "enabled": true,
+          "balance": "100000000000000000000000",
+          "reserved": "0",
+          "available": "100000000000000000000000",
+          "claimable": "0"
+        },
+        {
+          "address": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+          "symbol": "PONS",
+          "decimals": 18,
+          "fee": "3000000000000000000",
+          "enabled": true,
+          "balance": "0",
+          "reserved": "0",
+          "available": "0",
+          "claimable": "0"
+        }
+      ],
+      "block": 82349312,
+      "claimSeason": 0,
+      "claimPhase": 0,
+      "claimTokens": []
+    },
+    "chainId": 4663,
+    "latestBlock": 82349301,
+    "latestBlockTimestamp": "2026-10-07T08:58:13.000Z",
+    "address": "0xc1DB49694E0DB50778c333350C8A553fDE221989",
+    "addressInfoReceipt": "007-blockscout-contract-address",
+    "addressInfo": null,
+    "contractCodeReceipt": "008-evm-contract-code",
+    "historicalRegistrations": {
+      "status": "available",
+      "capturedAt": "2026-10-07T09:02:36.528Z",
+      "chainId": 4663,
+      "contract": "0xc1DB49694E0DB50778c333350C8A553fDE221989",
+      "fromBlock": 59392721,
+      "toBlock": 82351824,
+      "snapshotBlockHash": "0x4f1af28912503c9c4d954af93145c0a08241a248306487e5e64aea47a74f35e3",
+      "snapshotBlockTimestamp": "2026-10-07T09:02:29.000Z",
+      "deployment": {
+        "firstCodeBlock": 59392721,
+        "creation": {
+          "transactionHash": "0x8e3aea48be89848525aa73532f5702d79b2eec0cfa0a93841f38a2f11faa0400",
+          "block": 59392721,
+          "receipt": "317-ownership-first-transaction-receipt",
+          "status": "0x1"
+        },
+        "verifiedDirectCreation": true,
+        "method": "Constructor OwnershipTransferred log with creation transaction receipt",
+        "ownershipCoverageComplete": true,
+        "ownershipIntervals": [
+          {
+            "fromBlock": 0,
+            "toBlock": 9999999,
+            "receipt": "308-ownership-events-0-9999999",
+            "status": "complete"
+          },
+          {
+            "fromBlock": 10000000,
+            "toBlock": 19999999,
+            "receipt": "309-ownership-events-10000000-19999999",
+            "status": "complete"
+          },
+          {
+            "fromBlock": 20000000,
+            "toBlock": 29999999,
+            "receipt": "310-ownership-events-20000000-29999999",
+            "status": "complete"
+          },
+          {
+            "fromBlock": 30000000,
+            "toBlock": 39999999,
+            "receipt": "311-ownership-events-30000000-39999999",
+            "status": "complete"
+          },
+          {
+            "fromBlock": 40000000,
+            "toBlock": 49999999,
+            "receipt": "312-ownership-events-40000000-49999999",
+            "status": "complete"
+          },
+          {
+            "fromBlock": 50000000,
+            "toBlock": 59999999,
+            "receipt": "313-ownership-events-50000000-59999999",
+            "status": "complete"
+          },
+          {
+            "fromBlock": 60000000,
+            "toBlock": 69999999,
+            "receipt": "314-ownership-events-60000000-69999999",
+            "status": "complete"
+          },
+          {
+            "fromBlock": 70000000,
+            "toBlock": 79999999,
+            "receipt": "315-ownership-events-70000000-79999999",
+            "status": "complete"
+          },
+          {
+            "fromBlock": 80000000,
+            "toBlock": 82351824,
+            "receipt": "316-ownership-events-80000000-82351824",
+            "status": "complete"
+          }
+        ]
+      },
+      "event": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "bytes32",
+            "name": "runId",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "player",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "season",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint64",
+            "name": "score",
+            "type": "uint64"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes32",
+            "name": "replayHash",
+            "type": "bytes32"
+          }
+        ],
+        "name": "ScoreRegistered",
+        "type": "event",
+        "signature": "ScoreRegistered(bytes32,address,uint256,address,uint64,uint256,bytes32)",
+        "topic": "0xa3830084c9d43012fe46609bb07dcfc365f17b345ac8da48d583cb1b6ab90af3"
+      },
+      "coverageComplete": true,
+      "intervals": [
+        {
+          "fromBlock": 59392721,
+          "toBlock": 69392720,
+          "receipt": "319-score-events-59392721-69392720",
+          "status": "complete"
+        },
+        {
+          "fromBlock": 69392721,
+          "toBlock": 79392720,
+          "receipt": "320-score-events-69392721-79392720",
+          "status": "complete"
+        },
+        {
+          "fromBlock": 79392721,
+          "toBlock": 82351824,
+          "receipt": "321-score-events-79392721-82351824",
+          "status": "complete"
+        }
+      ],
+      "rejectedLogs": 0,
+      "eventCount": 15,
+      "observedEventCount": 15,
+      "uniqueRegisteredWallets": 1,
+      "returningRegisteredWalletsOnDistinctUtcDates": 1,
+      "uniqueRegisteredWalletsExcludingOwner": 0,
+      "returningRegisteredWalletsExcludingOwner": 0,
+      "participants": [
+        {
+          "player": "0x5d69c42a3a481d0ccfd88cfa8a2a08e2bf456134",
+          "registrations": 15,
+          "distinctUtcRegistrationDates": 7,
+          "firstRegistrationAt": "2026-09-10T14:23:46.000Z",
+          "lastRegistrationAt": "2026-09-30T23:43:04.000Z",
+          "isCurrentContractOwner": true,
+          "currentSeasonState": {
+            "receipt": "337-call-players",
+            "decoded": {
+              "bestScore": "49460",
+              "runs": "15",
+              "bestAt": "1790811784",
+              "bestRun": "0xa3fcca45a758c7547edac26a6b49520024e370ca1a524acecd6812fe6044fa3a",
+              "previous": "0x0000000000000000000000000000000000000000",
+              "next": "0x0000000000000000000000000000000000000000"
+            }
+          },
+          "solanaWallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+          "solanaLinkReceipt": "338-call-playerSolana"
+        }
+      ],
+      "seasons": [
+        {
+          "season": 1,
+          "receipt": "305-call-seasons",
+          "decoded": {
+            "playerCount": "1",
+            "registrations": "15",
+            "winnerCount": "0",
+            "captured": "0",
+            "totalScore": "0",
+            "head": "0x5d69c42a3a481d0ccfd88cfa8a2a08e2bf456134",
+            "nextWinner": "0x0000000000000000000000000000000000000000",
+            "phase": "0"
+          }
+        }
+      ],
+      "links": [
+        {
+          "solanaWallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+          "evmPlayer": "0x5d69c42a3a481d0ccfd88cfa8a2a08e2bf456134",
+          "receipt": "304-call-solanaPlayer"
+        }
+      ],
+      "classification": {
+        "treasurySolanaWallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "treasuryLabelSource": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/constants.ts",
+        "contractOwner": "0x5d69c42a3a481d0ccfd88cfa8a2a08e2bf456134",
+        "ownerReceipt": "302-call-owner",
+        "notAssumed": [
+          "unlabelled wallets are not automatically independent users",
+          "source labels do not establish person identity",
+          "on-chain registration does not attribute Android vs web"
+        ]
+      },
+      "eventsFile": "topshelf-score-events.json",
+      "limits": [
+        "Optional registered-score participants only; excludes unregistered play and local practice.",
+        "Distinct registration dates measure repeat registrations, not Android-specific retention.",
+        "Do not infer independent-user traction from contract-owner activity."
+      ]
+    }
+  },
+  "limits": [
+    "Wallet counts are not person counts.",
+    "Timelocks do not contain game or Android usage identifiers and may reflect ecosystem use outside gameplay.",
+    "Current lock accounts exclude accounts already closed on claim; not a complete historical cohort.",
+    "Multiple existing locks show lock activity only, not repeated play or retention.",
+    "Source labels and pinned owner receipts establish exclusions when available; unlabelled wallets are not assumed independent users.",
+    "No Android MAU, D1/D7 retention, session or sharing numbers are inferred."
+  ],
+  "receipts": [
+    "005-evm-chain",
+    "006-evm-latest",
+    "003-solana-genesis-scan-devfridge-cool",
+    "002-public-topshelf",
+    "001-public-protocol-stats",
+    "004-solana-program-locks-scan-devfridge-cool",
+    "007-blockscout-contract-address",
+    "008-evm-contract-code",
+    "101-historical-snapshot-block",
+    "102-call-owner",
+    "103-call-currentSeason",
+    "104-call-solanaPlayer",
+    "105-call-seasons",
+    "106-code-block-zero",
+    "107-code-at-snapshot",
+    "108-score-events-full-range",
+    "301-historical-snapshot-block",
+    "302-call-owner",
+    "303-call-currentSeason",
+    "304-call-solanaPlayer",
+    "305-call-seasons",
+    "306-code-block-zero",
+    "307-code-at-snapshot",
+    "308-ownership-events-0-9999999",
+    "309-ownership-events-10000000-19999999",
+    "310-ownership-events-20000000-29999999",
+    "311-ownership-events-30000000-39999999",
+    "312-ownership-events-40000000-49999999",
+    "313-ownership-events-50000000-59999999",
+    "314-ownership-events-60000000-69999999",
+    "315-ownership-events-70000000-79999999",
+    "316-ownership-events-80000000-82351824",
+    "317-ownership-first-transaction-receipt",
+    "318-score-events-full-range",
+    "319-score-events-59392721-69392720",
+    "320-score-events-69392721-79392720",
+    "321-score-events-79392721-82351824",
+    "322-event-block-59471920",
+    "323-event-block-59506358",
+    "324-event-block-59520835",
+    "325-event-block-61045311",
+    "326-event-block-61093040",
+    "327-event-block-61099218",
+    "328-event-block-61133781",
+    "329-event-block-61153873",
+    "330-event-block-62798302",
+    "331-event-block-62799255",
+    "332-event-block-63876758",
+    "333-event-block-67292719",
+    "334-event-block-68933007",
+    "335-event-block-68970949",
+    "336-event-block-76918595",
+    "337-call-players",
+    "338-call-playerSolana"
+  ]
+}

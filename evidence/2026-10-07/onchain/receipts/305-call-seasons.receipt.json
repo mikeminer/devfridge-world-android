@@ -1,0 +1,35 @@
+{
+  "name": "305-call-seasons",
+  "startedAt": "2026-10-07T09:02:31.165Z",
+  "finishedAt": "2026-10-07T09:02:31.312Z",
+  "url": "https://rpc.mainnet.chain.robinhood.com",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xc1DB49694E0DB50778c333350C8A553fDE221989",
+        "data": "0xf5d709a10000000000000000000000000000000000000000000000000000000000000001"
+      },
+      "0x4e896d0"
+    ]
+  },
+  "status": 200,
+  "headers": {
+    "cache-control": "no-cache",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a46bba32ae61ed4c-MXP",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "117",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 09:02:30 GMT",
+    "server": "cloudflare",
+    "vary": "Origin, accept-encoding",
+    "x-envoy-upstream-service-time": "1"
+  },
+  "error": null,
+  "bodyFile": "305-call-seasons.body.txt"
+}

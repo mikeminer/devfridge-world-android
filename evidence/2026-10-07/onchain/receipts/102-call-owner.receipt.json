@@ -1,0 +1,35 @@
+{
+  "name": "102-call-owner",
+  "startedAt": "2026-10-07T09:00:53.693Z",
+  "finishedAt": "2026-10-07T09:00:53.853Z",
+  "url": "https://rpc.mainnet.chain.robinhood.com",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xc1DB49694E0DB50778c333350C8A553fDE221989",
+        "data": "0x8da5cb5b"
+      },
+      "0x4e8930d"
+    ]
+  },
+  "status": 200,
+  "headers": {
+    "cache-control": "no-cache",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a46bb7d17be34c50-MXP",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-length": "104",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 09:00:53 GMT",
+    "server": "cloudflare",
+    "vary": "Origin, accept-encoding",
+    "x-envoy-upstream-service-time": "3"
+  },
+  "error": null,
+  "bodyFile": "102-call-owner.body.txt"
+}

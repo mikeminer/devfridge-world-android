@@ -1,0 +1,1 @@
+{"lockCount":139,"depositors":4,"mints":21,"activeLocks":84,"boostVaultLamports":890880,"pastaBurned":"876026.010648","pastaPrice":null,"liquidity":{"pool":"5o5JBdWZd3zKE3JC8Tb81D3bph7bwxftvwLLRoZ1EqL5","usd":null,"quoteSol":null,"baseTokens":null,"lpMint":"9Yi9cwm3Non7LoFkxC6eKgp38CSbbXPvYH3VTrz2KC4V","lpSupply":"0","lpBurned":true},"ts":1791363494638}
