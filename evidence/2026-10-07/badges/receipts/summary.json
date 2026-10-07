@@ -1,0 +1,241 @@
+{
+  "beganAt": "2026-10-07T09:23:52.179Z",
+  "completedAt": "2026-10-07T09:23:53.295Z",
+  "readOnly": true,
+  "cookiesSent": false,
+  "refererSent": false,
+  "badges": [
+    {
+      "tier": 1,
+      "symbol": "RUGARUGO",
+      "mint": "An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump",
+      "httpStatus": 200,
+      "receipt": "badge-01-rugarugo.receipt.json",
+      "svg": "badge-01-rugarugo.svg",
+      "text": [
+        "🧊 $RUGARUGO · FRIDGED · VERIFIED ONCHAIN",
+        "Locked: 600,000 · 0.06% of supply",
+        "Live scan → scan.devfridge.cool/t/An91…pump"
+      ],
+      "status": "open_vault_badge",
+      "percentageText": "0.06%",
+      "cacheControl": "public",
+      "age": "114",
+      "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+      "startedAt": "2026-10-07T09:23:52.181Z",
+      "finishedAt": "2026-10-07T09:23:52.474Z"
+    },
+    {
+      "tier": 2,
+      "symbol": "APE",
+      "mint": "B31GwpFQco9R4HX1GrfyXgdmLArBN9pBBinqRn8Jpump",
+      "httpStatus": 200,
+      "receipt": "badge-02-ape.receipt.json",
+      "svg": "badge-02-ape.svg",
+      "text": [
+        "🧊 $APE · FRIDGED · VERIFIED ONCHAIN",
+        "Locked: 500,000 · 0.05% of supply",
+        "Live scan → scan.devfridge.cool/t/B31G…pump"
+      ],
+      "status": "open_vault_badge",
+      "percentageText": "0.05%",
+      "cacheControl": "public",
+      "age": "114",
+      "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+      "startedAt": "2026-10-07T09:23:52.244Z",
+      "finishedAt": "2026-10-07T09:23:52.473Z"
+    },
+    {
+      "tier": 3,
+      "symbol": "FIFO",
+      "mint": "3Pg4b7wtcYTGacRzyRFGLBG4s6eeJ2d5jxK2jjz4pump",
+      "httpStatus": 200,
+      "receipt": "badge-03-fifo.receipt.json",
+      "svg": "badge-03-fifo.svg",
+      "text": [
+        "🧊 $FIFO · FRIDGED · VERIFIED ONCHAIN",
+        "Locked: 500,000 · 0.05% of supply",
+        "Live scan → scan.devfridge.cool/t/3Pg4…pump"
+      ],
+      "status": "open_vault_badge",
+      "percentageText": "0.05%",
+      "cacheControl": "public",
+      "age": "113",
+      "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+      "startedAt": "2026-10-07T09:23:52.246Z",
+      "finishedAt": "2026-10-07T09:23:52.470Z"
+    },
+    {
+      "tier": 4,
+      "symbol": "FUSILLI",
+      "mint": "4ZbHvh5xPMB3vTbURzQfDPPH6iy5KNXg7pTdySNtpump",
+      "httpStatus": 200,
+      "receipt": "badge-04-fusilli.receipt.json",
+      "svg": "badge-04-fusilli.svg",
+      "text": [
+        "🧊 $FUSILLI · FRIDGED · VERIFIED ONCHAIN",
+        "Locked: 500,000 · 0.05% of supply",
+        "Live scan → scan.devfridge.cool/t/4ZbH…pump"
+      ],
+      "status": "open_vault_badge",
+      "percentageText": "0.05%",
+      "cacheControl": "public",
+      "age": "113",
+      "date": "Wed, 07 Oct 2026 09:21:59 GMT",
+      "startedAt": "2026-10-07T09:23:52.476Z",
+      "finishedAt": "2026-10-07T09:23:52.583Z"
+    },
+    {
+      "tier": 5,
+      "symbol": "LAMBOCELLO",
+      "mint": "HAUTWMn41Qg1RvtwLFC3SEK7JSc19gns2vJL7TgRpump",
+      "httpStatus": 200,
+      "receipt": "badge-05-lambocello.receipt.json",
+      "svg": "badge-05-lambocello.svg",
+      "text": [
+        "🧊 $LAMBOCELLO · FRIDGED · VERIFIED ONCHAIN",
+        "Locked: 500,000 · 0.05% of supply",
+        "Live scan → scan.devfridge.cool/t/HAUT…pump"
+      ],
+      "status": "open_vault_badge",
+      "percentageText": "0.05%",
+      "cacheControl": "public",
+      "age": "113",
+      "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+      "startedAt": "2026-10-07T09:23:52.477Z",
+      "finishedAt": "2026-10-07T09:23:52.583Z"
+    },
+    {
+      "tier": 6,
+      "symbol": "GMGN",
+      "mint": "8RBcBZkdM8U4eoAi1MsftW7RcXYryobawfPz3Nuupump",
+      "httpStatus": 200,
+      "receipt": "badge-06-gmgn.receipt.json",
+      "svg": "badge-06-gmgn.svg",
+      "text": [
+        "🧊 $GMGN · FRIDGED · VERIFIED ONCHAIN",
+        "Locked: 500,000 · 0.05% of supply",
+        "Live scan → scan.devfridge.cool/t/8RBc…pump"
+      ],
+      "status": "open_vault_badge",
+      "percentageText": "0.05%",
+      "cacheControl": "public",
+      "age": "114",
+      "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+      "startedAt": "2026-10-07T09:23:52.477Z",
+      "finishedAt": "2026-10-07T09:23:52.770Z"
+    },
+    {
+      "tier": 7,
+      "symbol": "SESU",
+      "mint": "AHZMcoqA53trX8JcuoCRsQqWpeSk415cE4p7AsrZpump",
+      "httpStatus": 200,
+      "receipt": "badge-07-sesu.receipt.json",
+      "svg": "badge-07-sesu.svg",
+      "text": [
+        "🧊 $SESU · FRIDGED · VERIFIED ONCHAIN",
+        "Locked: 500,000 · 0.05% of supply",
+        "Live scan → scan.devfridge.cool/t/AHZM…pump"
+      ],
+      "status": "open_vault_badge",
+      "percentageText": "0.05%",
+      "cacheControl": "public",
+      "age": "113",
+      "date": "Wed, 07 Oct 2026 09:21:59 GMT",
+      "startedAt": "2026-10-07T09:23:52.772Z",
+      "finishedAt": "2026-10-07T09:23:52.896Z"
+    },
+    {
+      "tier": 8,
+      "symbol": "MOONZARELL",
+      "mint": "6ZbWBzH9TyQdGhhxjJ573M9p59SVfRaX25FCFY3spump",
+      "httpStatus": 200,
+      "receipt": "badge-08-moonzarell.receipt.json",
+      "svg": "badge-08-moonzarell.svg",
+      "text": [
+        "🧊 $MOONZARELL · FRIDGED · VERIFIED ONCHAIN",
+        "Locked: 500,000 · 0.05% of supply",
+        "Live scan → scan.devfridge.cool/t/6ZbW…pump"
+      ],
+      "status": "open_vault_badge",
+      "percentageText": "0.05%",
+      "cacheControl": "public",
+      "age": "113",
+      "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+      "startedAt": "2026-10-07T09:23:52.772Z",
+      "finishedAt": "2026-10-07T09:23:52.888Z"
+    },
+    {
+      "tier": 9,
+      "symbol": "BONKATINO",
+      "mint": "HivTCtHY1GbC8ws9jwCh3Km5EH4CGtnTdDeo3SdKpump",
+      "httpStatus": 200,
+      "receipt": "badge-09-bonkatino.receipt.json",
+      "svg": "badge-09-bonkatino.svg",
+      "text": [
+        "🧊 $BONKATINO · FRIDGED · VERIFIED ONCHAIN",
+        "Locked: 500,000 · 0.05% of supply",
+        "Live scan → scan.devfridge.cool/t/HivT…pump"
+      ],
+      "status": "open_vault_badge",
+      "percentageText": "0.05%",
+      "cacheControl": "public",
+      "age": "114",
+      "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+      "startedAt": "2026-10-07T09:23:52.773Z",
+      "finishedAt": "2026-10-07T09:23:52.888Z"
+    },
+    {
+      "tier": 10,
+      "symbol": "CICCIA",
+      "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+      "httpStatus": 200,
+      "receipt": "badge-10-ciccia.receipt.json",
+      "svg": "badge-10-ciccia.svg",
+      "text": [
+        "🧊 $CICCIA · FRIDGED · VERIFIED ONCHAIN",
+        "Locked: 610,000.16 · 0.06% of supply",
+        "Live scan → scan.devfridge.cool/t/CvjW…pump"
+      ],
+      "status": "open_vault_badge",
+      "percentageText": "0.06%",
+      "cacheControl": "public",
+      "age": "114",
+      "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+      "startedAt": "2026-10-07T09:23:52.899Z",
+      "finishedAt": "2026-10-07T09:23:52.984Z"
+    }
+  ],
+  "representativeSupply": {
+    "status": "available",
+    "mint": "An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump",
+    "receipt": "representative-supply-api.mainnet-beta.solana.com.receipt.json",
+    "contextSlot": 454181726,
+    "value": {
+      "amount": "1000000000000000",
+      "decimals": 6,
+      "uiAmount": 1000000000,
+      "uiAmountString": "1000000000"
+    },
+    "startedAt": "2026-10-07T09:23:53.115Z",
+    "finishedAt": "2026-10-07T09:23:53.292Z"
+  },
+  "formula": {
+    "numerator": "Sum raw amounts of every lock for the exact mint whose unlockAt is later than badge rendering time; all depositors included.",
+    "denominator": "Current getTokenSupply(mint).value.amount, same raw token units.",
+    "display": "(Number((BigInt(activeRawAmount)*10000n)/BigInt(supplyRaw))/100).toFixed(2)+\"%\"; integer division truncates to two decimal percentage places.",
+    "expiredUnclaimed": "An expired but unclaimed existing vault can still render FRIDGED without a percentage; it is not treated as currently timelocked in the percentage numerator.",
+    "unavailableSupply": "If supply is unavailable/nonpositive/invalid, omit percentage rather than infer a denominator."
+  },
+  "cache": {
+    "badgeRoute": "public, s-maxage=60, stale-while-revalidate=300",
+    "fridgeForMintProcessCacheMs": 30000,
+    "supplyAndLocksSameSlot": false,
+    "note": "SVG supplies no embedded ledger slot or data capture timestamp. HTTP request times/Date/Age are delivery provenance, not synchronized chain snapshot time."
+  },
+  "meaning": "Token-wide percentage of supply in active DevFridge timelocks; neither game sessions nor player counts nor Android attribution.",
+  "gameIntegrationSource": "cold-storage/src/access-ui.ts:56 embeds one clickable full badge per character, linking to scan.devfridge.cool/t/<mint>.",
+  "currentAccessRule": "cold-storage/src/devfridge-locks.ts reads SDK activeLocks and validates depositor/mint/time; cold-storage/src/access.ts sums unique unexpired amounts per wallet/mint and unlocks at 500000 token units. SDK plan result/original minimum duration is not used as an access predicate here.",
+  "refererHandling": "Badge API can store up to 20 unique external referring domains per mint, once per domain; explicitly excludes hosts ending devfridge.cool. No per-request counter, wallet identity or gameplay event in this route.",
+  "sourceManifest": "../sources-manifest.json"
+}

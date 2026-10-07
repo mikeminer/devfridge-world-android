@@ -1,0 +1,26 @@
+{
+  "name": "badge-09-bonkatino",
+  "url": "https://scan.devfridge.cool/api/badge?mint=HivTCtHY1GbC8ws9jwCh3Km5EH4CGtnTdDeo3SdKpump&theme=dark&style=full",
+  "method": "GET",
+  "request": null,
+  "status": 200,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "114",
+    "cache-control": "public",
+    "content-encoding": "br",
+    "content-type": "image/svg+xml; charset=utf-8",
+    "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/badge",
+    "x-vercel-cache": "STALE",
+    "x-vercel-id": "fra1::iad1::9x9zj-1791365032451-a618823592c4"
+  },
+  "startedAt": "2026-10-07T09:23:52.773Z",
+  "finishedAt": "2026-10-07T09:23:52.888Z",
+  "error": null,
+  "bodyFile": "badge-09-bonkatino.svg"
+}

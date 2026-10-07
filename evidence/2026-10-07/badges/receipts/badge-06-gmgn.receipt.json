@@ -1,0 +1,26 @@
+{
+  "name": "badge-06-gmgn",
+  "url": "https://scan.devfridge.cool/api/badge?mint=8RBcBZkdM8U4eoAi1MsftW7RcXYryobawfPz3Nuupump&theme=dark&style=full",
+  "method": "GET",
+  "request": null,
+  "status": 200,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "114",
+    "cache-control": "public",
+    "content-encoding": "br",
+    "content-type": "image/svg+xml; charset=utf-8",
+    "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/badge",
+    "x-vercel-cache": "STALE",
+    "x-vercel-id": "fra1::iad1::9hkn5-1791365032164-137379a9c148"
+  },
+  "startedAt": "2026-10-07T09:23:52.477Z",
+  "finishedAt": "2026-10-07T09:23:52.770Z",
+  "error": null,
+  "bodyFile": "badge-06-gmgn.svg"
+}

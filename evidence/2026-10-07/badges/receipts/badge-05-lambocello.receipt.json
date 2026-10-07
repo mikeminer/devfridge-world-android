@@ -1,0 +1,26 @@
+{
+  "name": "badge-05-lambocello",
+  "url": "https://scan.devfridge.cool/api/badge?mint=HAUTWMn41Qg1RvtwLFC3SEK7JSc19gns2vJL7TgRpump&theme=dark&style=full",
+  "method": "GET",
+  "request": null,
+  "status": 200,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "113",
+    "cache-control": "public",
+    "content-encoding": "br",
+    "content-type": "image/svg+xml; charset=utf-8",
+    "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/badge",
+    "x-vercel-cache": "STALE",
+    "x-vercel-id": "fra1::iad1::9zrnk-1791365032158-636587a30366"
+  },
+  "startedAt": "2026-10-07T09:23:52.477Z",
+  "finishedAt": "2026-10-07T09:23:52.583Z",
+  "error": null,
+  "bodyFile": "badge-05-lambocello.svg"
+}

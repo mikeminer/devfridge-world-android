@@ -1,0 +1,48 @@
+{
+  "name": "representative-supply-api.mainnet-beta.solana.com",
+  "url": "https://api.mainnet-beta.solana.com",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "getTokenSupply",
+    "params": [
+      "An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump",
+      {
+        "commitment": "confirmed"
+      }
+    ]
+  },
+  "status": 200,
+  "headers": {
+    "access-control-allow-headers": "authorization, *",
+    "access-control-allow-methods": "OPTIONS, POST, GET",
+    "access-control-allow-origin": "backend_traffic",
+    "access-control-max-age": "86400",
+    "allow": "OPTIONS, POST, GET",
+    "alt-svc": "h3=\":443\"; ma=60",
+    "content-encoding": "gzip",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 07 Oct 2026 09:23:52 GMT",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding",
+    "x-ratelimit-conn-limit": "40",
+    "x-ratelimit-conn-remaining": "39",
+    "x-ratelimit-connrate-limit": "40",
+    "x-ratelimit-connrate-remaining": "39",
+    "x-ratelimit-endpoint-limit": "unlimited",
+    "x-ratelimit-endpoint-remaining": "-18864",
+    "x-ratelimit-method-limit": "150",
+    "x-ratelimit-method-remaining": "149",
+    "x-ratelimit-pubsub-limit": "10",
+    "x-ratelimit-pubsub-remaining": "10",
+    "x-ratelimit-rps-limit": "250",
+    "x-ratelimit-rps-remaining": "249",
+    "x-ratelimit-tier": "free",
+    "x-rpc-node": "fra102"
+  },
+  "startedAt": "2026-10-07T09:23:53.115Z",
+  "finishedAt": "2026-10-07T09:23:53.292Z",
+  "error": null,
+  "bodyFile": "representative-supply-api.mainnet-beta.solana.com.body.json"
+}

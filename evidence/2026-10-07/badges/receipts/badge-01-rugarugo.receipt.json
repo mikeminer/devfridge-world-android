@@ -1,0 +1,26 @@
+{
+  "name": "badge-01-rugarugo",
+  "url": "https://scan.devfridge.cool/api/badge?mint=An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump&theme=dark&style=full",
+  "method": "GET",
+  "request": null,
+  "status": 200,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "114",
+    "cache-control": "public",
+    "content-encoding": "br",
+    "content-type": "image/svg+xml; charset=utf-8",
+    "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/badge",
+    "x-vercel-cache": "STALE",
+    "x-vercel-id": "fra1::iad1::r9d9z-1791365032050-363990852fcd"
+  },
+  "startedAt": "2026-10-07T09:23:52.181Z",
+  "finishedAt": "2026-10-07T09:23:52.474Z",
+  "error": null,
+  "bodyFile": "badge-01-rugarugo.svg"
+}

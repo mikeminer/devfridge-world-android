@@ -1,0 +1,26 @@
+{
+  "name": "badge-02-ape",
+  "url": "https://scan.devfridge.cool/api/badge?mint=B31GwpFQco9R4HX1GrfyXgdmLArBN9pBBinqRn8Jpump&theme=dark&style=full",
+  "method": "GET",
+  "request": null,
+  "status": 200,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "114",
+    "cache-control": "public",
+    "content-encoding": "br",
+    "content-type": "image/svg+xml; charset=utf-8",
+    "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/badge",
+    "x-vercel-cache": "STALE",
+    "x-vercel-id": "fra1::iad1::xsp54-1791365032043-6f77772539ae"
+  },
+  "startedAt": "2026-10-07T09:23:52.244Z",
+  "finishedAt": "2026-10-07T09:23:52.473Z",
+  "error": null,
+  "bodyFile": "badge-02-ape.svg"
+}

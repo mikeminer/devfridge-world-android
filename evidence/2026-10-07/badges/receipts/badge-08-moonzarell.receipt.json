@@ -1,0 +1,26 @@
+{
+  "name": "badge-08-moonzarell",
+  "url": "https://scan.devfridge.cool/api/badge?mint=6ZbWBzH9TyQdGhhxjJ573M9p59SVfRaX25FCFY3spump&theme=dark&style=full",
+  "method": "GET",
+  "request": null,
+  "status": 200,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "113",
+    "cache-control": "public",
+    "content-encoding": "br",
+    "content-type": "image/svg+xml; charset=utf-8",
+    "date": "Wed, 07 Oct 2026 09:21:58 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/badge",
+    "x-vercel-cache": "STALE",
+    "x-vercel-id": "fra1::iad1::p27tj-1791365032449-c935a0b24a4e"
+  },
+  "startedAt": "2026-10-07T09:23:52.772Z",
+  "finishedAt": "2026-10-07T09:23:52.888Z",
+  "error": null,
+  "bodyFile": "badge-08-moonzarell.svg"
+}

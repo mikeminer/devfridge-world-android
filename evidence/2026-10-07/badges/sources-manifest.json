@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-10-07T09:28:29.092Z",
+  "files": [
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/app/api/badge/route.ts",
+      "sha256": "4820981d6d4d8da2bb03cf55908816ef9559d7791f2fe7a59fc0ac6aa36a5db2",
+      "normalization": "UTF-8, CRLF to LF",
+      "byteCount": 2005,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/app/api/badge/route.ts"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/lib/badge.ts",
+      "sha256": "360a4b335c43a908ca63163774cc70e5e1e4f28f76b8b093e1f2e4a68e99e52c",
+      "normalization": "UTF-8, CRLF to LF",
+      "byteCount": 6645,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/badge.ts"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/lib/format.ts",
+      "sha256": "334185eeff260f17af52fbe02fb3fdb18a31cac4236cef72a972612deb40dc71",
+      "normalization": "UTF-8, CRLF to LF",
+      "byteCount": 3413,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/format.ts"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/lib/store.ts",
+      "sha256": "692249d20723bac1f6abd1bafb11cc10699ccf3ecb3e282788726de616970347",
+      "normalization": "UTF-8, CRLF to LF",
+      "byteCount": 6173,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/store.ts"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/lib/fridge.ts",
+      "sha256": "9f7d226fdbcfa422b371074eb654218b691b58bfcf4105d10366189a37130e1f",
+      "normalization": "UTF-8, CRLF to LF",
+      "byteCount": 4720,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/fridge.ts"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/public/world/game/assets/index-BRorhYzL.js",
+      "sha256": "e85907e7927955ec3b05b8a8d92b478ec2c28c66fefe346a581169992dd6b968",
+      "normalization": "UTF-8, CRLF to LF",
+      "byteCount": 3253815,
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/public/world/game/assets/index-BRorhYzL.js"
+    },
+    {
+      "repository": "Cold Storage source checkout (remote https://github.com/mikeminer/devfridge-world; public availability not independently verified)",
+      "commit": "5d9ab2464014bdef53dd129a6148c8e1d4364949",
+      "path": "src/access-ui.ts",
+      "sha256": "4302eac4a0aa08171d480263ccec9f5aadc4870cce7bb5f222fd8791a32d3b0a",
+      "normalization": "UTF-8, CRLF to LF",
+      "byteCount": 13704,
+      "includedSource": "source-excerpts/access-ui.ts"
+    },
+    {
+      "repository": "Cold Storage source checkout (remote https://github.com/mikeminer/devfridge-world; public availability not independently verified)",
+      "commit": "5d9ab2464014bdef53dd129a6148c8e1d4364949",
+      "path": "src/access.ts",
+      "sha256": "73ff7821891d32c63dad5611be9a640b885e7871d5ba457e769b21f47780beef",
+      "normalization": "UTF-8, CRLF to LF",
+      "byteCount": 2480,
+      "includedSource": "source-excerpts/access.ts"
+    },
+    {
+      "repository": "Cold Storage source checkout (remote https://github.com/mikeminer/devfridge-world; public availability not independently verified)",
+      "commit": "5d9ab2464014bdef53dd129a6148c8e1d4364949",
+      "path": "src/devfridge-locks.ts",
+      "sha256": "3ded2e5bc1fcf7c6740f099a681fb4da4cbd03f64f17ec9fc52f080c1e5a384d",
+      "normalization": "UTF-8, CRLF to LF",
+      "byteCount": 5388,
+      "includedSource": "source-excerpts/devfridge-locks.ts"
+    }
+  ]
+}

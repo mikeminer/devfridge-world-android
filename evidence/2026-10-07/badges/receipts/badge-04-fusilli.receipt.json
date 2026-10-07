@@ -1,0 +1,26 @@
+{
+  "name": "badge-04-fusilli",
+  "url": "https://scan.devfridge.cool/api/badge?mint=4ZbHvh5xPMB3vTbURzQfDPPH6iy5KNXg7pTdySNtpump&theme=dark&style=full",
+  "method": "GET",
+  "request": null,
+  "status": 200,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "113",
+    "cache-control": "public",
+    "content-encoding": "br",
+    "content-type": "image/svg+xml; charset=utf-8",
+    "date": "Wed, 07 Oct 2026 09:21:59 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/badge",
+    "x-vercel-cache": "STALE",
+    "x-vercel-id": "fra1::iad1::rd4mn-1791365032156-58feac591460"
+  },
+  "startedAt": "2026-10-07T09:23:52.476Z",
+  "finishedAt": "2026-10-07T09:23:52.583Z",
+  "error": null,
+  "bodyFile": "badge-04-fusilli.svg"
+}

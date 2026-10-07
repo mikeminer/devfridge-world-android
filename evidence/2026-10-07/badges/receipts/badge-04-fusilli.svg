@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="90" viewBox="0 0 420 90" role="img" aria-label="🧊 $FUSILLI · FRIDGED · VERIFIED ONCHAIN">
+  <a href="https://scan.devfridge.cool/t/4ZbHvh5xPMB3vTbURzQfDPPH6iy5KNXg7pTdySNtpump" target="_blank" rel="noopener noreferrer">
+    <rect x="0.5" y="0.5" width="419" height="89" rx="8" fill="#0d2137" stroke="#4fc3f7"/>
+    <text x="16" y="28" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#4fc3f7">🧊 $FUSILLI · FRIDGED · VERIFIED ONCHAIN</text>
+    <text x="16" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#e2e8f0">Locked: 500,000 · 0.05% of supply</text>
+    <text x="16" y="74" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" fill="#94a3b8">Live scan → scan.devfridge.cool/t/4ZbH…pump</text>
+  </a>
+</svg>

@@ -12,7 +12,7 @@ This report supplies reproducible evidence of DevFridge protocol activity, the g
 | Unique protocol depositor wallets | 4 | Ecosystem addresses; not four game players or people |
 | Unique locked token mints | 21 | Protocol token coverage |
 | Existing locks for the ten exact character mints | 19 | Game-token prerequisite accounts |
-| Active game-token lock accounts | 13 | All meet the SDK's one-day original-duration rule |
+| Active game-token lock accounts | 13 | Unexpired; all also pass the legacy SDK duration filter |
 | Unique wallets meeting the character-token rules | 1 | The publicly labelled Solana treasury |
 | Qualifying game wallets excluding that treasury | 0 | Current lock-prerequisite snapshot only |
 | Confirmed TopShelf score-registration events | 15 | Real successful contract events |
@@ -29,9 +29,25 @@ The four ecosystem depositor addresses are not assumed to be four independent pe
 
 The player selects a community character and authorizes a Solana account. The live game's character access checks the corresponding mint's timelocks. The server checks active matching-mint locks before starting a verified live run. Local practice is a separate onboarding route with isolated storage and blocked wallet/ranked requests. Optional TopShelf registration records a verified live score on Robinhood Chain through its separate EVM flow.
 
-The source-linked prerequisite is at least **500,000 tokens per wallet and selected character mint**, summed using integer raw units and the mint's decimals, across distinct unexpired locks. The game SDK additionally requires each counted lock's original duration to satisfy `floor((unlockAt-createdAt)/86400) >= 1`. All 13 active game-token accounts in this snapshot pass that duration condition.
+The source-linked prerequisite is at least **500,000 tokens per wallet and selected character mint**, summed using integer raw units and the mint's decimals, across distinct unexpired locks. The older v2 SDK-plan path additionally filters original duration using `floor((unlockAt-createdAt)/86400) >= 1`. The current Cold Storage entry reads `status.activeLocks` directly, without requiring that SDK plan's result, so its entry predicate does not independently enforce original duration. All 13 active game-token accounts in this snapshot pass the additional legacy duration filter anyway; the wallet counts are unchanged. [Current predicate and source excerpts](evidence/2026-10-07/badges/README.md#current-access-predicate-and-sdk-duration-distinction) document the distinction.
 
 This source and lock evidence does not establish a newly executed eligible Android round, signed beta.2 execution, wallet consent or legal/compliance eligibility. [Recorded Android evidence](ANDROID-EVIDENCE-2026-10-06.md) remains a separate scope.
+
+## Per-character badges in the live game
+
+The [live game access page](https://world.devfridge.cool/game) embeds ten clickable [DevFridge Scan badges](https://scan.devfridge.cool/badge), one for each exact character mint. Chrome inspection confirmed that all ten SVG images loaded successfully. Each displays its token's timelocked amount and percentage of total supply, and opens the scanner for that mint. [Captured game view](evidence/2026-10-07/badges/world-game-badges.png).
+
+The numerator sums **all unexpired DevFridge lock amounts for the exact mint across all depositor wallets**. The denominator is that mint's total token supply, in the same raw units. The displayed percentage is `floor(activeRawAmount * 10000 / supplyRaw) / 100`, formatted to two decimal places. The aggregate badge is separate from the connected wallet's 500,000-token character-access predicate.
+
+| Character token | Badge locked amount | Displayed supply percentage |
+| --- | ---: | ---: |
+| RUGARUGO | 600,000 | 0.06% |
+| CICCIA | 610,000.16 | 0.06% |
+| APE, FIFO, FUSILLI, LAMBOCELLO, GMGN, SESU, MOONZARELL, BONKATINO | 500,000 each | 0.05% each |
+
+All ten unauthenticated requests returned HTTP 200 at **2026-10-07 09:23:52–09:23:53 UTC**. A separate confirmed `getTokenSupply` response for RUGARUGO returned 1,000,000,000 tokens at slot **454181726**, consistent with its displayed 0.06%. These are separate observations, not a synchronized common-slot snapshot. The badge route permits 60-second CDN caching plus 300 seconds of stale delivery during revalidation, and a 30-second process lock cache. Its SVG contains no ledger slot or data timestamp; HTTP delivery time does not establish the exact chain-data time.
+
+This is observable Solana integration and token commitment associated with the playable cast. It does not count game sessions, unique players, Android use or returns: neither a game-event tag nor platform identity is present in the badge. Expired unclaimed vaults can display “FRIDGED” without an active percentage; unavailable supply omits the percentage. [Exact formula, current access source, raw SVGs and HTTP receipts](evidence/2026-10-07/badges/README.md) preserve the evidence without adding cookie analytics.
 
 ## Solana collection
 
