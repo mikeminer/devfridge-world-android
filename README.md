@@ -1,4 +1,4 @@
-# DevFridge World Android
+# DevFridge World Android by https://x.com/anonimocommando x https://solanamobile.radiant.nexus/ 
 
 DevFridge uses **one existing shared Solana timelock program** to measure token-gated access adoption across games. The game-builder skill supplies each game's accepted-mint mapping, raw amount threshold and duration configuration. The offline calculator counts qualifying active wallets as **wallets adopting token-gated access**, alongside active-lock fraction and renewal retention. Adoption is defined by accepted-mint locks meeting the game's raw amount and duration rules; actual play is not required. Existing scanner badges show commitment intensity through each mint's locked quantity and supply percentage. A game does not need its own new Solana timelock contract or cookie analytics. The policies are off-chain filters, not an on-chain GameID registry; a wallet can qualify for two games accepting the same mint and rules, so their counts are not additive as ecosystem-unique wallets.
 
