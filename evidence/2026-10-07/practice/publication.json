@@ -1,0 +1,31 @@
+{
+  "videoUrl": "https://youtube.com/shorts/EUBxEG-gh1A",
+  "visibility": "UNLISTED",
+  "publishedDate": "2026-10-07",
+  "englishSubtitles": "Published, reported by the operator; the exact local SRT is included in this package.",
+  "publicationVerificationScope": "Publication and English subtitle status were confirmed by the operator controlling YouTube Studio. This packaging step did not independently inspect the remote video.",
+  "originalVideoFile": "DevFridge-World-Beta2-Practice-Proof-2026-10-07.mp4",
+  "originalVideoSha256": "bbda3451d3ad5bec78bc06c07c370352d9e8b3c65ea8409ee4c3c42b8552f3ae",
+  "originalVideoBytes": 1271190,
+  "durationSeconds": 98.4,
+  "width": 540,
+  "height": 1360,
+  "fps": 30,
+  "audio": false,
+  "streamedHashScope": "YouTube transcodes uploads; originalVideoSha256 identifies the uploaded MP4, not a YouTube rendition.",
+  "primaryEarlierBeta1VideoUrl": "https://youtube.com/shorts/LRDAhJhFfLI",
+  "role": "Supplemental signed beta.2 local-practice proof; earlier beta.1 wallet diagnostic remains separate.",
+  "notShown": [
+    "restart action itself",
+    "successful live Phantom authorization/signing",
+    "positive SKR/Aurora unlock",
+    "physical Seed Vault hardware",
+    "share recipient delivery",
+    "external social post",
+    "eligible timelock-gated round",
+    "ranked entry or payment",
+    "external adoption or retention"
+  ],
+  "privateMaterialIncluded": false,
+  "gitStatus": "Prepared as local untracked files; this agent did not stage, commit or push."
+}

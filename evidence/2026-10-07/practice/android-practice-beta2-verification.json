@@ -1,0 +1,112 @@
+{
+  "output": "DevFridge-World-Beta2-Practice-Proof-2026-10-07.mp4",
+  "outputSha256": "bbda3451d3ad5bec78bc06c07c370352d9e8b3c65ea8409ee4c3c42b8552f3ae",
+  "outputBytes": 1271190,
+  "durationSeconds": 98.4,
+  "width": 540,
+  "height": 1360,
+  "fps": 30,
+  "audio": false,
+  "sourceMetadata": [
+    {
+      "file": "beta2-host-gpu-04.mp4",
+      "bytes": 4369222,
+      "sha256": "96071f04f87ae7255f20bf6cdd61de6dc1e4539467d7de036a124b44e11c07f4",
+      "containerDurationSeconds": 174.0725,
+      "decodedFrames": 1870
+    },
+    {
+      "file": "beta2-host-gpu-05.mp4",
+      "bytes": 2962978,
+      "sha256": "b3fe97f095984359ef79e49c40fd3b82c2283a7ccdae29fe99606f6c9f2ca6c4",
+      "containerDurationSeconds": 173.4412,
+      "decodedFrames": 1355
+    }
+  ],
+  "confirmedSourceEvents": [
+    {
+      "source": "04",
+      "sourcePtsSeconds": 11.575344,
+      "outputSeconds": 6.575344,
+      "evidence": "Replay opens actual local practice, score zero."
+    },
+    {
+      "source": "04",
+      "sourcePtsSeconds": 53.137667,
+      "outputSeconds": 21.637667,
+      "evidence": "Local score changes to 20. Full-size 54 s source frame also shows MERGED! Aperitivo and personal best 20."
+    },
+    {
+      "source": "04",
+      "sourcePtsSeconds": 73.356978,
+      "outputSeconds": 29.356978,
+      "evidence": "Practice complete: 20 result appears; on-device coach panel visible."
+    },
+    {
+      "source": "04",
+      "sourcePtsSeconds": 109.95,
+      "outputSeconds": 54.45,
+      "evidence": "Actual 20-point share card visibly rendered. This is a sampled keyframe, not an asserted first rendering frame."
+    },
+    {
+      "source": "04",
+      "sourcePtsSeconds": 172.470722,
+      "outputSeconds": 62.470722,
+      "evidence": "Native Android image share sheet appears. No recipient selected."
+    },
+    {
+      "source": "05",
+      "sourcePtsSeconds": 0.0,
+      "outputSeconds": 67.0,
+      "evidence": "Personalbest20 retained after restart reported by test operator."
+    },
+    {
+      "source": "05",
+      "sourcePtsSeconds": 40.01,
+      "outputSeconds": 81.51,
+      "evidence": "Native local session history visibly lists20-point completed run; sampled keyframe."
+    },
+    {
+      "source": "05",
+      "sourcePtsSeconds": 172.521133,
+      "outputSeconds": 91.521133,
+      "evidence": "Android App info version 0.3.2-beta.2 visible after final scroll."
+    }
+  ],
+  "privacyQa": {
+    "sourceScope": "Only practice clips04/05; private wallet/age recordings excluded.",
+    "visualReview": "Source overview and full-size keyframes at meaningful state changes; all selected output segment start/mid/end frames and merge/share/history/version proof frames.",
+    "observedScreens": [
+      "DevFridge local practice and score result",
+      "on-device coaching panel",
+      "actual local score card",
+      "Android image share chooser with no suggested contacts",
+      "native local session history",
+      "Android App info"
+    ],
+    "sensitiveMaterialObserved": false,
+    "redactionsApplied": false,
+    "note": "No wallet balances, seed phrase, private keys, passwords, authorization payloads, date of birth, email, phone number or selected recipients were observed in reviewed frames. This is visual evidence review, not a formal security audit."
+  },
+  "visualQa": {
+    "sourceFramePlacement": "Full 540 × 1200 phone frame at x0,y48 in 540 × 1360 output. Top label y0..47 and footer y1248..1359 are outside source.",
+    "outputChecks": [
+      "33 segment midpoint/boundary images",
+      "6 additional final proof frames",
+      "captions and cut cards stay outside phone source frame",
+      "post-restart state is labelled; restart action itself is not recorded",
+      "no source speed-up, crop, synthetic UI or secret overlays"
+    ],
+    "publicationStatus": "Local artifact only; not uploaded or published."
+  },
+  "limitations": [
+    "live Phantom authorization or message signing",
+    "positive SKR/Aurora unlock",
+    "eligible timelock-gated round",
+    "physical Saga/Seeker or Seed Vault",
+    "haptic sensation",
+    "ranked entry or payment",
+    "external users or retention",
+    "share destination delivery"
+  ]
+}

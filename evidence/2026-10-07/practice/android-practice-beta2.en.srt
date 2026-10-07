@@ -1,0 +1,78 @@
+1
+00:00:00,000 --> 00:00:04,000
+Local practice on the publisher-signed APK.
+Separate from the earlier beta.1 demo.
+
+2
+00:00:04,000 --> 00:00:12,000
+The replay opens the actual 3D practice game.
+Local play · no ranking or prizes.
+
+3
+00:00:12,000 --> 00:00:13,500
+Source recording 04 · playback speed unchanged.
+
+4
+00:00:13,500 --> 00:00:25,500
+Matching pieces fall and merge into Aperitivo.
+The local score and personal best reach 20.
+
+5
+00:00:25,500 --> 00:00:27,000
+Source recording 04 · playback speed unchanged.
+
+6
+00:00:27,000 --> 00:00:38,000
+Practice complete: 20 points.
+The on-device coaching panel is visible.
+
+7
+00:00:38,000 --> 00:00:39,500
+Source recording 04 · playback speed unchanged.
+
+8
+00:00:39,500 --> 00:00:57,500
+The share panel renders the 20-point image.
+Local practice · no ranking or prizes.
+
+9
+00:00:57,500 --> 00:00:59,000
+Source recording 04 · playback speed unchanged.
+
+10
+00:00:59,000 --> 00:01:04,000
+Android opens its image share sheet and caption.
+This clip does not show delivery or an external post.
+
+11
+00:01:04,000 --> 00:01:07,000
+Post-restart observations follow.
+Local data · no on-chain session claim.
+
+12
+00:01:07,000 --> 00:01:15,000
+The reopened app retains personal best 20.
+The current local practice score is zero.
+
+13
+00:01:15,000 --> 00:01:16,500
+Source recording 05 · playback speed unchanged.
+
+14
+00:01:16,500 --> 00:01:26,500
+Native Recent sessions retains the 20-point run.
+These are local records, not external user metrics.
+
+15
+00:01:26,500 --> 00:01:28,000
+Source recording 05 · playback speed unchanged.
+
+16
+00:01:28,000 --> 00:01:32,400
+Android App info: version 0.3.2-beta.2.
+Package, APK hash and signing proof are in the receipt.
+
+17
+00:01:32,400 --> 00:01:38,400
+Actual emulator evidence with declared cuts.
+No successful wallet or hardware flow is implied.

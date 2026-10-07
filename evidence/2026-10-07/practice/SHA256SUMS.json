@@ -1,0 +1,61 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "All package files except this manifest; relative paths only.",
+  "files": [
+    {
+      "file": "android-practice-beta2-edit-receipt.json",
+      "bytes": 9836,
+      "sha256": "7f0abb8449befa8965b8bccf45d6a3d08fb0e29b85c95bc79a77c094aa354529"
+    },
+    {
+      "file": "android-practice-beta2-verification.json",
+      "bytes": 4288,
+      "sha256": "61a4031e1c32f88e56a82c4fb421beca74e7576373b23c0f50c312bc3f5aa48b"
+    },
+    {
+      "file": "android-practice-beta2.en.srt",
+      "bytes": 1906,
+      "sha256": "5b9f0ba6563259fc4e95baebb9ca7850710322a1ecb39f8e186e7ee4b1b75bc5"
+    },
+    {
+      "file": "android-practice-beta2.transcript.md",
+      "bytes": 4634,
+      "sha256": "db357fd92ee02f04b0d4ab1b97253d25a2414d1a123f38038aaba94e3a9149ad"
+    },
+    {
+      "file": "practice-history-after-reopen.png",
+      "bytes": 182107,
+      "sha256": "fc7b427712830dc36ce429cc0c286b36cc1a64ce4446c195b91011c56301df19"
+    },
+    {
+      "file": "practice-installed-version.png",
+      "bytes": 196930,
+      "sha256": "6dcd7ff4bf30e6a461632f27c6ab04419529e748139e003d462525e5fb26f689"
+    },
+    {
+      "file": "practice-merge-20.png",
+      "bytes": 247453,
+      "sha256": "26e3a00ec59d761512bc79e453b5000b9019cab2234bd0c55715d0e09e9b99c9"
+    },
+    {
+      "file": "practice-native-share-sheet.png",
+      "bytes": 169124,
+      "sha256": "7249fc07904c9437ceac575fb3118708be129bd43bfe2269e84523a62e6c6416"
+    },
+    {
+      "file": "practice-personal-best-after-reopen.png",
+      "bytes": 246337,
+      "sha256": "739747ab759fff8aff1df26b9389fc4f8abe8a68eb85bde112222b747018a646"
+    },
+    {
+      "file": "publication.json",
+      "bytes": 1547,
+      "sha256": "de9c5c87c7b9a1b59e4d1233acaf813d35407af75812e9ae799715768555043b"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5720,
+      "sha256": "cfaeecfcceb5e795b74e12324558f51f1b03989ac4a4e9fc96a7c205053bd898"
+    }
+  ]
+}
