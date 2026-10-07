@@ -1,0 +1,153 @@
+{
+  "kind": "local-signed-candidate-v2-provenance",
+  "recordedAtUtc": "2026-10-07T16:55:53.7722362Z",
+  "artifact": {
+    "localWorkspaceRelativePath": "deliverables/DevFridge-World-0.3.2-beta.3.apk",
+    "packageName": "cool.devfridge.world",
+    "versionName": "0.3.2-beta.3",
+    "versionCode": 10,
+    "sha256": "20de2863c186c5840989fea8e7e0261ac27258a40a9274ac9e96bedbb3490160",
+    "bytes": 65779658,
+    "publisherCertificateSha256": "2acabfed1ae887ed90e650a4446e5ef747de096f0fd6ea75a8948b75b06071ca",
+    "signatureVerifiedV3": true,
+    "published": false
+  },
+  "source": {
+    "baseCommit": "bbb9125c3cc84953d1403d02d4543a70d68e9e62",
+    "workingTreeHadTrackedChangesAtBuild": true,
+    "originalBuildBaseCommit": "bbb9125c3cc84953d1403d02d4543a70d68e9e62",
+    "buildWasDirty": true,
+    "sourceCommit": "d7617b577ee137792895c75706fe9358cbd7e363",
+    "sourceCommitMatchesRecordedNormalizedHashes": true,
+    "verifiedSourceFileCount": 4,
+    "rebuiltAtSourceCommit": false,
+    "normalizedSha256": {
+      "android/app/src/main/java/cool/devfridge/world/MainActivity.kt": "25d18007cc69f9741e41e212b629716f4c45248e472c828016385509148984cb",
+      "android/app/src/main/java/cool/devfridge/world/BridgePolicy.kt": "e37a7d939dc46b8f5b00fc916b94c03ebf56c50dda86c58b8297ba3508cd0634",
+      "android/app/build.gradle.kts": "6efeae6fe6dc360722a3085b209922f6b809e0abab0279d658677a62d5c2551a",
+      "android/mobile/native-bridge.js": "ed4b3917d64498e7aead88161c3011f873fe059512c776beb8e77bfc4eccbe91"
+    },
+    "compiledClassesSha256": "2bcf924b9c53c11d742a01c25992b2c0ce7e2aa7b7088e7785a88ec3fecb0080",
+    "scope": "Candidate was built from the original base commit plus changed working tree. Its four recorded LF-normalized source hashes later match sourceCommit exactly. The same APK was not rebuilt at that subsequent commit."
+  },
+  "verification": {
+    "staticBoundaryChecksPassed": 34,
+    "staticChecks": {
+      "publisher_certificate_verified": true,
+      "expected_package_version": true,
+      "one_exported_launcher_activity": true,
+      "test_receipt_and_invoker_activities_absent": true,
+      "providers_non_exported": true,
+      "share_provider_authority_and_scoped_permission": true,
+      "exported_receiver_has_dump_permission": true,
+      "backup_disabled": true,
+      "release_not_debuggable": true,
+      "application_cleartext_disabled": true,
+      "manifest_references_inspected_share_paths": true,
+      "manifest_references_inspected_network_policy": true,
+      "only_share_cache_is_exposed": true,
+      "network_default_cleartext_disabled": true,
+      "only_loopback_cleartext_exception": true,
+      "no_custom_release_trust_anchors": true,
+      "one_compiled_dex": true,
+      "compiled_classes_match_build": true,
+      "asset_matches_signed_apk:native-bridge.js": true,
+      "extracted_asset_matches_signed_apk:native-bridge.js": true,
+      "asset_matches_signed_apk:registration-handoff.js": true,
+      "extracted_asset_matches_signed_apk:registration-handoff.js": true,
+      "asset_matches_signed_apk:adaptive-coach.js": true,
+      "extracted_asset_matches_signed_apk:adaptive-coach.js": true,
+      "asset_matches_signed_apk:assets/gate-2.js": true,
+      "extracted_asset_matches_signed_apk:assets/gate-2.js": true,
+      "asset_matches_signed_apk:assets/cold-storage.js": true,
+      "extracted_asset_matches_signed_apk:assets/cold-storage.js": true,
+      "asset_matches_signed_apk:cast.json": true,
+      "extracted_asset_matches_signed_apk:cast.json": true,
+      "asset_matches_signed_apk:practice/practice-game.js": true,
+      "extracted_asset_matches_signed_apk:practice/practice-game.js": true,
+      "asset_matches_signed_apk:practice/index.html": true,
+      "extracted_asset_matches_signed_apk:practice/index.html": true
+    },
+    "javascript": {
+      "tests": 55,
+      "passed": 55,
+      "failed": 0,
+      "skipped": 0,
+      "hostilePackagedAdapterCases": 11
+    },
+    "releaseJvm": {
+      "tests": 18,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "suites": [
+        {
+          "suite": "cool.devfridge.world.BridgePolicyAdversarialTest",
+          "tests": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "cool.devfridge.world.BridgePolicyTest",
+          "tests": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "cool.devfridge.world.SkrBalanceTest",
+          "tests": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "cool.devfridge.world.WalletCancellationTest",
+          "tests": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    "assembleReleasePassed": true,
+    "lintReleasePassed": true,
+    "walletRuntimeSuccessClaim": false,
+    "cancellationCausalProof": false,
+    "scope": "Synthetic trust-boundary and real coroutine cancellation semantics tests; static exact signed-candidate byte inspection. This defensive recovery is not proof of the observed signing failure cause or successful wallet signing."
+  },
+  "sourceReceiptSha256": {
+    "candidate-boundaries.json": "135001b838e966cc1ccf9f659300cb21f46378d2556f8441ca6524f98c826614",
+    "candidate-release.json": "e3b886ec6a3c0603fd182b34c5b85a5dc08d8f762e1622371077ca091a146b7e",
+    "verification-summary.json": "5fb8138c5a55c4803f32a5a5ac9b6cc478658cc0847ffacd6ee79a622cd535ec"
+  },
+  "previousCandidate": {
+    "localWorkspaceRelativePath": "deliverables/DevFridge-World-0.3.2-beta.3-v1.apk",
+    "sha256": "b6f2a6b82b1405222e5697ea6c9acdb5763ac6a906d7715c68c0c948f4434650",
+    "oldReceiptsPreserved": true
+  },
+  "runtimeFollowup": {
+    "kind": "Operator-reported local beta.3 candidate-v2 UI observation",
+    "date": "2026-10-07",
+    "observations": [
+      {
+        "approximateObservedClockTime": "17:00",
+        "phase": "wallet consent and error states observed"
+      },
+      {
+        "approximateObservedClockTime": "17:01",
+        "phase": "game UI recovery observed"
+      }
+    ],
+    "timeBasis": "Clock times reported by the test operator; no timezone or precise duration inferred from this sanitized summary.",
+    "successfulGameMessageSignatureEstablished": false,
+    "cancellationFailureCauseEstablished": false,
+    "scope": "UI recovery after error is a limited observation, not successful signing or proof that a cancellation caused the failure. No private screenshots, wallet data or raw logs are included."
+  },
+  "boundaries": [
+    "Build/test receipts do not establish successful Android game authorization/signing or a timelock-eligible round.",
+    "The successful authorization receipt is a separate native protocol diagnostic.",
+    "No message-signing, positive SKR/Aurora, physical Seed Vault or paid-entry success is claimed here."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "kind": "Local native MWA protocol diagnostic",
+  "targetPackage": "cool.devfridge.world",
+  "sdkVersion": "2.0.7",
+  "rpcTimeoutMs": 300000,
+  "financialTransactionRequested": false,
+  "messageSigningRequested": false,
+  "gameplayEvidence": false,
+  "events": [
+    {
+      "phase": "probe",
+      "outcome": "started",
+      "elapsedMs": 0,
+      "rpcResponseReceived": false
+    },
+    {
+      "phase": "association",
+      "outcome": "intent_dispatched_from_installed_world",
+      "elapsedMs": 3257,
+      "rpcResponseReceived": false
+    },
+    {
+      "phase": "association",
+      "outcome": "encrypted_session_established",
+      "elapsedMs": 8634,
+      "rpcResponseReceived": true
+    },
+    {
+      "phase": "get_capabilities",
+      "outcome": "requested",
+      "elapsedMs": 8648,
+      "rpcResponseReceived": false
+    },
+    {
+      "phase": "get_capabilities",
+      "outcome": "response_received",
+      "elapsedMs": 8662,
+      "rpcResponseReceived": true
+    },
+    {
+      "phase": "authorize",
+      "outcome": "requested_mainnet_beta_without_auth_token",
+      "elapsedMs": 8691,
+      "rpcResponseReceived": false
+    },
+    {
+      "phase": "authorize",
+      "outcome": "success_response_received",
+      "elapsedMs": 120706,
+      "rpcResponseReceived": true
+    },
+    {
+      "phase": "get_capabilities_final",
+      "outcome": "response_received",
+      "elapsedMs": 120723,
+      "rpcResponseReceived": true
+    },
+    {
+      "phase": "association",
+      "outcome": "closed",
+      "elapsedMs": 126012,
+      "rpcResponseReceived": false
+    },
+    {
+      "phase": "probe",
+      "outcome": "finished",
+      "elapsedMs": 126019,
+      "rpcResponseReceived": false
+    }
+  ]
+}
