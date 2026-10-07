@@ -75,4 +75,3 @@ const summary={schemaVersion:1,beganAt,completedAt:new Date().toISOString(),read
 await fs.writeFile(path.join(out,'decoded-locks.json'),JSON.stringify({slot:summary.solana.slot,asOfUtc:summary.solana.asOfUtc,locks,invalidAccounts},null,2)+'\n');
 await fs.writeFile(path.join(out,'summary.json'),JSON.stringify(summary,null,2)+'\n');
 console.log(JSON.stringify({out,asOfUtc:summary.solana.asOfUtc,slot:summary.solana.slot,protocol,game:game?{existingGameTokenLockAccounts:game.existingGameTokenLockAccounts,activeGameTokenLockAccounts:game.activeGameTokenLockAccounts,uniqueGameTokenDepositorWallets:game.uniqueGameTokenDepositorWallets,eligibleWalletCount:game.eligibleWalletCount,repeatedExistingLockWalletCount:game.repeatedExistingLockWalletCount}:null,topshelf:summary.topshelf},null,2));
-

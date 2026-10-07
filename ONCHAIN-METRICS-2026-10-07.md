@@ -79,4 +79,3 @@ A fresh run can produce different counts as the chains change. Errors remain una
 ## Source anchors
 
 [Game wallet prerequisite](https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/world-game-v2/src/wallet.js), [SDK duration rule](https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/public/sdk/devfridge-sdk.js), [live-run server prerequisite](https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/topshelf/registration.ts), [exact character mints](https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/topshelf/engine/tokens.json) and [public treasury label](https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/constants.ts).
-

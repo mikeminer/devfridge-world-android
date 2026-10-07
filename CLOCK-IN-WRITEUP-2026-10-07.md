@@ -33,4 +33,3 @@ The live community loop is wallet-selected character access through existing Sol
 [Android observations](ANDROID-EVIDENCE-2026-10-06.md), [native network follow-up](evidence/2026-10-06/EMULATOR-NETWORK-FIX.md) and [source triage](SECURITY-TRIAGE-2026-10-06.md) remain separate evidence sources. The original [6 October writeup](CLOCK-IN-WRITEUP-2026-10-06.md) is retained as a dated prior version.
 
 This text is within the portal's 5,000-character field limit. A local copy does not itself establish that the portal draft was saved.
-
