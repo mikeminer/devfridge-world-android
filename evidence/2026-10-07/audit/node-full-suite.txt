@@ -1,0 +1,60 @@
+✔ on-device coach adapts its eligible tip to collection progress and recent scores (20.2966ms)
+✔ voluntary helpful feedback changes later selection, with localized advice (1.2944ms)
+✔ the shipped game bundle matches the recorded upstream file (11.3681ms)
+✔ every character has its required model, portrait and audio packaged (67.7571ms)
+✔ a rejected HTTPS request displays an error and permits retry without granting access (7.2379ms)
+✔ a stalled submission times out, restores the button and prevents duplicate requests (1.8072ms)
+✔ a stalled initial status check becomes a visible retryable error (1.594ms)
+✔ invalid calendar dates and a missing age declaration never send a submission (2.671ms)
+✔ server refusal remains visible and does not unlock the game (1.506ms)
+✔ native broker binds the exact server challenge and restores its persisted authorization (43.2335ms)
+✔ native broker never accepts another message and allows cancelling without a payment (41.0786ms)
+✔ registers only in the main frame on the first-party origin (10.1304ms)
+✔ silent connection never opens a wallet or invents an account (6.947ms)
+✔ signing preserves exact bytes, rejects the wrong account, and clears on disconnect (13.7657ms)
+✔ wallet refusal propagates and never grants access (1.109ms)
+✔ invalid signatures and oversized payloads fail instead of returning success (13.7719ms)
+✔ share capability reports actual native support (1.7956ms)
+✔ SKR cosmetic benefit only changes local styling and accepts booleans (8.6506ms)
+✔ practice can fetch actual local model/blob assets but cannot send a ranked start, finish or fee request (29.6304ms)
+✔ the head-loaded adapter waits for a body and labels an existing result after DOMContentLoaded (89.5186ms)
+✔ generated CSP permits in-memory texture fetches without permitting remote connections (18.251ms)
+✔ practice relabels actual engine results without changing a game-menu heading (45.9418ms)
+✔ practice refuses a modified renderer instead of silently patching unknown code (2.1685ms)
+✔ finishing practice uses the actual engine callback once and keeps existing stored results (22.2724ms)
+✔ captures only matching server-confirmed final results and restores them after restart (97.1717ms)
+✔ persists the handoff before opening Phantom and never opens a mismatched run (29.1785ms)
+✔ on-chain confirmation prevents another launch; a failed status request stays unconfirmed (43.4985ms)
+✔ native return requires a saved run, explicit approval and the original wallet before delivery (78.9413ms)
+✔ native return refuses a response for a different wallet (14.4108ms)
+﹣ built Phantom page retrieves the server draft and renders the real registration controls (0.6268ms) # SKIP
+﹣ native signing path opens the existing payment UI without requiring a Phantom Solana account (0.3853ms) # SKIP
+﹣ different Solana account and expired links cannot proceed to payment (0.0918ms) # SKIP
+✔ packaged saved-score UI treats poisoned stored metadata as text, never HTML or automatic authorization (27.6054ms)
+✔ packaged handoff refuses malformed stored run IDs rather than constructing active UI from them (107.6383ms)
+✔ packaged server-error rendering does not parse attacker markup or open a wallet (14.9154ms)
+✔ packaged exact authorization message is literal text and requires separate button approval (12.629ms)
+✔ packaged authorization rejects request/run/wallet/score/season/expiry/message tampering before signing (244.3549ms)
+✔ packaged authorization changed after review is rejected at approval without signing or delivery (30.9867ms)
+✔ packaged unsolicited registration returns cannot trigger an RPC or signature without a matching saved run (71.7504ms)
+✔ packaged wallet adapter is absent in iframes and lookalike/non-HTTPS origins (7.6443ms)
+✔ packaged native reply ignores malformed/unknown/replayed IDs instead of inventing a wallet account (1.8733ms)
+✔ packaged share rejects oversized, non-PNG and multiple files before invoking native sharing (12.8626ms)
+✔ packaged compliance gate displays hostile server refusal as text without entering the game (21.9644ms)
+✔ a fresh mobile menu shows an honest empty state without inventing a session (64.2677ms)
+✔ the native history hook opens outside the game, restores real saved rows, and creates no session (63.7607ms)
+✔ a completed result is saved once despite later DOM updates and is restored after restart (105.8146ms)
+✔ the history keeps at most 20 valid completed results and the replay goal uses that window (64.6547ms)
+✔ clearing local history persists and does not reset the game or trigger wallet/network actions (94.4106ms)
+✔ unavailable storage is visible and never claims a result survived restart (100.6171ms)
+✔ malformed storage and non-result text create no phantom score (96.5792ms)
+✔ practice results remain labelled local and the personal goal never compares different modes (31.4697ms)
+✔ ordinary web pages and foreign origins do not record mobile session data (62.2037ms)
+ℹ tests 52
+ℹ suites 0
+ℹ pass 49
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 3
+ℹ todo 0
+ℹ duration_ms 4938.2049

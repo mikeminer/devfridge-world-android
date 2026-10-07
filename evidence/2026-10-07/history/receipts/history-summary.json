@@ -1,0 +1,1532 @@
+{
+  "schemaVersion": 1,
+  "chain": "solana:mainnet-beta",
+  "programId": "9RY54dNPYTzDyh3TfFqDdt2b2KMM56KW1tw9erRTGQo6",
+  "policyId": "devfridge-world-current-access-5d9ab246",
+  "genesisHash": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "historyDiscoverySlot": 454207346,
+  "accountSnapshotSlot": 454209595,
+  "asOfUtc": "2026-10-07T11:28:22.564Z",
+  "completeGameHistoryUnderCurrentPolicy": true,
+  "coverage": {
+    "gameId": "devfridge-world",
+    "complete": true,
+    "includesClosedAccounts": true,
+    "initialStateKnown": true,
+    "fromUtc": "2026-08-18T00:01:52.000Z",
+    "throughUtc": "2026-10-07T11:28:22.564Z",
+    "sourceEvidence": "Same-package program-signatures/transactions-manifest/decoded-history plus initial loader deployment and exact surviving game lock accounts. All closed claims recovered; none concern an accepted World mint."
+  },
+  "signatureCoverage": {
+    "total": 191,
+    "terminalEmptyPage": true,
+    "available": 191,
+    "unavailable": 0,
+    "oldestSlot": 439945412,
+    "latestSlot": 452392206,
+    "newSignatureGapCount": 0
+  },
+  "reconciliation": {
+    "deployment": {
+      "type": "deploy",
+      "signature": "48LVqwGHTaRyhDFvinEmeu2EzmfFY69u2F77bqgy7oUiiZF23LjhNE5jvwcEi1gG1UBir72zRWjCMsfeSc7cM5r7",
+      "receipt": "0195-transaction-48LVqwGHTaRy",
+      "location": "outer:1",
+      "slot": 439949642,
+      "blockTime": 1787011312,
+      "programData": "EaQ6fQFEabtVYMYvbnToKVpUxaZHbQvaTDyewLKALPzo",
+      "authority": "7rXYtcws1sHW5Hhgx79AeMQYGfTtREzyvWq63FVpSyUY",
+      "dataHex": "02000000882c040000000000",
+      "programPreLamports": 0,
+      "programPostLamports": 1141440,
+      "createdInSameTransaction": true
+    },
+    "initialZeroStateVerified": true,
+    "successfulCreates": 146,
+    "successfulClaims": 7,
+    "historicalUniqueAccountAddresses": 139,
+    "reusedAccountAddresses": [
+      "GUScuiwiaHMhfzEe1BkQfA6wL15w5GGaS5ZzrosjctF5",
+      "9ejyFjQTPFJNMrHArT9QMHYxyRkVfJCuEiYfQ3TkRGzA",
+      "6GsGMKTSVskVbaTqwGFpFpPZqEsJe33qSM3icY5W56oN",
+      "Bn29P3QKDdPhg14tMRLyG11MqCqCbD8sjY1LP8fTCSus",
+      "JAmrSKu2BPpYywB87CD3nqP3fkpF3GdisR4dnFgfNM9h",
+      "4JtpVXoZkq14Zf523tvaadLHdeMPwJ9fGQ86VHi7bGy4"
+    ],
+    "currentOpenAccounts": 139,
+    "currentSnapshotAccounts": 139,
+    "problems": [],
+    "clockDeltas": [
+      {
+        "address": "12XZMcdqxuAhki5tixqw83LJPT7ufceMMm1SnNMfUb95",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "8gAES5UjhC9Y3hnz5GYV7EaQNW3N7WSHaxatvZMToWy",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "91t67XUUnpcgNMDdx2Koqk7Yzf3RKcFxpoMSSGVwwZF",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "A8Ds1VSks6uDh6jS7dx1ZYTtxovxBknne6WTnXRgCnk",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "KjdFruFx1VgcYmaANa3yP2xahjEYLncAcJeQtPDUeZn",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "LrKvm58nmYpQzQj1ciFaXmSEqR9mYwo5tLwYCug8zR5",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "Spvcp4BZDCn8twvBFgWD4PKUfRjjP3LVWfJRLnx2gMb",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "VapXGgBHQHtbPC72SRNdnCLJMdE9E7PxgvbJUqzJHmh",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "XkBugMrsv8ML4rBzXzPDHy7M4b9U9RmbEzAwAUdp1Wb",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "aHBBLeh5vA2S5rkfDx9SWDPgCkdvLz3V5a5P9QPcvxc",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "imLV1NXYQQMd6HWNy9P5rZQr6A29NPPsoy3iu3yCX1V",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "ugLHJV4vKX1gCeiMcJdZf4wH1mVZ896rWF5pGvtvY8y",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "zHZUpdw7VcpRuo9goaSoRwAhZwVSyandp2Nqtjj36e7",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "22YguhEAQBTTH2rspjJoK71DmLQx8KxeLo7MN71NmLjw",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "2groXpJBZwe56V1p8zUMvBEhozTpWapo6nLbkaYKJiEf",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "2x4TFyXh6rZNpjCsxJSzbsTeyYPs7LfeQLEXHuf48vLx",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "31E3Rkk5PSNn7JTXXWPCwqeaPQDoxW1fHAXj7x1Tyw5b",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "3QuUKK1M2oHsNLMNtJGKFnBeWLpQa5sAVuneCb359bCo",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "3YVwMbz8bKZ9vw6mpghrhYQZzqJq1NwSrXoQc9Cyfav1",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "3h5M5JRa71PFTN9YFJWrqk1wTk4Nr37wrX2zxNRcD6af",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "3mFsVLifWquTtrwnJzax98EHbsk7mCTh4SggvpvXk62e",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "3qzp1yaQV9vDyvzbJ1NMv4fQj4fzP9wC2zCLQteZ22Qu",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "4Ce31YwZDYUd2cQZvVMMKwXY6qnyJ3im5kCbhdF7jC7f",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "4DgzWXwxKp4x8mJrWSVXG9uvhLX5HJU7uFJufwCFmHMC",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "4HsCrJRj7HCSxr4t8y7VN8bUX4PJiftnDWuqnjBXkyCF",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "4JTGxSgDZNqqiuK8fcK8vdxmGZsRP9GUyuBW7XhqA4FS",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "4JtpVXoZkq14Zf523tvaadLHdeMPwJ9fGQ86VHi7bGy4",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "4iNKj5tHJ2o1NaHLjBhKDmVXBegrkUBR4CtruYeUeL4Y",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "4mLbCkTv8jtokqiUbPdqYpAEQV9yet1pLhVJWCVyHe33",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "4zTQfjb5ysrsDnFEvBUek9NFmm13nABoQCbUjuXjHzh8",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "58NF3TvBX2TGbBHznfp1KVD6UKgkXuAuaTWV6dQipDrs",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5DSqPzU39P67yYSyn98aiomH13nzbS6FJJKBMBcg5RFt",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5Rzu3p1t3uhrv6tHujCgjA74Ex2QEKw6Khb5HjnoNEbe",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5UQwcp7sYt2rjYo7Yh6CUNHtMQ54KGapjffRgxKa9YDx",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5VFMNzsWnz76FaSDYx1NTUK3au3wQbKGji3XYQXZH1ub",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5ZUzk2tfB7fqjsnfDxb2tnkTixyZ32J9PbmUeURsuJdB",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5b8MtsDNeUJX3Rj5HUwwK9SnrSJUZeuT6hsrQjgSiet6",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5dMDmKQKNg6EuiQZFX8zVx3PhB1wVveUwg5UCKqkV4S3",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5itbwZ2g4dpYQC2RgdUGHMtSYsF8rrJkEX72ik3Pb7yw",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5mkViJvMLVvCdHbLNWctihwknAjdCtpxfXiNRjj27VLu",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5n6UjTwWM9KnbufoC8KTvfi7RD6iYbR3yTCab2z45pDS",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5nAvBhmF7nZzMHysqX7tP5EU3UD1Rddr4jFqtKTeiFFo",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "5q6Q9stPrudsRo5yKnxNuxwmCx7tiqwgB3uR1GRTnGuZ",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "63JcEqHndLP2U9DiNR2eWshXbYj4NkG2Zsi31fGnyVoQ",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "646n394yuBNTBEqTz82D4yaKB17WaG6aR5Lw12k4P5Qd",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "6GsGMKTSVskVbaTqwGFpFpPZqEsJe33qSM3icY5W56oN",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "6Uh3tPQhXAdYYo3FUmZFzTtGyCWzWvqxvy7Uhc3fhSQQ",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "6yRapcXiLxod8wK8knt1NTZG5ESLjQqrED4a545Dce2p",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "75MNyNfaAuh6f8pDxSTkiPEQ8JyDfLZEiYwAYm1wj6bJ",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "76kGbxTgbfoNLNHRk8fQg5jHcYbP3SjxcqRcSA4UBe1Q",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "7EkRP6JTs75BDCw73MgoX5B69bBphA1UW3rEKbbKjgWj",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "7LtogmT9VkcUB5aKLtPpncytUjjYFUT6DMC6ef1esktK",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "7UFKHUjCemeE8WK3urGJqHJ5SpiTW88a6oux2vdwWLUS",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "7qBju2P84R8mppxrmv4iJzbR8juerfCKGn7f9pRMNgC1",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "7vQWKunQUrKDPKGcci99GbKkRKeQEymVHPWNAnEbTo9N",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "8K8hsztP4GbRb9a1SXmJ2VvfMbU4zeRqTtAZw7WeUb8k",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "8khEneobQDXrhZQa83U5TrKqS1JxTe1kt4p4Noadgcvr",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "8wzzm9FFvgSTRdU9HSpP8skNUMULGiDKowx7SryLG1M8",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "8zCJy48tMDh8Eg7iHXFtFXwoddjnmNmrFUKNfkutBfdo",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "8zEMjVqB7cokioQ4XutYtjwpoMpbc4EKKVURqndvUTR8",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "96Xq7BsyGrbJKM9JWyWLwFAGBQfgdXagy7g7sEVCqGKn",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "9A3XLsbCeVakuFZGD74d2WCUqdXKTGYc7crSX3SSfgjM",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "9FV4gjvCznntHJ1REXtuGT1yG9uoBGndeAdv6qVAQFnL",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "9Z3kPAj9EZGswdL2RLFE91wZ9pCKDmXhFPXxj8HKmKk6",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "9ejyFjQTPFJNMrHArT9QMHYxyRkVfJCuEiYfQ3TkRGzA",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "9hnEUnJzZ93FM1fQAxatZcks2uMnMVSMCEghCfu3r6ei",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "9sQ4BbnR155GsN5j6zApscVM84V1aQF4veLMEyD6vbVz",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "9u3i5phD2UzvpjNNrw2Pz9fS8RAp84KpRnxs5mmrtxAM",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "ANZsVcX7fxkPxuZeQDkvAXERUi8ATPkQEuWwDV9YXDga",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "AdKsngab2md9eLCnAFyq8hNi71RgXnmy2s3XRbLoiUQA",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "AueahKYPzdWPAe6heC7j2fq8ZYfQQCri2fEwUycGMPia",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "Az75w6Fera4SXv2Z8FPfBL3HfaB1Q1e3NdTopYiqaLYt",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "AzQyomKyYDKx3sNJEuFByfJaGVFatajoq8qgUYqYRZBh",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "B5pLX7rtvraxMkq1fuwSd3MW1LXing51YdmjXg6S89Rf",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "BAgnL8s8giNcybVpktbaxRduNC994UPRDXBdsLwDQY93",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "BNY8d7RKaxnkooMqfDh2Kjn6ULmRSzUti8MKZw5nXWuZ",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "BWvAayNm7WgCLn6p3d9Ur9vBXUDEytenZX6VuJ9Lvxn7",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "Bb3aiEsviumucvgsy5QC5AUAGEKgL9CWM2BRrBZJt2jY",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "Bc9cBTy6kZNj5EJcfD42aMTK77iWtatr2JyjtocA1DXq",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "BeUYkQrAwnG64o99V1aZULQtGJghvFrpDhq8SVsZteVJ",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "BgNUtnTbRPgGRygR1fgiPRoFQNxrEPoSykmdLs5WDjHz",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "BiYiPVevNJfdJoMewoaSTzPF7bmdtLi4JH4JrGNxS3KC",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "Bn29P3QKDdPhg14tMRLyG11MqCqCbD8sjY1LP8fTCSus",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "C5UdEqUQbLNqLcGcu7sRHTi2n8cNXnviUPxNyXdQbTyg",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "C7f1mhtSVJuxdLLjSKewUucsbidWyYJPg58LTDHEUk2n",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "CEZby5EyRkZ1RYba8fhQsruVW9hNxoGatVvQnhp6roiJ",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "CGmdQhxHrB9gnjhc1fagDna6e6zNmqVfkG7Lki5qXMSX",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "CVYPtVnSKv2a7r8f3jBXxWNKs1Kt3xiCCcck47inWqco",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "CWsi6rBXUftVHWJQAVbGWu45JhUfpvo7bfjZnvxV1VYy",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "CZRG2kp4tamNrgUNMWUqonTZYr8YWcZDEEvxwKba4V6s",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "CvwJbYGWJhHAyAa7dkprDtK9K8a5kJzHb1Wp5kr3r4NS",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "D2nvfWvaTH3QWEtzxKZAAHrXtUnWtMEXTi751EiAKJ8u",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "DAs3CUR9qh36Ycs7JEhtrEahg8NRgrGHPBAbe8RC73mG",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "DMhZuWdNkTPp2NHkkWtm2cYugepYGNxNTYkMXTjmhtDC",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "DNToVVcQi848L2uxv6phsay9XM6x7SxHjJ13232LFuwk",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "DQ36Ki7RQJVssUSLtifu6E1tPNyu2xc9hbQuapbjrLey",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "DY3N38ZMZ6WQ5c5WWgySBURknAuiJBX7NAEraSq4MXH2",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "Da6kYQiryH93kDpPRLex4E6qBSekRRB9VhYTFbd5vEVo",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "DbhyEakAk2nyeGEJovgSDbSmWTaDUNwUgCH48WQAYbUF",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "Dd1htTsgJMgp3fXLeTSJ2QRttCGsi1w2w5kCstM77zsi",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "Dyf25xYsH3BnYvmwwqu22XBe6QvVd6qQXtB6uS6bkTZw",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "EUFR7caAePtQVuvKyRZjqVtGFupkVqAYhF1a9b55ZcZ1",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "EUR2m3Y6r3dxXdxzhN7Cew2ddXpbb3sM4qXtNuUv2fbf",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "EbatmwyNAJWE3i1EnKWhSjiGvJJpYvMGpdzXzsAknUQz",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "EwLwVVrxvNnvP75qXt7XJ42NtXDfkXhoRrn649n7Vn7X",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "F3H6YLg83WsBvhZzd8VLp66NdpPp71oWtWwTCj5ryNna",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "FGTBKFTnHQ92bpmZLrvzua7cVqWDjJRcN6uEbFm19QvX",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "FdoNgzGm9H9edqQT6RucihUKCgch2auszNTQjdf7NMrD",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "FonQa6ou9vRjm7YsE6sJg3QKy7HwGYv9AFfTfn6KSWzF",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "FpBjK4RvsoZQKuYLa3SdVsXpTL7ZHmSaKzCH91ofqz2R",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "FqqrgU9KGT3f9eV9sHd77ud36ggcUF22N8C7ehcV4WYx",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "Fs2gCrHhs4Evd4P1P22Qu4vAN4GyXbjkrmAsWLc5vhEy",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "G1X7Mb87rGaPRhhBhhGvXYbbZsSioFXWJZip1J51ZYiB",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "G7J3Zige1j2u9WHdozZ5oaDXHNnP2nfktfnYUA4kFdc1",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GNNN1TqmuvTqwutXpHyTYbhbr95KNLLvYabVabULM7vE",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GNxX8q5kTACzLtYnisb9SvSUhMs9rcyhq9gAcHHH3hMB",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GTdoNjcdbucorD2RPJvWBHnWBQdLF5RxnVFHwm4SqjoJ",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GUScuiwiaHMhfzEe1BkQfA6wL15w5GGaS5ZzrosjctF5",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GV1WRJ3eNzyWHUUfxyzLdJHtGdB18wfMJu9PzEZvxDCh",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GV4pCofQcgi71NnNsK1X5ZS1eRo7AE5dWKwPAi7y7Hb6",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GXhmVDNP1B7th54n4C95zCw2CUAyDgp4Rxat2eEBbZPx",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GfJQR7ToxjDeoshN1HVtgFzv3ADw89yrwq9X2PbsL3mn",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GhyHkgXxzGozaijMuZbD67pRhq2GZ1rcfBDmo5pWUebT",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GiCDaWUNoVdSNNKbpuvD6MUpdNgKAuuF1qje771SbjMj",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GmzTTUDqqoupDj29ikJB5TiEbdc41FKWnbv8VHeKhUwB",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "GnNC5oau9zxjCrpx5h17bmrGndPSnyca591rT1KEg1aX",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "Gr9gj99Djiwbp2Ly75to6yxnjJLcU3fPAuMzy9MdYmD6",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "Gzvo3QYMmLH4QQhq9dNpS27v2ewD9GiUQRwWuvTUEMUc",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "HAAKoJ5aLfZUmMLh49S3ivMnQ5RC6qG3gSrxnHvTHkHd",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "HJHSbHxNQc1NZdmtoSWCqFDeTcJSTouEj6wZMTTh3XMh",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "HVkdQ4XJFWfreHzJcoVJoBkxPY1xLeQR6x6yRzdMgi1f",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "HWE8r5tonqCBCkZ9UGkHB5h2MCPzuipbSYkuD3qHVycQ",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "HWEDJx9VrGy1DQpQTQDTu2p2qnEPy4fFTKyATruM5qQp",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "HXQr5H43eg7GdgEuJTA7GcebghRqjx5xEkhc9QWRceH1",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "HwHr5SxR6dHkHUxFq8QUqcWvo4LUGQQz18s8GnsFa8ej",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "J2kWoiwMLRxT6GQzn5eoBWvRdUiCUjLik2tTcSS5zBP5",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "J73rwmeunLrswc3UuPZ4vWXvXJDUxaAJXuukKhkmvo9J",
+        "deltaSeconds": 0
+      },
+      {
+        "address": "JAmrSKu2BPpYywB87CD3nqP3fkpF3GdisR4dnFgfNM9h",
+        "deltaSeconds": 0
+      }
+    ],
+    "gameCreates": 19,
+    "gameClaims": 0,
+    "gameExactTimestampRecords": 19,
+    "canEstablishCompleteGameHistory": true,
+    "gameLocks": [
+      {
+        "eventId": "4nMM1Ew1vay2AUyVU9ac9AEhAqdoKMo46xWR9eXWqFU7EVAkFR9NKVpvPm8goY7iyFuhyJ3mWDsai8n8d8KxJNTY:outer:2",
+        "signature": "4nMM1Ew1vay2AUyVU9ac9AEhAqdoKMo46xWR9eXWqFU7EVAkFR9NKVpvPm8goY7iyFuhyJ3mWDsai8n8d8KxJNTY",
+        "receipt": "0185-transaction-4nMM1Ew1vay2",
+        "location": "outer:2",
+        "slot": 440220670,
+        "blockTime": 1787123908,
+        "type": "create_lock",
+        "address": "A8Ds1VSks6uDh6jS7dx1ZYTtxovxBknne6WTnXRgCnk",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "vault": "FYvMsmUDHejCt6PdspYUCtsmt8zegihw7cEQQGF2ooqA",
+        "amount": "3000000000000",
+        "requestedAmount": "3000000000000",
+        "unlockAt": 1787127480,
+        "lockId": "1",
+        "createdAt": 1787123908,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "5EuHF3XATjXqxt2RFmr3GwNdP5BUsbu7mua26pcwjt4emTtifz3uKBWGWRJ2HYaW72C7n65uhaHHxwaqsZ9qSfpV:outer:5",
+        "signature": "5EuHF3XATjXqxt2RFmr3GwNdP5BUsbu7mua26pcwjt4emTtifz3uKBWGWRJ2HYaW72C7n65uhaHHxwaqsZ9qSfpV",
+        "receipt": "0027-transaction-5EuHF3XATjXq",
+        "location": "outer:5",
+        "slot": 445125101,
+        "blockTime": 1788803051,
+        "type": "create_lock",
+        "address": "4Ce31YwZDYUd2cQZvVMMKwXY6qnyJ3im5kCbhdF7jC7f",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "4ZbHvh5xPMB3vTbURzQfDPPH6iy5KNXg7pTdySNtpump",
+        "vault": "9jfjBTPCtnx9H5L8EmtG3BPza1Yx8gDWLKiLffqej1Ha",
+        "amount": "500000000000",
+        "requestedAmount": "500000000000",
+        "unlockAt": 1791394980,
+        "lockId": "1",
+        "createdAt": 1788803051,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "QQP5sPyCY75Rret7kK8oxuzH1PhY2YQS25Sr6x19kJ7XXN1HSYndDNcP7VKLNiToYKziV5XykGsqUwaSGAijf45:outer:5",
+        "signature": "QQP5sPyCY75Rret7kK8oxuzH1PhY2YQS25Sr6x19kJ7XXN1HSYndDNcP7VKLNiToYKziV5XykGsqUwaSGAijf45",
+        "receipt": "0026-transaction-QQP5sPyCY75R",
+        "location": "outer:5",
+        "slot": 445125168,
+        "blockTime": 1788803072,
+        "type": "create_lock",
+        "address": "4JTGxSgDZNqqiuK8fcK8vdxmGZsRP9GUyuBW7XhqA4FS",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "8RBcBZkdM8U4eoAi1MsftW7RcXYryobawfPz3Nuupump",
+        "vault": "2oRFMQf2H7HqqEsmLuNNAJ3rfxHk7MC5aBiMPAhbZbno",
+        "amount": "500000000000",
+        "requestedAmount": "500000000000",
+        "unlockAt": 1791395040,
+        "lockId": "1",
+        "createdAt": 1788803072,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "5474uRLHzVUd7DvHKvBeq5RDqCAaTyPqTtKEq7gqbzHosMzkxJhuyFVV6dMWSmv6snDC9cK7Pg28J67vWkhPgGdE:outer:5",
+        "signature": "5474uRLHzVUd7DvHKvBeq5RDqCAaTyPqTtKEq7gqbzHosMzkxJhuyFVV6dMWSmv6snDC9cK7Pg28J67vWkhPgGdE",
+        "receipt": "0175-transaction-5474uRLHzVUd",
+        "location": "outer:5",
+        "slot": 440520613,
+        "blockTime": 1787248744,
+        "type": "create_lock",
+        "address": "5ZUzk2tfB7fqjsnfDxb2tnkTixyZ32J9PbmUeURsuJdB",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "vault": "BsnS6hx2DWKaWGdShcnqUCiJWh5Q7BgDBtDLTvAdjvt3",
+        "amount": "100000156028",
+        "requestedAmount": "100000156028",
+        "unlockAt": 1818784680,
+        "lockId": "4",
+        "createdAt": 1787248744,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "2M7UWKUrscohAwMqXfiDC2S3p6vJ6n2AkqdXz1D4r2zcegtgtjRMjhp1GmgCoz9dJc5ughwvCzAsKpjiF3cSoV9h:outer:5",
+        "signature": "2M7UWKUrscohAwMqXfiDC2S3p6vJ6n2AkqdXz1D4r2zcegtgtjRMjhp1GmgCoz9dJc5ughwvCzAsKpjiF3cSoV9h",
+        "receipt": "0173-transaction-2M7UWKUrscoh",
+        "location": "outer:5",
+        "slot": 440523359,
+        "blockTime": 1787249888,
+        "type": "create_lock",
+        "address": "5dMDmKQKNg6EuiQZFX8zVx3PhB1wVveUwg5UCKqkV4S3",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "vault": "5gKdc9QZQRVfLpe1WzaLjnL1J3WFbogoHTiBWUf8QGvP",
+        "amount": "10000000000",
+        "requestedAmount": "10000000000",
+        "unlockAt": 1789841820,
+        "lockId": "6",
+        "createdAt": 1787249888,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "DQkJZjTzkVuRcKAKbMUheZdKDdKBjzMEcuMmyurdxdhrFpf6YBEihu4bbBBi5kJdKrnr5g5QfSKCVZfMo3kjmNW:outer:5",
+        "signature": "DQkJZjTzkVuRcKAKbMUheZdKDdKBjzMEcuMmyurdxdhrFpf6YBEihu4bbBBi5kJdKrnr5g5QfSKCVZfMo3kjmNW",
+        "receipt": "0029-transaction-DQkJZjTzkVuR",
+        "location": "outer:5",
+        "slot": 445124935,
+        "blockTime": 1788802998,
+        "type": "create_lock",
+        "address": "5itbwZ2g4dpYQC2RgdUGHMtSYsF8rrJkEX72ik3Pb7yw",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "HivTCtHY1GbC8ws9jwCh3Km5EH4CGtnTdDeo3SdKpump",
+        "vault": "FyQSAfYD8Hf8wBCn9P9rLtjFze6cE9BWkWaoP2f4BeUb",
+        "amount": "500000000000",
+        "requestedAmount": "500000000000",
+        "unlockAt": 1791394980,
+        "lockId": "1",
+        "createdAt": 1788802998,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "43zpr4tGcfBD9L9FwnmnsmkSuQYH3NQsWxsaxWEijtagwFX3n5ACR95TEpCCHtp6S5zSyFdXk99z3uTfRqeuf65W:outer:5",
+        "signature": "43zpr4tGcfBD9L9FwnmnsmkSuQYH3NQsWxsaxWEijtagwFX3n5ACR95TEpCCHtp6S5zSyFdXk99z3uTfRqeuf65W",
+        "receipt": "0172-transaction-43zpr4tGcfBD",
+        "location": "outer:5",
+        "slot": 440523427,
+        "blockTime": 1787249915,
+        "type": "create_lock",
+        "address": "7UFKHUjCemeE8WK3urGJqHJ5SpiTW88a6oux2vdwWLUS",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "vault": "8ZsAPQ3y3pnuohjnMmexcFFBCBvGo65mSRxRdzWsHUoG",
+        "amount": "10000000000",
+        "requestedAmount": "10000000000",
+        "unlockAt": 1795025880,
+        "lockId": "7",
+        "createdAt": 1787249915,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "5Vk261wDw13VERMDe7WztfFkMKiWc6MjwtJqMkybDLFGLDMmczzx61a9UmhW1Cm3PEWfpBqEq8CG1jAYNLepKcuu:outer:5",
+        "signature": "5Vk261wDw13VERMDe7WztfFkMKiWc6MjwtJqMkybDLFGLDMmczzx61a9UmhW1Cm3PEWfpBqEq8CG1jAYNLepKcuu",
+        "receipt": "0019-transaction-5Vk261wDw13V",
+        "location": "outer:5",
+        "slot": 445381368,
+        "blockTime": 1788884121,
+        "type": "create_lock",
+        "address": "96Xq7BsyGrbJKM9JWyWLwFAGBQfgdXagy7g7sEVCqGKn",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "3Pg4b7wtcYTGacRzyRFGLBG4s6eeJ2d5jxK2jjz4pump",
+        "vault": "BWiJAzvyioRD62jrjcTWhfi9AkXLGJL6iPmAMzWf24yT",
+        "amount": "500000000000",
+        "requestedAmount": "500000000000",
+        "unlockAt": 1788970500,
+        "lockId": "2",
+        "createdAt": 1788884121,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "5GYT444nYywgUDQmwU3QYP1pv92X8jVuoYpsVUMoGLsR2A449t5i9CHLea2yWysr1ofnawnti95ZdUZ2mvEgNgVR:outer:5",
+        "signature": "5GYT444nYywgUDQmwU3QYP1pv92X8jVuoYpsVUMoGLsR2A449t5i9CHLea2yWysr1ofnawnti95ZdUZ2mvEgNgVR",
+        "receipt": "0020-transaction-5GYT444nYywg",
+        "location": "outer:5",
+        "slot": 445128015,
+        "blockTime": 1788803976,
+        "type": "create_lock",
+        "address": "9A3XLsbCeVakuFZGD74d2WCUqdXKTGYc7crSX3SSfgjM",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump",
+        "vault": "C2RSuYuDxDZEFq9jedd6ADDHT3rdfhzQQCKBdK2iL11p",
+        "amount": "100000000000",
+        "requestedAmount": "100000000000",
+        "unlockAt": 1791395940,
+        "lockId": "2",
+        "createdAt": 1788803976,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "YhY1GwDa3Gzg6hevApFDdUpNvDPGHPz6foJBsqFqYePtsAvDvevpTfaG9F2AXZ18JL3JrFomX8hHT5aAjHcNWVk:outer:5",
+        "signature": "YhY1GwDa3Gzg6hevApFDdUpNvDPGHPz6foJBsqFqYePtsAvDvevpTfaG9F2AXZ18JL3JrFomX8hHT5aAjHcNWVk",
+        "receipt": "0025-transaction-YhY1GwDa3Gzg",
+        "location": "outer:5",
+        "slot": 445125241,
+        "blockTime": 1788803096,
+        "type": "create_lock",
+        "address": "9hnEUnJzZ93FM1fQAxatZcks2uMnMVSMCEghCfu3r6ei",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "HAUTWMn41Qg1RvtwLFC3SEK7JSc19gns2vJL7TgRpump",
+        "vault": "GDNKt1nYZwnNH2F88SkNjKZQhqBBtpWmM8s3mqpPANFU",
+        "amount": "500000000000",
+        "requestedAmount": "500000000000",
+        "unlockAt": 1791395040,
+        "lockId": "1",
+        "createdAt": 1788803096,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "38t4fQcAggCV4h9Mxm1iYWuZHEouWswCNyWVn3cuAZF4jKScmXGe7MFrZWEiDE99LH4G9tSMF1y2Tz8rJFe84PDo:outer:5",
+        "signature": "38t4fQcAggCV4h9Mxm1iYWuZHEouWswCNyWVn3cuAZF4jKScmXGe7MFrZWEiDE99LH4G9tSMF1y2Tz8rJFe84PDo",
+        "receipt": "0028-transaction-38t4fQcAggCV",
+        "location": "outer:5",
+        "slot": 445125024,
+        "blockTime": 1788803027,
+        "type": "create_lock",
+        "address": "Az75w6Fera4SXv2Z8FPfBL3HfaB1Q1e3NdTopYiqaLYt",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "3Pg4b7wtcYTGacRzyRFGLBG4s6eeJ2d5jxK2jjz4pump",
+        "vault": "6ULvacEudRZVh9xbbDif6NNAjk1BNsbZykJaGSuHHQ3p",
+        "amount": "500000000000",
+        "requestedAmount": "500000000000",
+        "unlockAt": 1791394980,
+        "lockId": "1",
+        "createdAt": 1788803027,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "3H8UegC69e9Tc43AmuMHa1B6aXBjW5yqPJ8CdBcrZqJmKa2CoHuu2zThjfTioaqW3BQ4DsdsiDHfb6eEXybb1UDd:outer:2",
+        "signature": "3H8UegC69e9Tc43AmuMHa1B6aXBjW5yqPJ8CdBcrZqJmKa2CoHuu2zThjfTioaqW3BQ4DsdsiDHfb6eEXybb1UDd",
+        "receipt": "0184-transaction-3H8UegC69e9T",
+        "location": "outer:2",
+        "slot": 440221816,
+        "blockTime": 1787124389,
+        "type": "create_lock",
+        "address": "C5UdEqUQbLNqLcGcu7sRHTi2n8cNXnviUPxNyXdQbTyg",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "vault": "32eLqJhU7EbTbADeaH1JEu8UK1yFFpRfo4KPyQQuEsb7",
+        "amount": "7537000000000",
+        "requestedAmount": "7537000000000",
+        "unlockAt": 1787127960,
+        "lockId": "2",
+        "createdAt": 1787124389,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "J1NGnD1X1UrdMxcXKM4zXT3T7j3xwRBen7PyeTQvjWPZntGxP98i9ZhQ5h9NyFunXZ2NxSCV7J56kFKXE4EC5NG:outer:5",
+        "signature": "J1NGnD1X1UrdMxcXKM4zXT3T7j3xwRBen7PyeTQvjWPZntGxP98i9ZhQ5h9NyFunXZ2NxSCV7J56kFKXE4EC5NG",
+        "receipt": "0024-transaction-J1NGnD1X1Urd",
+        "location": "outer:5",
+        "slot": 445125304,
+        "blockTime": 1788803116,
+        "type": "create_lock",
+        "address": "CZRG2kp4tamNrgUNMWUqonTZYr8YWcZDEEvxwKba4V6s",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "6ZbWBzH9TyQdGhhxjJ573M9p59SVfRaX25FCFY3spump",
+        "vault": "74Lg5KhPMAL4ri7WMcVK3g7DqifsuMph6iAvspB7DdqR",
+        "amount": "500000000000",
+        "requestedAmount": "500000000000",
+        "unlockAt": 1791395100,
+        "lockId": "1",
+        "createdAt": 1788803116,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "3vBxsmceRKoH7icg1hSg7y9A7z14MbGo3RdSzDMbZNPuW9LP6xh4peb42ohcP1mgSQyZNCoAeZuMEcMfSZJyFsFA:outer:5",
+        "signature": "3vBxsmceRKoH7icg1hSg7y9A7z14MbGo3RdSzDMbZNPuW9LP6xh4peb42ohcP1mgSQyZNCoAeZuMEcMfSZJyFsFA",
+        "receipt": "0021-transaction-3vBxsmceRKoH",
+        "location": "outer:5",
+        "slot": 445125581,
+        "blockTime": 1788803203,
+        "type": "create_lock",
+        "address": "DAs3CUR9qh36Ycs7JEhtrEahg8NRgrGHPBAbe8RC73mG",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "vault": "GHX7p7WdHL523nEco8jcJNqQFKHzYkYRg21nnXgRWUfv",
+        "amount": "500000000000",
+        "requestedAmount": "500000000000",
+        "unlockAt": 1791395160,
+        "lockId": "8",
+        "createdAt": 1788803203,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "4pb4sPjHRjd6F2UoVXg135rp5tHUxHkMDKXvHH7EvXbk8BkKDwqXPZfsnpKskbm8RHFmzWyri53qxfshBnAFAosR:outer:5",
+        "signature": "4pb4sPjHRjd6F2UoVXg135rp5tHUxHkMDKXvHH7EvXbk8BkKDwqXPZfsnpKskbm8RHFmzWyri53qxfshBnAFAosR",
+        "receipt": "0030-transaction-4pb4sPjHRjd6",
+        "location": "outer:5",
+        "slot": 445124848,
+        "blockTime": 1788802971,
+        "type": "create_lock",
+        "address": "Da6kYQiryH93kDpPRLex4E6qBSekRRB9VhYTFbd5vEVo",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "B31GwpFQco9R4HX1GrfyXgdmLArBN9pBBinqRn8Jpump",
+        "vault": "8FD5H2hEa7PkEj3wg3RJ1rErJwxZGhYWy1TzuHm5iVZf",
+        "amount": "500000000000",
+        "requestedAmount": "500000000000",
+        "unlockAt": 1791394920,
+        "lockId": "1",
+        "createdAt": 1788802971,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "5psYpJCx3ekHUWU4hiFfJJLaLo7cBtvBA1VXbH4T5Q115Sxky6QXvVaxCCYoSdH8creDLEcybpmfEwcf12kviQz6:outer:2",
+        "signature": "5psYpJCx3ekHUWU4hiFfJJLaLo7cBtvBA1VXbH4T5Q115Sxky6QXvVaxCCYoSdH8creDLEcybpmfEwcf12kviQz6",
+        "receipt": "0180-transaction-5psYpJCx3ekH",
+        "location": "outer:2",
+        "slot": 440260440,
+        "blockTime": 1787140422,
+        "type": "create_lock",
+        "address": "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "vault": "14bdxdWoYZivvWsFbQkLqjXvTPsEnCvWp2PMyJf3Zk7w",
+        "amount": "3657477000000",
+        "requestedAmount": "3657477000000",
+        "unlockAt": 1787143980,
+        "lockId": "3",
+        "createdAt": 1787140422,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "7NYjm6AXL2Spc27JrwTKF3ZVQ2Tf4dMcXQbhxjWhLx5emrZudeJGY1pznGbv8G1EUvFwiP7nXzXsXn9dibVQUwc:outer:5",
+        "signature": "7NYjm6AXL2Spc27JrwTKF3ZVQ2Tf4dMcXQbhxjWhLx5emrZudeJGY1pznGbv8G1EUvFwiP7nXzXsXn9dibVQUwc",
+        "receipt": "0023-transaction-7NYjm6AXL2Sp",
+        "location": "outer:5",
+        "slot": 445125366,
+        "blockTime": 1788803136,
+        "type": "create_lock",
+        "address": "Gr9gj99Djiwbp2Ly75to6yxnjJLcU3fPAuMzy9MdYmD6",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump",
+        "vault": "GkGdasxhgeL6FmpwqmhCGMHcMMGaLn1DH7TCfBWdbvs2",
+        "amount": "500000000000",
+        "requestedAmount": "500000000000",
+        "unlockAt": 1791395100,
+        "lockId": "1",
+        "createdAt": 1788803136,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "24YjuMSMmFLjNAZmiZG8HTh1y61B8rrVJDgCH55FiF8VRj482neCsHnaqSoFvQUKvBZqSFoAqoiZHSzNzCoS8FQy:outer:5",
+        "signature": "24YjuMSMmFLjNAZmiZG8HTh1y61B8rrVJDgCH55FiF8VRj482neCsHnaqSoFvQUKvBZqSFoAqoiZHSzNzCoS8FQy",
+        "receipt": "0022-transaction-24YjuMSMmFLj",
+        "location": "outer:5",
+        "slot": 445125432,
+        "blockTime": 1788803156,
+        "type": "create_lock",
+        "address": "HJHSbHxNQc1NZdmtoSWCqFDeTcJSTouEj6wZMTTh3XMh",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "AHZMcoqA53trX8JcuoCRsQqWpeSk415cE4p7AsrZpump",
+        "vault": "GyRFcMbgFusaaDTJzdQtn5U4jQP5KTTyk2BsmW5xKYSf",
+        "amount": "500000000000",
+        "requestedAmount": "500000000000",
+        "unlockAt": 1791395100,
+        "lockId": "1",
+        "createdAt": 1788803156,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      },
+      {
+        "eventId": "5bfW3b7wzHeW7gh9XrGfGX9eionX1BA75ggLGBS84xanKPVty2Szw4cJfWLDJZ7a43SFvDJBf8LD5L2up5p6DZiu:outer:5",
+        "signature": "5bfW3b7wzHeW7gh9XrGfGX9eionX1BA75ggLGBS84xanKPVty2Szw4cJfWLDJZ7a43SFvDJBf8LD5L2up5p6DZiu",
+        "receipt": "0174-transaction-5bfW3b7wzHeW",
+        "location": "outer:5",
+        "slot": 440523309,
+        "blockTime": 1787249867,
+        "type": "create_lock",
+        "address": "HXQr5H43eg7GdgEuJTA7GcebghRqjx5xEkhc9QWRceH1",
+        "depositor": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "vault": "mMy25oj18rRjRFHp3exg5og7LcovvNKEFWoTGSrm8EM",
+        "amount": "10000000000",
+        "requestedAmount": "10000000000",
+        "unlockAt": 1787854620,
+        "lockId": "5",
+        "createdAt": 1787249867,
+        "createdAtOrigin": "Exact surviving Lock.created_at, corroborated by historical transaction",
+        "decimals": 6,
+        "claimed": false,
+        "blockTimeDeltaSeconds": 0
+      }
+    ],
+    "historicalProtocolDepositorWallets": 4,
+    "historicalAcceptedMintDepositorWallets": 1
+  },
+  "currentAdoption": {
+    "gameId": "devfridge-world",
+    "policyId": "devfridge-world-current-access-5d9ab246",
+    "asOfUtc": "2026-10-07T11:28:22.564Z",
+    "slot": 454209595,
+    "meaning": "Token commitment and eligibility for game access; no gameplay or unique-human inference.",
+    "existingLockAccounts": 19,
+    "activeLockAccounts": 13,
+    "expiredUnclaimedLockAccounts": 6,
+    "activeLockRatio": {
+      "numerator": 13,
+      "denominator": 19,
+      "percentage": 68.42105263,
+      "status": "available"
+    },
+    "excludedWalletAccountSubtotal": {
+      "existingLockAccounts": 19,
+      "activeLockAccounts": 13
+    },
+    "observedDepositorWallets": 1,
+    "eligibleWalletCount": 1,
+    "excludedEligibleWalletCount": 1,
+    "eligibleWalletCountExcludingDeclaredWallets": 0,
+    "eligibleWallets": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "acceptedMints": [
+          "An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump",
+          "B31GwpFQco9R4HX1GrfyXgdmLArBN9pBBinqRn8Jpump",
+          "3Pg4b7wtcYTGacRzyRFGLBG4s6eeJ2d5jxK2jjz4pump",
+          "4ZbHvh5xPMB3vTbURzQfDPPH6iy5KNXg7pTdySNtpump",
+          "HAUTWMn41Qg1RvtwLFC3SEK7JSc19gns2vJL7TgRpump",
+          "8RBcBZkdM8U4eoAi1MsftW7RcXYryobawfPz3Nuupump",
+          "AHZMcoqA53trX8JcuoCRsQqWpeSk415cE4p7AsrZpump",
+          "6ZbWBzH9TyQdGhhxjJ573M9p59SVfRaX25FCFY3spump",
+          "HivTCtHY1GbC8ws9jwCh3Km5EH4CGtnTdDeo3SdKpump",
+          "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump"
+        ],
+        "excluded": true
+      }
+    ],
+    "perMint": [
+      {
+        "mint": "An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump",
+        "symbol": "RUGARUGO",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 2,
+        "activeLockAccounts": 2,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "600000000000",
+        "activeAmountRaw": "600000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "600000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "B31GwpFQco9R4HX1GrfyXgdmLArBN9pBBinqRn8Jpump",
+        "symbol": "APE",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "3Pg4b7wtcYTGacRzyRFGLBG4s6eeJ2d5jxK2jjz4pump",
+        "symbol": "FIFO",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 2,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 1,
+        "existingAmountRaw": "1000000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "500000000000",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "4ZbHvh5xPMB3vTbURzQfDPPH6iy5KNXg7pTdySNtpump",
+        "symbol": "FUSILLI",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "HAUTWMn41Qg1RvtwLFC3SEK7JSc19gns2vJL7TgRpump",
+        "symbol": "LAMBOCELLO",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "8RBcBZkdM8U4eoAi1MsftW7RcXYryobawfPz3Nuupump",
+        "symbol": "GMGN",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "AHZMcoqA53trX8JcuoCRsQqWpeSk415cE4p7AsrZpump",
+        "symbol": "SESU",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "6ZbWBzH9TyQdGhhxjJ573M9p59SVfRaX25FCFY3spump",
+        "symbol": "MOONZARELL",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "HivTCtHY1GbC8ws9jwCh3Km5EH4CGtnTdDeo3SdKpump",
+        "symbol": "BONKATINO",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "symbol": "CICCIA",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 8,
+        "activeLockAccounts": 3,
+        "expiredUnclaimedLockAccounts": 5,
+        "existingAmountRaw": "14824477156028",
+        "activeAmountRaw": "610000156028",
+        "expiredUnclaimedAmountRaw": "14214477000000",
+        "excludedWalletActiveAmountRaw": "610000156028",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      }
+    ],
+    "ignoredUnacceptedRecords": 120,
+    "duplicateAcceptedRecords": 0,
+    "historicalClosedAccountCoverage": "unknown",
+    "limitations": [
+      "Existing-account snapshots omit claimed/closed locks. Counts and reconstructed renewals describe observed accounts; a complete historical renewal rate requires an archive including closed accounts.",
+      "Current pinned access rules are applied uniformly; historical game policy versions are not reconstructed.",
+      "Different mint amounts are never added together. Wallets are deduplicated across character unlocks. Public wallet addresses are pseudonymous, not proof of independent people."
+    ]
+  },
+  "historicalRenewal7Days": {
+    "gameId": "devfridge-world",
+    "policyId": "devfridge-world-current-access-5d9ab246",
+    "asOfUtc": "2026-10-07T11:28:22.564Z",
+    "slot": 454209595,
+    "renewalWindowDays": 7,
+    "meaning": "Same-wallet, same-mint economic commitment reacquisition caused by new locks at/after an observed expiry. A loss concerns one accepted mint/character and need not remove access via other mints. Not gameplay retention and not proof that the expired funds were reused.",
+    "cohortRule": "Fixed first observed loss of qualifying commitment for an accepted mint per wallet; expiry must reduce summed active same-mint amount below threshold. Other character access may remain. At an identical timestamp, expiries are processed before deposits. A renewal must reacquire a mint from that first loss within the inclusive window. Only fully elapsed windows enter the wallet denominator.",
+    "observed": {
+      "walletsWithAccessLoss": 1,
+      "fullyElapsedWindowWallets": 1,
+      "walletDenominator": 1,
+      "renewedWallets": 1,
+      "excludedWalletSubtotal": {
+        "walletDenominator": 1,
+        "renewedWallets": 1
+      },
+      "excludingDeclaredWallets": {
+        "walletDenominator": 0,
+        "renewedWallets": 0
+      },
+      "matchedAccessEpisodes": 1,
+      "oneToOneLockPairCount": 1,
+      "uniqueObservedRenewingWalletsAcrossEpisodes": 1
+    },
+    "historicalRenewalRetention": {
+      "allWallets": {
+        "numerator": 1,
+        "denominator": 1,
+        "percentage": 100,
+        "status": "available"
+      },
+      "excludedWalletSubtotal": {
+        "numerator": 1,
+        "denominator": 1,
+        "percentage": 100,
+        "status": "available"
+      },
+      "excludingDeclaredWallets": {
+        "numerator": 0,
+        "denominator": 0,
+        "percentage": null,
+        "status": "not_applicable"
+      }
+    },
+    "coverage": {
+      "status": "complete_declared",
+      "from": 1787011312,
+      "through": 1791372502.564,
+      "sourceEvidence": "Same-package program-signatures/transactions-manifest/decoded-history plus initial loader deployment and exact surviving game lock accounts. All closed claims recovered; none concern an accepted World mint."
+    },
+    "cohorts": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "firstObservedAccessLossAt": "2026-08-19T08:26:00.000Z",
+        "acceptedMintsAtLoss": [
+          "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump"
+        ],
+        "deadlineUtc": "2026-08-26T08:26:00.000Z",
+        "windowMatured": true,
+        "renewedWithinWindow": true,
+        "excluded": true
+      }
+    ],
+    "accessLossEpisodes": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredAt": "2026-08-19T08:26:00.000Z",
+        "expiredLockIds": [
+          "C5UdEqUQbLNqLcGcu7sRHTi2n8cNXnviUPxNyXdQbTyg"
+        ],
+        "renewedAt": "2026-08-19T11:53:42.000Z",
+        "newLockIds": [
+          "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb"
+        ],
+        "beforeNewAmountRaw": "0",
+        "afterNewAmountRaw": "3657477000000",
+        "excluded": true,
+        "qualifiesWithinWindow": true
+      },
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredAt": "2026-08-19T12:53:00.000Z",
+        "expiredLockIds": [
+          "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb"
+        ],
+        "renewedAt": "2026-09-07T17:46:43.000Z",
+        "newLockIds": [
+          "DAs3CUR9qh36Ycs7JEhtrEahg8NRgrGHPBAbe8RC73mG"
+        ],
+        "beforeNewAmountRaw": "120000156028",
+        "afterNewAmountRaw": "620000156028",
+        "excluded": true,
+        "qualifiesWithinWindow": false
+      }
+    ],
+    "oneToOneLockPairs": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredLock": "C5UdEqUQbLNqLcGcu7sRHTi2n8cNXnviUPxNyXdQbTyg",
+        "newLock": "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb",
+        "expiredAt": "2026-08-19T08:26:00.000Z",
+        "renewedAt": "2026-08-19T11:53:42.000Z",
+        "excluded": true
+      }
+    ],
+    "limitations": [
+      "Existing-account snapshots omit claimed/closed locks. Counts and reconstructed renewals describe observed accounts; a complete historical renewal rate requires an archive including closed accounts.",
+      "Current pinned access rules are applied retrospectively. This does not establish the game eligibility policy in force on the historical creation/expiry dates.",
+      "Expiry/redeposit relationships are inferred, because the program exposes create_lock and claim, not a renew/extend instruction. One wallet may control many addresses and need not have played. Declaring complete coverage does not independently verify its provenance."
+    ]
+  },
+  "historicalRenewal30Days": {
+    "gameId": "devfridge-world",
+    "policyId": "devfridge-world-current-access-5d9ab246",
+    "asOfUtc": "2026-10-07T11:28:22.564Z",
+    "slot": 454209595,
+    "renewalWindowDays": 30,
+    "meaning": "Same-wallet, same-mint economic commitment reacquisition caused by new locks at/after an observed expiry. A loss concerns one accepted mint/character and need not remove access via other mints. Not gameplay retention and not proof that the expired funds were reused.",
+    "cohortRule": "Fixed first observed loss of qualifying commitment for an accepted mint per wallet; expiry must reduce summed active same-mint amount below threshold. Other character access may remain. At an identical timestamp, expiries are processed before deposits. A renewal must reacquire a mint from that first loss within the inclusive window. Only fully elapsed windows enter the wallet denominator.",
+    "observed": {
+      "walletsWithAccessLoss": 1,
+      "fullyElapsedWindowWallets": 1,
+      "walletDenominator": 1,
+      "renewedWallets": 1,
+      "excludedWalletSubtotal": {
+        "walletDenominator": 1,
+        "renewedWallets": 1
+      },
+      "excludingDeclaredWallets": {
+        "walletDenominator": 0,
+        "renewedWallets": 0
+      },
+      "matchedAccessEpisodes": 2,
+      "oneToOneLockPairCount": 2,
+      "uniqueObservedRenewingWalletsAcrossEpisodes": 1
+    },
+    "historicalRenewalRetention": {
+      "allWallets": {
+        "numerator": 1,
+        "denominator": 1,
+        "percentage": 100,
+        "status": "available"
+      },
+      "excludedWalletSubtotal": {
+        "numerator": 1,
+        "denominator": 1,
+        "percentage": 100,
+        "status": "available"
+      },
+      "excludingDeclaredWallets": {
+        "numerator": 0,
+        "denominator": 0,
+        "percentage": null,
+        "status": "not_applicable"
+      }
+    },
+    "coverage": {
+      "status": "complete_declared",
+      "from": 1787011312,
+      "through": 1791372502.564,
+      "sourceEvidence": "Same-package program-signatures/transactions-manifest/decoded-history plus initial loader deployment and exact surviving game lock accounts. All closed claims recovered; none concern an accepted World mint."
+    },
+    "cohorts": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "firstObservedAccessLossAt": "2026-08-19T08:26:00.000Z",
+        "acceptedMintsAtLoss": [
+          "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump"
+        ],
+        "deadlineUtc": "2026-09-18T08:26:00.000Z",
+        "windowMatured": true,
+        "renewedWithinWindow": true,
+        "excluded": true
+      }
+    ],
+    "accessLossEpisodes": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredAt": "2026-08-19T08:26:00.000Z",
+        "expiredLockIds": [
+          "C5UdEqUQbLNqLcGcu7sRHTi2n8cNXnviUPxNyXdQbTyg"
+        ],
+        "renewedAt": "2026-08-19T11:53:42.000Z",
+        "newLockIds": [
+          "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb"
+        ],
+        "beforeNewAmountRaw": "0",
+        "afterNewAmountRaw": "3657477000000",
+        "excluded": true,
+        "qualifiesWithinWindow": true
+      },
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredAt": "2026-08-19T12:53:00.000Z",
+        "expiredLockIds": [
+          "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb"
+        ],
+        "renewedAt": "2026-09-07T17:46:43.000Z",
+        "newLockIds": [
+          "DAs3CUR9qh36Ycs7JEhtrEahg8NRgrGHPBAbe8RC73mG"
+        ],
+        "beforeNewAmountRaw": "120000156028",
+        "afterNewAmountRaw": "620000156028",
+        "excluded": true,
+        "qualifiesWithinWindow": true
+      }
+    ],
+    "oneToOneLockPairs": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredLock": "C5UdEqUQbLNqLcGcu7sRHTi2n8cNXnviUPxNyXdQbTyg",
+        "newLock": "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb",
+        "expiredAt": "2026-08-19T08:26:00.000Z",
+        "renewedAt": "2026-08-19T11:53:42.000Z",
+        "excluded": true
+      },
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredLock": "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb",
+        "newLock": "DAs3CUR9qh36Ycs7JEhtrEahg8NRgrGHPBAbe8RC73mG",
+        "expiredAt": "2026-08-19T12:53:00.000Z",
+        "renewedAt": "2026-09-07T17:46:43.000Z",
+        "excluded": true
+      }
+    ],
+    "limitations": [
+      "Existing-account snapshots omit claimed/closed locks. Counts and reconstructed renewals describe observed accounts; a complete historical renewal rate requires an archive including closed accounts.",
+      "Current pinned access rules are applied retrospectively. This does not establish the game eligibility policy in force on the historical creation/expiry dates.",
+      "Expiry/redeposit relationships are inferred, because the program exposes create_lock and claim, not a renew/extend instruction. One wallet may control many addresses and need not have played. Declaring complete coverage does not independently verify its provenance."
+    ]
+  },
+  "limitations": [
+    "Current pinned access rules are applied retrospectively; historical policy versions are not reconstructed.",
+    "History completion is supported by a single public RPC archive, initial deployment, exhaustive pagination and state reconciliation. It is not an independent security audit or proof of human identity.",
+    "Protocol closed-account creation uses transaction blockTime where exact Lock.created_at did not survive. No accepted World-mint lock was claimed: all game creation timestamps are instead verified against surviving account data.",
+    "Treasury-labelled adoption and renewal are not independent market demand; overlapping game-policy wallet counts are not additive.",
+    "No Android platform, gameplay, wallet-consent or positive-SKR execution is inferred."
+  ]
+}

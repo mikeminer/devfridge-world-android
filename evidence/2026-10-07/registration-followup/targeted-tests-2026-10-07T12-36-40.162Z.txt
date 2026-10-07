@@ -1,0 +1,11 @@
+✔ built Phantom page retrieves the server draft and renders the real registration controls (183.9981ms)
+✔ native signing path opens the existing payment UI without requiring a Phantom Solana account (75.4142ms)
+✔ different Solana account and expired links cannot proceed to payment (106.2492ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3022.0299

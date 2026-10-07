@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "idl.json",
+      "sha256": "ff7d8b5857f4824cce29d731cfa72c57b48f065743e0b3fa37da9d87e9e06c57",
+      "normalization": "UTF-8, CRLF to LF",
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/idl.json"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "programs/fridge/src/lib.rs",
+      "sha256": "451cc1397a004c440ceee9a86171dcd287082f80c26248b95529ce31623f9b9d",
+      "normalization": "UTF-8, CRLF to LF",
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/programs/fridge/src/lib.rs"
+    },
+    {
+      "repository": "https://github.com/mikeminer/devfridge",
+      "commit": "2e0064cc37f21187bd89c0e3768f3257000c3fdb",
+      "path": "scan/lib/rpc-proxy.ts",
+      "sha256": "5a4747415c796242941badbced8942df80a16abcbe8fa7c891e0426ffd35f25e",
+      "normalization": "UTF-8, CRLF to LF",
+      "immutableUrl": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/rpc-proxy.ts"
+    }
+  ],
+  "policyPath": "../measurement/game-policy.json",
+  "accessSourceManifest": "../badges/sources-manifest.json"
+}

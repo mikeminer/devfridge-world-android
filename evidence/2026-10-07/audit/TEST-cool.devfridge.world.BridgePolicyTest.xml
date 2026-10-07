@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cool.devfridge.world.BridgePolicyTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-07T11:33:14.294Z" hostname="LAPTOP-GIS0EK2E" time="0.011">
+  <properties/>
+  <testcase name="practiceModeRequiresExactTrustedRoute" classname="cool.devfridge.world.BridgePolicyTest" time="0.0"/>
+  <testcase name="publicKeysKeepLeadingZeroes" classname="cool.devfridge.world.BridgePolicyTest" time="0.003"/>
+  <testcase name="invalidRegistrationReturnsNeverForcePracticeToNavigate" classname="cool.devfridge.world.BridgePolicyTest" time="0.0"/>
+  <testcase name="onlyTheBundledGameCanUseTheBridge" classname="cool.devfridge.world.BridgePolicyTest" time="0.0"/>
+  <testcase name="skrResultIsRejectedAfterReloadEvenWhenTheUrlIsUnchanged" classname="cool.devfridge.world.BridgePolicyTest" time="0.0"/>
+  <testcase name="aValidWarmRegistrationReturnLeavesPracticeWithoutLosingItsIdentifiers" classname="cool.devfridge.world.BridgePolicyTest" time="0.001"/>
+  <testcase name="registrationLinksCarryIdentifiersOnly" classname="cool.devfridge.world.BridgePolicyTest" time="0.001"/>
+  <testcase name="externalNavigationDoesNotForwardDangerousSchemes" classname="cool.devfridge.world.BridgePolicyTest" time="0.003"/>
+  <testcase name="skrResultCannotUnlockPracticeOrAnUntrustedDocument" classname="cool.devfridge.world.BridgePolicyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

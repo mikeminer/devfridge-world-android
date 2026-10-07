@@ -1,0 +1,40 @@
+{
+  "name": "0041-transaction-3CBG7bkxfXVU",
+  "url": "https://scan.devfridge.cool/api/rpc",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 41,
+    "method": "getTransaction",
+    "params": [
+      "3CBG7bkxfXVUfKZpm43C4PYv1ZrsguApT7Y4MqEzxFnvZf11W6qxjac3Bivs9sHiSUsftc5GqBWq6jP9k3eTDAPg",
+      {
+        "encoding": "json",
+        "commitment": "finalized",
+        "maxSupportedTransactionVersion": 0
+      }
+    ]
+  },
+  "startedAt": "2026-10-07T11:20:46.722Z",
+  "finishedAt": "2026-10-07T11:20:46.934Z",
+  "status": 200,
+  "headers": {
+    "access-control-allow-headers": "content-type, solana-client",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "cache-control": "no-store",
+    "content-encoding": "br",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 11:20:46 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/rpc",
+    "x-vercel-cache": "MISS",
+    "x-vercel-id": "fra1::iad1::vdqrw-1791372046640-1934ee69bab0"
+  },
+  "error": null,
+  "bodyFile": "0041-transaction-3CBG7bkxfXVU.body.txt",
+  "bodySha256": "f47e47103ca925391ccfd3b8ba41478da5114de83fbf51d16c53b23569705431"
+}

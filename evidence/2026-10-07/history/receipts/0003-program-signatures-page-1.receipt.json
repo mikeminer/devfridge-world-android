@@ -1,0 +1,39 @@
+{
+  "name": "0003-program-signatures-page-1",
+  "url": "https://scan.devfridge.cool/api/rpc",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "getSignaturesForAddress",
+    "params": [
+      "9RY54dNPYTzDyh3TfFqDdt2b2KMM56KW1tw9erRTGQo6",
+      {
+        "commitment": "finalized",
+        "limit": 1000
+      }
+    ]
+  },
+  "startedAt": "2026-10-07T11:18:18.178Z",
+  "finishedAt": "2026-10-07T11:18:18.522Z",
+  "status": 200,
+  "headers": {
+    "access-control-allow-headers": "content-type, solana-client",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "cache-control": "no-store",
+    "content-encoding": "br",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 11:18:18 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/rpc",
+    "x-vercel-cache": "MISS",
+    "x-vercel-id": "fra1::iad1::p5bqm-1791371898086-9173c93ad161"
+  },
+  "error": null,
+  "bodyFile": "0003-program-signatures-page-1.body.txt",
+  "bodySha256": "b8c3c92d43982a514bc6bb4a6ddc1bda2d71c522281799767dbc98eba77d46d6"
+}

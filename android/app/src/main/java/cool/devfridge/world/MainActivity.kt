@@ -337,6 +337,7 @@ class MainActivity : ComponentActivity() {
 
     private fun showMenu() {
         pauseGame()
+        val runtimePackageInfo = packageManager.getPackageInfo(packageName, 0)
         val haptics = prefs.getBoolean("haptics", true)
         val italian = Locale.getDefault().language == "it"
         val items = arrayOf("Return to game", "Share game", if (haptics) "Turn haptics off" else "Turn haptics on", "Game guide", "Reload game", "About this build", "Close app", "Saved scores / Robinhood registration", if (italian) "Regole TopShelf" else "TopShelf rules", if (italian) "Dati su questo dispositivo" else "Data on this device", if (italian) "Verifica SKR · tema Aurora" else "Check SKR · Aurora theme", "Local practice · no wallet or prizes", "Live game · timelock access", "Recent sessions")
@@ -347,7 +348,7 @@ class MainActivity : ComponentActivity() {
                 3 -> openExternal("https://docs.devfridge.cool/world")
                 4 -> AlertDialog.Builder(this).setTitle("Reload the game?").setMessage("Your current run will end. Your saved collection stays on this device.")
                     .setPositiveButton("Reload") { _, _ -> web.reload() }.setNegativeButton("Cancel", null).show()
-                5 -> AlertDialog.Builder(this).setTitle("DevFridge World 0.3.2-beta.1")
+                5 -> AlertDialog.Builder(this).setTitle("DevFridge World ${runtimePackageInfo.versionName.orEmpty()}")
                     .setMessage("Bundled Cold Storage v2\nNative Solana Mobile Wallet Adapter, haptics and sharing.\n\nApprove TopShelf with your original Solana wallet, including Seed Vault. Review and pay separately with your Robinhood wallet in Phantom. Completed verified scores are saved for retry. Online access is required.")
                     .setPositiveButton("OK", null).show()
                 6 -> AlertDialog.Builder(this).setTitle("Close the game?").setMessage("The current run will end. Saved scores and collection stay on this device.")

@@ -1,0 +1,41 @@
+{
+  "name": "0199-post-discovery-signature-gap",
+  "url": "https://scan.devfridge.cool/api/rpc",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 199,
+    "method": "getSignaturesForAddress",
+    "params": [
+      "9RY54dNPYTzDyh3TfFqDdt2b2KMM56KW1tw9erRTGQo6",
+      {
+        "commitment": "finalized",
+        "minContextSlot": 454209595,
+        "until": "2QUxx9eFWNfaZw3BoiX8LH6vfRrBATbxgcKoeE9KXg6qFjhYgXcBYovkL6i6da8gEzmdNTWap6Q3zXQYsJTTQT3t",
+        "limit": 1000
+      }
+    ]
+  },
+  "startedAt": "2026-10-07T11:28:23.278Z",
+  "finishedAt": "2026-10-07T11:28:23.532Z",
+  "status": 200,
+  "headers": {
+    "access-control-allow-headers": "content-type, solana-client",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "cache-control": "no-store",
+    "content-encoding": "br",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 11:28:23 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/rpc",
+    "x-vercel-cache": "MISS",
+    "x-vercel-id": "fra1::iad1::8ch6p-1791372503246-fdf96fb8bd3f"
+  },
+  "error": null,
+  "bodyFile": "0199-post-discovery-signature-gap.body.txt",
+  "bodySha256": "0d1158f8c369ec7ab9b858bf013bec44c823529a0e4ce4a49073dfb8bcf8d2c5"
+}

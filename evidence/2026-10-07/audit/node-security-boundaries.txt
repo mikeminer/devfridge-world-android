@@ -1,0 +1,19 @@
+✔ packaged saved-score UI treats poisoned stored metadata as text, never HTML or automatic authorization (928.2467ms)
+✔ packaged handoff refuses malformed stored run IDs rather than constructing active UI from them (324.5244ms)
+✔ packaged server-error rendering does not parse attacker markup or open a wallet (75.9922ms)
+✔ packaged exact authorization message is literal text and requires separate button approval (132.6437ms)
+✔ packaged authorization rejects request/run/wallet/score/season/expiry/message tampering before signing (406.4761ms)
+✔ packaged authorization changed after review is rejected at approval without signing or delivery (144.1425ms)
+✔ packaged unsolicited registration returns cannot trigger an RPC or signature without a matching saved run (158.5156ms)
+✔ packaged wallet adapter is absent in iframes and lookalike/non-HTTPS origins (11.5106ms)
+✔ packaged native reply ignores malformed/unknown/replayed IDs instead of inventing a wallet account (4.8302ms)
+✔ packaged share rejects oversized, non-PNG and multiple files before invoking native sharing (2.6852ms)
+✔ packaged compliance gate displays hostile server refusal as text without entering the game (50.2504ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8784.3562

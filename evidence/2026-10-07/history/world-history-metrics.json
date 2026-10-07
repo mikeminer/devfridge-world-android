@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 1,
+  "chain": "solana:mainnet-beta",
+  "programId": "9RY54dNPYTzDyh3TfFqDdt2b2KMM56KW1tw9erRTGQo6",
+  "gameId": "devfridge-world",
+  "policyId": "devfridge-world-current-access-5d9ab246",
+  "asOfUtc": "2026-10-07T11:28:22.564Z",
+  "finalizedAccountSlot": 454209595,
+  "historyDiscoverySlot": 454207346,
+  "inputArchive": "./receipts/",
+  "calculator": "../measurement/metrics.mjs",
+  "policy": "../measurement/game-policy.json",
+  "policySha256": "21ab3cf0f7da3e078c4690d39daae28e2cdcccc6afda00158df8f061a345cb64",
+  "historicalCoverage": {
+    "status": "verified_archive_scope",
+    "coverage": {
+      "gameId": "devfridge-world",
+      "complete": true,
+      "includesClosedAccounts": true,
+      "initialStateKnown": true,
+      "fromUtc": "2026-08-18T00:01:52.000Z",
+      "throughUtc": "2026-10-07T11:28:22.564Z",
+      "sourceEvidence": "199 archived RPC receipts revalidated by reproduce-world-metrics.mjs; initial zero-state deployment, exhaustive pagination, every indexed transaction, closed claim cycles and exact finalized game-account reconciliation."
+    },
+    "resolvedScope": "Accepted World mints under the current pinned policy, applied retrospectively",
+    "priorSnapshotOnlyResult": "../measurement/game-metrics.json",
+    "earlierFrozenResultChanged": false
+  },
+  "provenance": {
+    "receiptCount": 199,
+    "indexedTransactions": 191,
+    "retrievedTransactions": 191,
+    "missingTransactions": 0,
+    "failedTransactions": 8,
+    "terminalEmptyPage": true,
+    "initialZeroStateVerified": true,
+    "successfulCreateIncarnations": 146,
+    "successfulClaimCycles": 7,
+    "reusedPhysicalAccountAddresses": [
+      "GUScuiwiaHMhfzEe1BkQfA6wL15w5GGaS5ZzrosjctF5",
+      "9ejyFjQTPFJNMrHArT9QMHYxyRkVfJCuEiYfQ3TkRGzA",
+      "6GsGMKTSVskVbaTqwGFpFpPZqEsJe33qSM3icY5W56oN",
+      "Bn29P3QKDdPhg14tMRLyG11MqCqCbD8sjY1LP8fTCSus",
+      "JAmrSKu2BPpYywB87CD3nqP3fkpF3GdisR4dnFgfNM9h",
+      "4JtpVXoZkq14Zf523tvaadLHdeMPwJ9fGQ86VHi7bGy4"
+    ],
+    "reconstructedOpenAccounts": 139,
+    "currentAccountRecords": 139,
+    "acceptedMintCreates": 19,
+    "acceptedMintClaims": 0,
+    "exactAcceptedMintTimestampRecords": 19,
+    "newSignatureGapCount": 0,
+    "reconciliationProblems": []
+  },
+  "adoption": {
+    "gameId": "devfridge-world",
+    "policyId": "devfridge-world-current-access-5d9ab246",
+    "asOfUtc": "2026-10-07T11:28:22.564Z",
+    "slot": 454209595,
+    "meaning": "Token commitment and eligibility for game access; no gameplay or unique-human inference.",
+    "existingLockAccounts": 19,
+    "activeLockAccounts": 13,
+    "expiredUnclaimedLockAccounts": 6,
+    "activeLockRatio": {
+      "numerator": 13,
+      "denominator": 19,
+      "percentage": 68.42105263,
+      "status": "available"
+    },
+    "excludedWalletAccountSubtotal": {
+      "existingLockAccounts": 19,
+      "activeLockAccounts": 13
+    },
+    "observedDepositorWallets": 1,
+    "eligibleWalletCount": 1,
+    "excludedEligibleWalletCount": 1,
+    "eligibleWalletCountExcludingDeclaredWallets": 0,
+    "eligibleWallets": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "acceptedMints": [
+          "An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump",
+          "B31GwpFQco9R4HX1GrfyXgdmLArBN9pBBinqRn8Jpump",
+          "3Pg4b7wtcYTGacRzyRFGLBG4s6eeJ2d5jxK2jjz4pump",
+          "4ZbHvh5xPMB3vTbURzQfDPPH6iy5KNXg7pTdySNtpump",
+          "HAUTWMn41Qg1RvtwLFC3SEK7JSc19gns2vJL7TgRpump",
+          "8RBcBZkdM8U4eoAi1MsftW7RcXYryobawfPz3Nuupump",
+          "AHZMcoqA53trX8JcuoCRsQqWpeSk415cE4p7AsrZpump",
+          "6ZbWBzH9TyQdGhhxjJ573M9p59SVfRaX25FCFY3spump",
+          "HivTCtHY1GbC8ws9jwCh3Km5EH4CGtnTdDeo3SdKpump",
+          "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump"
+        ],
+        "excluded": true
+      }
+    ],
+    "perMint": [
+      {
+        "mint": "An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump",
+        "symbol": "RUGARUGO",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 2,
+        "activeLockAccounts": 2,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "600000000000",
+        "activeAmountRaw": "600000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "600000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "B31GwpFQco9R4HX1GrfyXgdmLArBN9pBBinqRn8Jpump",
+        "symbol": "APE",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "3Pg4b7wtcYTGacRzyRFGLBG4s6eeJ2d5jxK2jjz4pump",
+        "symbol": "FIFO",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 2,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 1,
+        "existingAmountRaw": "1000000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "500000000000",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "4ZbHvh5xPMB3vTbURzQfDPPH6iy5KNXg7pTdySNtpump",
+        "symbol": "FUSILLI",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "HAUTWMn41Qg1RvtwLFC3SEK7JSc19gns2vJL7TgRpump",
+        "symbol": "LAMBOCELLO",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "8RBcBZkdM8U4eoAi1MsftW7RcXYryobawfPz3Nuupump",
+        "symbol": "GMGN",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "AHZMcoqA53trX8JcuoCRsQqWpeSk415cE4p7AsrZpump",
+        "symbol": "SESU",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "6ZbWBzH9TyQdGhhxjJ573M9p59SVfRaX25FCFY3spump",
+        "symbol": "MOONZARELL",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "HivTCtHY1GbC8ws9jwCh3Km5EH4CGtnTdDeo3SdKpump",
+        "symbol": "BONKATINO",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 1,
+        "activeLockAccounts": 1,
+        "expiredUnclaimedLockAccounts": 0,
+        "existingAmountRaw": "500000000000",
+        "activeAmountRaw": "500000000000",
+        "expiredUnclaimedAmountRaw": "0",
+        "excludedWalletActiveAmountRaw": "500000000000",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      },
+      {
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "symbol": "CICCIA",
+        "decimals": 6,
+        "minimumRaw": "500000000000",
+        "existingLockAccounts": 8,
+        "activeLockAccounts": 3,
+        "expiredUnclaimedLockAccounts": 5,
+        "existingAmountRaw": "14824477156028",
+        "activeAmountRaw": "610000156028",
+        "expiredUnclaimedAmountRaw": "14214477000000",
+        "excludedWalletActiveAmountRaw": "610000156028",
+        "activeAmountRawExcludingDeclaredWallets": "0",
+        "eligibleWallets": [
+          "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W"
+        ],
+        "eligibleWalletCount": 1,
+        "excludedEligibleWalletCount": 1
+      }
+    ],
+    "ignoredUnacceptedRecords": 120,
+    "duplicateAcceptedRecords": 0,
+    "historicalClosedAccountCoverage": "unknown",
+    "limitations": [
+      "Existing-account snapshots omit claimed/closed locks. Counts and reconstructed renewals describe observed accounts; a complete historical renewal rate requires an archive including closed accounts.",
+      "Current pinned access rules are applied uniformly; historical game policy versions are not reconstructed.",
+      "Different mint amounts are never added together. Wallets are deduplicated across character unlocks. Public wallet addresses are pseudonymous, not proof of independent people."
+    ]
+  },
+  "renewal7Days": {
+    "gameId": "devfridge-world",
+    "policyId": "devfridge-world-current-access-5d9ab246",
+    "asOfUtc": "2026-10-07T11:28:22.564Z",
+    "slot": 454209595,
+    "renewalWindowDays": 7,
+    "meaning": "Same-wallet, same-mint economic commitment reacquisition caused by new locks at/after an observed expiry. A loss concerns one accepted mint/character and need not remove access via other mints. Not gameplay retention and not proof that the expired funds were reused.",
+    "cohortRule": "Fixed first observed loss of qualifying commitment for an accepted mint per wallet; expiry must reduce summed active same-mint amount below threshold. Other character access may remain. At an identical timestamp, expiries are processed before deposits. A renewal must reacquire a mint from that first loss within the inclusive window. Only fully elapsed windows enter the wallet denominator.",
+    "observed": {
+      "walletsWithAccessLoss": 1,
+      "fullyElapsedWindowWallets": 1,
+      "walletDenominator": 1,
+      "renewedWallets": 1,
+      "excludedWalletSubtotal": {
+        "walletDenominator": 1,
+        "renewedWallets": 1
+      },
+      "excludingDeclaredWallets": {
+        "walletDenominator": 0,
+        "renewedWallets": 0
+      },
+      "matchedAccessEpisodes": 1,
+      "oneToOneLockPairCount": 1,
+      "uniqueObservedRenewingWalletsAcrossEpisodes": 1
+    },
+    "historicalRenewalRetention": {
+      "allWallets": {
+        "numerator": 1,
+        "denominator": 1,
+        "percentage": 100,
+        "status": "available"
+      },
+      "excludedWalletSubtotal": {
+        "numerator": 1,
+        "denominator": 1,
+        "percentage": 100,
+        "status": "available"
+      },
+      "excludingDeclaredWallets": {
+        "numerator": 0,
+        "denominator": 0,
+        "percentage": null,
+        "status": "not_applicable"
+      }
+    },
+    "coverage": {
+      "status": "complete_declared",
+      "from": 1787011312,
+      "through": 1791372502.564,
+      "sourceEvidence": "199 archived RPC receipts revalidated by reproduce-world-metrics.mjs; initial zero-state deployment, exhaustive pagination, every indexed transaction, closed claim cycles and exact finalized game-account reconciliation."
+    },
+    "cohorts": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "firstObservedAccessLossAt": "2026-08-19T08:26:00.000Z",
+        "acceptedMintsAtLoss": [
+          "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump"
+        ],
+        "deadlineUtc": "2026-08-26T08:26:00.000Z",
+        "windowMatured": true,
+        "renewedWithinWindow": true,
+        "excluded": true
+      }
+    ],
+    "accessLossEpisodes": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredAt": "2026-08-19T08:26:00.000Z",
+        "expiredLockIds": [
+          "C5UdEqUQbLNqLcGcu7sRHTi2n8cNXnviUPxNyXdQbTyg"
+        ],
+        "renewedAt": "2026-08-19T11:53:42.000Z",
+        "newLockIds": [
+          "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb"
+        ],
+        "beforeNewAmountRaw": "0",
+        "afterNewAmountRaw": "3657477000000",
+        "excluded": true,
+        "qualifiesWithinWindow": true
+      },
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredAt": "2026-08-19T12:53:00.000Z",
+        "expiredLockIds": [
+          "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb"
+        ],
+        "renewedAt": "2026-09-07T17:46:43.000Z",
+        "newLockIds": [
+          "DAs3CUR9qh36Ycs7JEhtrEahg8NRgrGHPBAbe8RC73mG"
+        ],
+        "beforeNewAmountRaw": "120000156028",
+        "afterNewAmountRaw": "620000156028",
+        "excluded": true,
+        "qualifiesWithinWindow": false
+      }
+    ],
+    "oneToOneLockPairs": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredLock": "C5UdEqUQbLNqLcGcu7sRHTi2n8cNXnviUPxNyXdQbTyg",
+        "newLock": "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb",
+        "expiredAt": "2026-08-19T08:26:00.000Z",
+        "renewedAt": "2026-08-19T11:53:42.000Z",
+        "excluded": true
+      }
+    ],
+    "limitations": [
+      "Existing-account snapshots omit claimed/closed locks. Counts and reconstructed renewals describe observed accounts; a complete historical renewal rate requires an archive including closed accounts.",
+      "Current pinned access rules are applied retrospectively. This does not establish the game eligibility policy in force on the historical creation/expiry dates.",
+      "Expiry/redeposit relationships are inferred, because the program exposes create_lock and claim, not a renew/extend instruction. One wallet may control many addresses and need not have played. Declaring complete coverage does not independently verify its provenance."
+    ]
+  },
+  "renewal30Days": {
+    "gameId": "devfridge-world",
+    "policyId": "devfridge-world-current-access-5d9ab246",
+    "asOfUtc": "2026-10-07T11:28:22.564Z",
+    "slot": 454209595,
+    "renewalWindowDays": 30,
+    "meaning": "Same-wallet, same-mint economic commitment reacquisition caused by new locks at/after an observed expiry. A loss concerns one accepted mint/character and need not remove access via other mints. Not gameplay retention and not proof that the expired funds were reused.",
+    "cohortRule": "Fixed first observed loss of qualifying commitment for an accepted mint per wallet; expiry must reduce summed active same-mint amount below threshold. Other character access may remain. At an identical timestamp, expiries are processed before deposits. A renewal must reacquire a mint from that first loss within the inclusive window. Only fully elapsed windows enter the wallet denominator.",
+    "observed": {
+      "walletsWithAccessLoss": 1,
+      "fullyElapsedWindowWallets": 1,
+      "walletDenominator": 1,
+      "renewedWallets": 1,
+      "excludedWalletSubtotal": {
+        "walletDenominator": 1,
+        "renewedWallets": 1
+      },
+      "excludingDeclaredWallets": {
+        "walletDenominator": 0,
+        "renewedWallets": 0
+      },
+      "matchedAccessEpisodes": 2,
+      "oneToOneLockPairCount": 2,
+      "uniqueObservedRenewingWalletsAcrossEpisodes": 1
+    },
+    "historicalRenewalRetention": {
+      "allWallets": {
+        "numerator": 1,
+        "denominator": 1,
+        "percentage": 100,
+        "status": "available"
+      },
+      "excludedWalletSubtotal": {
+        "numerator": 1,
+        "denominator": 1,
+        "percentage": 100,
+        "status": "available"
+      },
+      "excludingDeclaredWallets": {
+        "numerator": 0,
+        "denominator": 0,
+        "percentage": null,
+        "status": "not_applicable"
+      }
+    },
+    "coverage": {
+      "status": "complete_declared",
+      "from": 1787011312,
+      "through": 1791372502.564,
+      "sourceEvidence": "199 archived RPC receipts revalidated by reproduce-world-metrics.mjs; initial zero-state deployment, exhaustive pagination, every indexed transaction, closed claim cycles and exact finalized game-account reconciliation."
+    },
+    "cohorts": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "firstObservedAccessLossAt": "2026-08-19T08:26:00.000Z",
+        "acceptedMintsAtLoss": [
+          "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump"
+        ],
+        "deadlineUtc": "2026-09-18T08:26:00.000Z",
+        "windowMatured": true,
+        "renewedWithinWindow": true,
+        "excluded": true
+      }
+    ],
+    "accessLossEpisodes": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredAt": "2026-08-19T08:26:00.000Z",
+        "expiredLockIds": [
+          "C5UdEqUQbLNqLcGcu7sRHTi2n8cNXnviUPxNyXdQbTyg"
+        ],
+        "renewedAt": "2026-08-19T11:53:42.000Z",
+        "newLockIds": [
+          "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb"
+        ],
+        "beforeNewAmountRaw": "0",
+        "afterNewAmountRaw": "3657477000000",
+        "excluded": true,
+        "qualifiesWithinWindow": true
+      },
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredAt": "2026-08-19T12:53:00.000Z",
+        "expiredLockIds": [
+          "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb"
+        ],
+        "renewedAt": "2026-09-07T17:46:43.000Z",
+        "newLockIds": [
+          "DAs3CUR9qh36Ycs7JEhtrEahg8NRgrGHPBAbe8RC73mG"
+        ],
+        "beforeNewAmountRaw": "120000156028",
+        "afterNewAmountRaw": "620000156028",
+        "excluded": true,
+        "qualifiesWithinWindow": true
+      }
+    ],
+    "oneToOneLockPairs": [
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredLock": "C5UdEqUQbLNqLcGcu7sRHTi2n8cNXnviUPxNyXdQbTyg",
+        "newLock": "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb",
+        "expiredAt": "2026-08-19T08:26:00.000Z",
+        "renewedAt": "2026-08-19T11:53:42.000Z",
+        "excluded": true
+      },
+      {
+        "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+        "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump",
+        "expiredLock": "FhH4j5iYVp2red3dXpdGf5uDDmDkAVQSu6TXkw8Ackpb",
+        "newLock": "DAs3CUR9qh36Ycs7JEhtrEahg8NRgrGHPBAbe8RC73mG",
+        "expiredAt": "2026-08-19T12:53:00.000Z",
+        "renewedAt": "2026-09-07T17:46:43.000Z",
+        "excluded": true
+      }
+    ],
+    "limitations": [
+      "Existing-account snapshots omit claimed/closed locks. Counts and reconstructed renewals describe observed accounts; a complete historical renewal rate requires an archive including closed accounts.",
+      "Current pinned access rules are applied retrospectively. This does not establish the game eligibility policy in force on the historical creation/expiry dates.",
+      "Expiry/redeposit relationships are inferred, because the program exposes create_lock and claim, not a renew/extend instruction. One wallet may control many addresses and need not have played. Declaring complete coverage does not independently verify its provenance."
+    ]
+  },
+  "interpretation": [
+    "Current qualifying-wallet adoption is independent of played rounds.",
+    "The renewing cohort in this dated archive is one declared treasury wallet. Its 1/1 rate is internal n=1; excluding it leaves an empty external cohort and N/A, not 0%.",
+    "Full current-policy World coverage is established separately from the adoption helper’s generic snapshot-only unknown-history limitation.",
+    "This single-provider archive/state reconciliation does not establish historical game policy versions, independent people, program security, Android live gameplay or positive SKR execution."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "beganAt": "2026-10-07T11:18:17.425Z",
+  "completedAt": "2026-10-07T11:18:19.148Z",
+  "readOnly": true,
+  "programId": "9RY54dNPYTzDyh3TfFqDdt2b2KMM56KW1tw9erRTGQo6",
+  "genesisHash": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "pinnedFinalizedSlot": 454207346,
+  "signatureDiscovery": {
+    "observedSignatures": 191,
+    "terminalEmptyPage": true,
+    "pages": [
+      {
+        "page": 1,
+        "receipt": "0003-program-signatures-page-1",
+        "count": 191,
+        "before": null,
+        "newestSlot": 452392206,
+        "oldestSlot": 439945412
+      },
+      {
+        "page": 2,
+        "receipt": "0004-program-signatures-page-2",
+        "count": 0,
+        "before": "2mvaLqXDb24Hpnus1CR65Gef8ihUhuFgq626B2FZfw16JtSUJW9z45ntaJvfLqLq8pVrz4GoSzVY5co3gm2hTPvx",
+        "newestSlot": null,
+        "oldestSlot": null
+      }
+    ],
+    "error": null,
+    "earliestObserved": {
+      "blockTime": 1787009561,
+      "confirmationStatus": "finalized",
+      "err": "ProgramAccountNotFound",
+      "memo": null,
+      "signature": "2mvaLqXDb24Hpnus1CR65Gef8ihUhuFgq626B2FZfw16JtSUJW9z45ntaJvfLqLq8pVrz4GoSzVY5co3gm2hTPvx",
+      "slot": 439945412,
+      "transactionIndex": 960
+    },
+    "latestObserved": {
+      "blockTime": 1790885764,
+      "confirmationStatus": "finalized",
+      "err": null,
+      "memo": null,
+      "signature": "2QUxx9eFWNfaZw3BoiX8LH6vfRrBATbxgcKoeE9KXg6qFjhYgXcBYovkL6i6da8gEzmdNTWap6Q3zXQYsJTTQT3t",
+      "slot": 452392206,
+      "transactionIndex": 156
+    }
+  },
+  "transactionSamples": [
+    {
+      "label": "newest",
+      "signature": "2QUxx9eFWNfaZw3BoiX8LH6vfRrBATbxgcKoeE9KXg6qFjhYgXcBYovkL6i6da8gEzmdNTWap6Q3zXQYsJTTQT3t",
+      "receipt": "0005-newest-program-transaction",
+      "available": true,
+      "slot": 452392206,
+      "blockTime": 1790885764
+    },
+    {
+      "label": "oldest",
+      "signature": "2mvaLqXDb24Hpnus1CR65Gef8ihUhuFgq626B2FZfw16JtSUJW9z45ntaJvfLqLq8pVrz4GoSzVY5co3gm2hTPvx",
+      "receipt": "0006-oldest-program-transaction",
+      "available": true,
+      "slot": 439945412,
+      "blockTime": 1787009561
+    }
+  ],
+  "closedHistoryCoverage": "not_established",
+  "limits": [
+    "An empty signature page proves only that the selected RPC provider returned no earlier address records. Deployment-origin coverage and every successful lock/claim transaction must also be verified before a complete historical renewal rate is claimed.",
+    "Failed transactions are not deposits. Program-address references can include loader or other non-lock instructions.",
+    "No full historical adoption or renewal rate is calculated by this discovery stage."
+  ],
+  "receipts": [
+    "0001-genesis",
+    "0002-pinned-finalized-slot",
+    "0003-program-signatures-page-1",
+    "0004-program-signatures-page-2",
+    "0005-newest-program-transaction",
+    "0006-oldest-program-transaction"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "recordedAtUtc": "2026-10-07T11:28:33.603666+00:00",
+  "apkSha256": "d60e046d0f4a314a2d954a8ebbfc079cdc21b54af2c6ce6fbdcf6f9e84913774",
+  "apkBytes": 65775562,
+  "sourceCommit": "f2408f43af4446bcd082c93574f14c6f24eb3af6",
+  "checks": {
+    "expected_package_version": true,
+    "one_exported_launcher_activity": true,
+    "test_receipt_and_invoker_activities_absent": true,
+    "providers_non_exported": true,
+    "share_provider_authority_and_scoped_permission": true,
+    "exported_receiver_has_dump_permission": true,
+    "backup_disabled": true,
+    "application_cleartext_disabled": true,
+    "manifest_references_inspected_share_paths": true,
+    "manifest_references_inspected_network_policy": true,
+    "only_share_cache_is_exposed": true,
+    "network_default_cleartext_disabled": true,
+    "only_loopback_cleartext_exception": true,
+    "no_custom_release_trust_anchors": true,
+    "compiled_classes_unchanged": true,
+    "asset_matches_signed_apk:native-bridge.js": true,
+    "asset_matches_signed_apk:registration-handoff.js": true,
+    "asset_matches_signed_apk:adaptive-coach.js": true,
+    "asset_matches_signed_apk:assets/gate-2.js": true,
+    "asset_matches_signed_apk:assets/cold-storage.js": true,
+    "asset_matches_signed_apk:cast.json": true,
+    "asset_matches_signed_apk:practice/practice-game.js": true,
+    "asset_matches_signed_apk:practice/index.html": true,
+    "jvm_policy_source_matches_release_tag": true
+  },
+  "assets": {
+    "native-bridge.js": {
+      "bytes": 9178,
+      "sha256": "4a8808ffef781bbcf1184d73040d156b90400829fe498e9ef3f2fc8ad3495c64"
+    },
+    "registration-handoff.js": {
+      "bytes": 11520,
+      "sha256": "f6d89588137fc6fbf35c15a1a8daf1210d761163bc54f080d3834c7d1a290e3d"
+    },
+    "adaptive-coach.js": {
+      "bytes": 11976,
+      "sha256": "c61b4b07837f4bf407637b8e7f88726f2712c169557105b86e923bc58b1cd6da"
+    },
+    "assets/gate-2.js": {
+      "bytes": 12424,
+      "sha256": "29f6968f4e740cfabefdbc809552e585cd87c5aebcdb99d446d4a5b362ce2b83"
+    },
+    "assets/cold-storage.js": {
+      "bytes": 3260119,
+      "sha256": "d3ab63b9cabd3803944aa74c0d1307db1b5e24da4c6065f4c784acb2f5f09dcd"
+    },
+    "cast.json": {
+      "bytes": 12287,
+      "sha256": "63506c7d0e4d8358d695004c9e5a8d960d6a78d55623394958cb985c527a16b9"
+    },
+    "practice/practice-game.js": {
+      "bytes": 3006576,
+      "sha256": "b5ab540af4a3cd94885a3af79e9174ba52cbb7741d40b85c719fe3809be0a023"
+    },
+    "practice/index.html": {
+      "bytes": 2268,
+      "sha256": "8c0e4a57594c0533d74a98b57b7fa3f99b43287e520a4112849374bc680ec8d1"
+    }
+  },
+  "compiledResources": {
+    "file_paths": {
+      "id": "0x7f0b0001",
+      "file": "res/8K.xml"
+    },
+    "network_security_config": {
+      "id": "0x7f0b0002",
+      "file": "res/8G.xml"
+    },
+    "data_extraction_rules": {
+      "id": "0x7f0b0000",
+      "file": "res/4j.xml"
+    }
+  },
+  "bridgePolicyNormalizedSha256": "e37a7d939dc46b8f5b00fc916b94c03ebf56c50dda86c58b8297ba3508cd0634",
+  "scope": "Static inspection of exact signed APK and byte equality for subsequently tested adapters. No APK execution, TLS handshake, wallet flow, independent audit or complete engine security claim."
+}

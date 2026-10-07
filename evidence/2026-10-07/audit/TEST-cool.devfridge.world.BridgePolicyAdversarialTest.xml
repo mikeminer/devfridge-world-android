@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cool.devfridge.world.BridgePolicyAdversarialTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-07T11:33:14.097Z" hostname="LAPTOP-GIS0EK2E" time="0.181">
+  <properties/>
+  <testcase name="registrationReturnsRejectInjectionDuplicateFieldsAndAuthorityConfusion" classname="cool.devfridge.world.BridgePolicyAdversarialTest" time="0.177"/>
+  <testcase name="hostileOriginsSchemesAndEncodedPathsNeverAcquireTheBridge" classname="cool.devfridge.world.BridgePolicyAdversarialTest" time="0.002"/>
+  <testcase name="staleAndForeignDocumentsCannotReceiveEarlierWalletResults" classname="cool.devfridge.world.BridgePolicyAdversarialTest" time="0.0"/>
+  <testcase name="ambiguousPracticeQueriesDoNotSelectTheNativePracticeDocument" classname="cool.devfridge.world.BridgePolicyAdversarialTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

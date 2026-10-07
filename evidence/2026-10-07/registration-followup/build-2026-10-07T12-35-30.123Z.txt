@@ -1,0 +1,6 @@
+
+Error: spawnSync C:\nvm4w\nodejs\node.exe EPERM
+    at Object.spawnSync (node:internal/child_process:1143:20)
+    at spawnSync (node:child_process:911:24)
+    at run (file:///C:/Users/mikfo/Documents/ChatGPT/pasta%20ecosystem/deliverables/devfridge-world-android/evidence/2026-10-07/registration-followup/build-and-test.mjs:58:18)
+    at file:///C:/Users/mikfo/Documents/ChatGPT/pasta%20ecosystem/deliverables/devfridge-world-android/evidence/2026-10-07/registration-followup/build-and-test.mjs:72:9

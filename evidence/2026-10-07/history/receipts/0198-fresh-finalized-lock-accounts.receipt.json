@@ -1,0 +1,45 @@
+{
+  "name": "0198-fresh-finalized-lock-accounts",
+  "url": "https://scan.devfridge.cool/api/rpc",
+  "method": "POST",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 198,
+    "method": "getProgramAccounts",
+    "params": [
+      "9RY54dNPYTzDyh3TfFqDdt2b2KMM56KW1tw9erRTGQo6",
+      {
+        "commitment": "finalized",
+        "encoding": "base64",
+        "withContext": true,
+        "filters": [
+          {
+            "dataSize": 105
+          }
+        ]
+      }
+    ]
+  },
+  "startedAt": "2026-10-07T11:28:19.361Z",
+  "finishedAt": "2026-10-07T11:28:22.564Z",
+  "status": 200,
+  "headers": {
+    "access-control-allow-headers": "content-type, solana-client",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "cache-control": "no-store",
+    "content-encoding": "br",
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 11:28:21 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch",
+    "x-matched-path": "/api/rpc",
+    "x-vercel-cache": "MISS",
+    "x-vercel-id": "fra1::iad1::r6jcz-1791372501472-2ae28bbab41e"
+  },
+  "error": null,
+  "bodyFile": "0198-fresh-finalized-lock-accounts.body.txt",
+  "bodySha256": "8cb813dbb4826a0382a2fc6bbc173924c6a9022437542b0314bbe0cb723c4d8c"
+}

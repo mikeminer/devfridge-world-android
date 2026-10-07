@@ -6,6 +6,8 @@ The original downloaded report is preserved byte for byte. Its SHA-256 is `2902a
 
 ## Review of all 17 reported locations
 
+**Subsequent verification, 7 October 2026:** [targeted checks of the exact signed beta.2 APK](SECURITY-VERIFICATION-2026-10-07.md) add 24 static packaging/resource checks, 11 hostile-input tests of APK-matched JavaScript adapters, a full JavaScript run with 49 passed / three generated-page skips, and 15 passed release JVM tests including four new hostile-link cases. The security policy and tested packaged adapters match the published beta.2 APK, which is unchanged. A separate source-only About change reads the installed package version instead of the hard-coded beta.1 label; it has not been assembled into or installed as a new APK. This supplements the original source dispositions below; it does not claim complete engine sink coverage, independent clearance or new Android wallet/TLS execution.
+
 Line numbers below refer to the audited commit. The JavaScript reference sources and server excerpts are distinct from the hash-pinned distributions packaged by `android/scripts/prepare-game.mjs:9–24`; [README source boundaries](README.md) describe this distinction. Reviewing an excerpt does not cover all code in either packaged distribution or the production server.
 
 | Report item | Audited source location | Trace and present disposition |

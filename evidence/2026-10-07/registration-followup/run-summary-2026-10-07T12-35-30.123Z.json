@@ -1,0 +1,106 @@
+{
+  "startedAtUtc": "2026-10-07T12:35:30.127Z",
+  "attempt": "2026-10-07T12-35-30.123Z",
+  "scope": "Generated external registration-page integration tests; API and Phantom fixtures, no live wallet or payment.",
+  "inputs": [
+    {
+      "origin": "focused repository",
+      "path": "android/scripts/build-registration-page.mjs",
+      "bytes": 3118,
+      "sha256": "46dc7657905f95fa24305a2a83cc03d99524a9e09c374cd3e41135e3ecc19b97"
+    },
+    {
+      "origin": "focused repository",
+      "path": "android/mobile/registration-page.ts",
+      "bytes": 4137,
+      "sha256": "50cf0020972db46babb4e2ed7990a1a6cd3c9a03ceb39718ece5ec563dcfdfcd"
+    },
+    {
+      "origin": "focused repository",
+      "path": "android/mobile/registration-page.html",
+      "bytes": 2159,
+      "sha256": "fdd983a024d04af763caa8b71683e23256aedca702e8027217a7fcfef18d3243"
+    },
+    {
+      "origin": "focused repository",
+      "path": "android/mobile/native-signing.ts",
+      "bytes": 4004,
+      "sha256": "f9ce7fa2073a67459afe23e513cc88f1af98db1a21b39ed3072c41630c07616d"
+    },
+    {
+      "origin": "original monorepo",
+      "path": "cold-storage/src/score-registration.ts",
+      "bytes": 22037,
+      "sha256": "7565618bfdb01cc6d43318ca38f58399affc8298ab6030319f25f29e77f42065"
+    },
+    {
+      "origin": "original monorepo",
+      "path": "cold-storage/src/score-protocol.ts",
+      "bytes": 1520,
+      "sha256": "56ac1a6233dcebc564a4dcead5f7900a917b11ab955899d7cde2813f4ddd2417"
+    },
+    {
+      "origin": "original monorepo",
+      "path": "cold-storage/package.json",
+      "bytes": 1523,
+      "sha256": "24a061f23936078880e7804ee8f1df265c190f760a3c53431c1f6e50f11bdacf"
+    },
+    {
+      "origin": "original monorepo",
+      "path": "cold-storage/package-lock.json",
+      "sha256": "ad9fd320dc743fc407d37f44701c93c5ec5bb1dfc8119ee6b08dbf80fe7f8784"
+    }
+  ],
+  "commands": [
+    {
+      "label": "build",
+      "executable": "node",
+      "args": [
+        "C:\\Users\\mikfo\\Documents\\ChatGPT\\pasta ecosystem\\deliverables\\registration-followup-stage-F7iHA1\\android\\scripts\\build-registration-page.mjs",
+        "C:\\Users\\mikfo\\Documents\\ChatGPT\\pasta ecosystem\\deliverables\\devfridge-world-android\\evidence\\2026-10-07\\registration-followup\\bundle"
+      ],
+      "cwd": "C:\\Users\\mikfo\\Documents\\ChatGPT\\pasta ecosystem\\deliverables\\registration-followup-stage-F7iHA1",
+      "env": {},
+      "exitCode": null,
+      "error": "spawnSync C:\\nvm4w\\nodejs\\node.exe EPERM",
+      "log": "build-2026-10-07T12-35-30.123Z.txt",
+      "logSha256": "936a8f0287c833d08d27da3c8261b120a240e67fae07c14d17460c4c9604e9d4"
+    }
+  ],
+  "unchangedOriginalEvidence": [
+    {
+      "path": "SECURITY-VERIFICATION-2026-10-07.md",
+      "beforeSha256": "3d7ba9989bfbfff352dd53b0cf4a8c2d713e99d49d902057e71b780d2553ec27",
+      "afterSha256": "3d7ba9989bfbfff352dd53b0cf4a8c2d713e99d49d902057e71b780d2553ec27",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/2026-10-07/audit/javascript-tests.json",
+      "beforeSha256": "5a139af5726f0b5c4b8664063df6d022d4c2b8b86f43761a756e73dacd33c51b",
+      "afterSha256": "5a139af5726f0b5c4b8664063df6d022d4c2b8b86f43761a756e73dacd33c51b",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/2026-10-07/audit/node-full-suite.txt",
+      "beforeSha256": "e3c45c5ece5a9e7a97f3e5f496c0348128982333f0303a33c69fff4087f01b23",
+      "afterSha256": "e3c45c5ece5a9e7a97f3e5f496c0348128982333f0303a33c69fff4087f01b23",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/2026-10-07/audit/node-security-boundaries.txt",
+      "beforeSha256": "c12159d9842b3acd947096eca56ccc590a41ee03586b1c19a5433fd851948e60",
+      "afterSha256": "c12159d9842b3acd947096eca56ccc590a41ee03586b1c19a5433fd851948e60",
+      "unchanged": true
+    }
+  ],
+  "stagingDirectory": "C:\\Users\\mikfo\\Documents\\ChatGPT\\pasta ecosystem\\deliverables\\registration-followup-stage-F7iHA1",
+  "versions": {
+    "node": "v24.18.0",
+    "esbuild": "0.28.2",
+    "ethers": "6.15.0",
+    "happyDom": "20.14.5"
+  },
+  "success": false,
+  "failure": "Error: build did not pass; see build-2026-10-07T12-35-30.123Z.txt\n    at run (file:///C:/Users/mikfo/Documents/ChatGPT/pasta%20ecosystem/deliverables/devfridge-world-android/evidence/2026-10-07/registration-followup/build-and-test.mjs:67:50)\n    at async file:///C:/Users/mikfo/Documents/ChatGPT/pasta%20ecosystem/deliverables/devfridge-world-android/evidence/2026-10-07/registration-followup/build-and-test.mjs:72:3",
+  "finishedAtUtc": "2026-10-07T12:35:40.961Z"
+}

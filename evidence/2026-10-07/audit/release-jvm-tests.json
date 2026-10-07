@@ -1,0 +1,41 @@
+{
+  "recordedAtUtc": "2026-10-07T11:36:43.5662847Z",
+  "command": "gradlew.bat --offline :app:testReleaseUnitTest",
+  "sourceCommitForUnchangedPolicy": "f2408f43af4446bcd082c93574f14c6f24eb3af6",
+  "tests": 15.0,
+  "failures": 0.0,
+  "errors": 0.0,
+  "suites": [
+    {
+      "name": "cool.devfridge.world.BridgePolicyAdversarialTest",
+      "tests": 4,
+      "skipped": 0,
+      "failures": 0,
+      "errors": 0,
+      "timestamp": "2026-10-07T11:33:14.097Z",
+      "evidenceFile": "TEST-cool.devfridge.world.BridgePolicyAdversarialTest.xml",
+      "sha256": "dc2236af301a6c07488e0552b9d35d52298c6d29051163fd79a9c745072c4522"
+    },
+    {
+      "name": "cool.devfridge.world.BridgePolicyTest",
+      "tests": 9,
+      "skipped": 0,
+      "failures": 0,
+      "errors": 0,
+      "timestamp": "2026-10-07T11:33:14.294Z",
+      "evidenceFile": "TEST-cool.devfridge.world.BridgePolicyTest.xml",
+      "sha256": "3d5c07230e9489525c19876e086b97eda9607401431e23e791f5141c876cc4ef"
+    },
+    {
+      "name": "cool.devfridge.world.SkrBalanceTest",
+      "tests": 2,
+      "skipped": 0,
+      "failures": 0,
+      "errors": 0,
+      "timestamp": "2026-10-07T11:33:14.310Z",
+      "evidenceFile": "TEST-cool.devfridge.world.SkrBalanceTest.xml",
+      "sha256": "9a4ff56e3563fd89443468ae2544cc30ceb0df9c2cd1f4b0055adb51c5d1c7d1"
+    }
+  ],
+  "scope": "JVM unit tests of unchanged release policy plus four new hostile-input cases; no Android APK/device/wallet execution."
+}

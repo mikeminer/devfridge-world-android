@@ -1,0 +1,21 @@
+{
+  "observedAtUtc": "2026-10-07T11:33:12Z",
+  "targeted": {
+    "command": "node --test --test-isolation=none tests/security-boundaries.test.mjs",
+    "passed": 11,
+    "failed": 0,
+    "skipped": 0
+  },
+  "fullSuite": {
+    "command": "node --test --test-isolation=none tests/*.test.mjs",
+    "passed": 49,
+    "failed": 0,
+    "skipped": 3,
+    "skipReason": "Separate generated registration-page bundle is absent."
+  },
+  "initialSandboxBlocks": [
+    "Gradle wrapper could not write its external cache lock.",
+    "Existing esbuild child process could not spawn (EPERM); full suite passed after the authorized local helper/cache execution."
+  ],
+  "scope": "Synthetic hostile inputs executed against JS adapter bytes matched to the exact signed beta.2 APK, in VM/happy-dom. No Android runtime, live wallet, independent audit or full 3D engine execution claim."
+}
