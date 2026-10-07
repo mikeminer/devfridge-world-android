@@ -1,0 +1,4 @@
+world.devfridge.cool	HTTP=200	CONTENT_TYPE=application/json	TLS=TLSv1.3	ISSUER=CN=YR1,O=Let's Encrypt,C=US	elapsedMs=713
+api.mainnet-beta.solana.com	HTTP=200	CONTENT_TYPE=text/html	TLS=TLSv1.3	ISSUER=CN=ZeroSSL ECC DV SSL CA 2,O=ZeroSSL GmbH,C=AT	elapsedMs=450
+api.phantom.app	HTTP=403	CONTENT_TYPE=text/html; charset=UTF-8	TLS=TLSv1.3	ISSUER=CN=WE1,O=Google Trust Services,C=US	elapsedMs=229
+world.devfridge.cool	CHECK=DAL_REFERENCE_1S	HTTP=200	CONTENT_TYPE=application/json	EXACT_MIME=true	VALID_JSON=true	EXPECTED_PACKAGE=true	RELEASE_CERT=true	DAL_RELATION=true	REFERENCE_COMPATIBLE=true	JSON_ERROR=none	elapsedMs=537

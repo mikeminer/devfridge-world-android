@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "observedAtUtc": "2026-10-07T13:36:40.130208+00:00",
+  "scope": "Public production Digital Asset Links verification; not Phantom or Android runtime",
+  "publicationReportedByParent": {
+    "pullRequest": 116,
+    "commit": "5bccf8fc97f8b1241e72eade3b8fc1a00f871135",
+    "deploymentId": "dpl_CtM8zs59S62P6PMJify23cK8uMu7",
+    "deploymentReadinessIndependentlyVerifiedHere": false
+  },
+  "baselineReceipt": {
+    "file": "mwa-identity-publication.json",
+    "sha256": "04726a6cb204b54da4647889c20fd86b9fc584cfe32d4ad0080d53b49ea82cdc"
+  },
+  "transport": {
+    "publicProductionOnly": true,
+    "redirectsAllowed": false,
+    "proxyHandler": "empty; direct public HTTPS",
+    "certificateVerificationRequired": true,
+    "hostnameVerificationEnabled": true,
+    "trustOverride": false,
+    "protectedPreviewOrAuthenticationBypassUsed": false
+  },
+  "checks": {
+    "http200": true,
+    "noRedirect": true,
+    "exactApplicationJson": true,
+    "jsonArray": true,
+    "sameAssociationAsBeforeFix": true,
+    "exactSingleReleaseAssociation": true,
+    "googleHttp200": true,
+    "googleLinked": true,
+    "priorFailureReceiptPreserved": true
+  },
+  "errors": [],
+  "limitations": [
+    "Google linked=true does not establish wallet-side direct retrieval",
+    "This receipt does not prove Phantom consent, signing or removal of its warning"
+  ],
+  "directRetrieval": {
+    "url": "https://world.devfridge.cool/.well-known/assetlinks.json",
+    "finalUrl": "https://world.devfridge.cool/.well-known/assetlinks.json",
+    "httpStatus": 200,
+    "headers": {
+      "Age": "0",
+      "Cache-Control": "public, max-age=0, must-revalidate",
+      "Content-Type": "application/json",
+      "Date": "Wed, 07 Oct 2026 13:36:40 GMT",
+      "Server": "Vercel",
+      "Strict-Transport-Security": "max-age=63072000",
+      "X-Matched-Path": "/.well-known/assetlinks.json",
+      "X-Vercel-Cache": "MISS",
+      "X-Vercel-Id": "fra1::fra1::jk9xw-1791380200455-94365b80211a",
+      "Connection": "close",
+      "Transfer-Encoding": "chunked"
+    },
+    "contentType": "application/json",
+    "bodySha256": "a97d2ae9361bce4fbd6eb39cdcad71ec1d3396f16c140d79dde3bafaced00916",
+    "bodyUtf8": "[{\"relation\":[\"delegate_permission/common.handle_all_urls\"],\"target\":{\"namespace\":\"android_app\",\"package_name\":\"cool.devfridge.world\",\"sha256_cert_fingerprints\":[\"2A:CA:BF:ED:1A:E8:87:ED:90:E6:50:A4:44:6E:5E:F7:47:DE:09:6F:0F:D6:EA:75:A8:94:8B:75:B0:60:71:CA\"]}}]",
+    "parsedStatements": [
+      {
+        "relation": [
+          "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+          "namespace": "android_app",
+          "package_name": "cool.devfridge.world",
+          "sha256_cert_fingerprints": [
+            "2A:CA:BF:ED:1A:E8:87:ED:90:E6:50:A4:44:6E:5E:F7:47:DE:09:6F:0F:D6:EA:75:A8:94:8B:75:B0:60:71:CA"
+          ]
+        }
+      }
+    ]
+  },
+  "googleAssetLinksCheck": {
+    "url": "https://digitalassetlinks.googleapis.com/v1/assetlinks:check?source.web.site=https%3A%2F%2Fworld.devfridge.cool&relation=delegate_permission%2Fcommon.handle_all_urls&target.androidApp.packageName=cool.devfridge.world&target.androidApp.certificate.sha256Fingerprint=2A%3ACA%3ABF%3AED%3A1A%3AE8%3A87%3AED%3A90%3AE6%3A50%3AA4%3A44%3A6E%3A5E%3AF7%3A47%3ADE%3A09%3A6F%3A0F%3AD6%3AEA%3A75%3AA8%3A94%3A8B%3A75%3AB0%3A60%3A71%3ACA",
+    "httpStatus": 200,
+    "bodySha256": "6e767b8e5914d7f0533a9f99f3ee3953c907c12576d3ab3e798059fdb39c20d6",
+    "response": {
+      "linked": true,
+      "maxAge": "3599.998264825s"
+    }
+  },
+  "allChecksPassed": true,
+  "completedAtUtc": "2026-10-07T13:36:41.565007+00:00"
+}
