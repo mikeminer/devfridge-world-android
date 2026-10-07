@@ -1,6 +1,10 @@
-# DevFridge World: cookie-free on-chain baseline — 7 October 2026
+# DevFridge World: one shared Solana program, per-game token commitment — 7 October 2026
 
-This report supplies reproducible evidence of DevFridge protocol activity, the game's token-lock prerequisite and real optional TopShelf score registrations. It separates publisher activity from evidence of independent players. Collection was read-only: no cookies, analytics SDK, wallet signature or transaction was requested.
+One existing Fridge Solana timelock program supports per-game measurement of token commitment. The game-builder skill supplies each game's accepted-mint mapping, exact raw amount thresholds and duration configuration. The offline calculator filters the shared accounts into game wallets with timelocked access, per-mint locked quantity, active-lock fraction and renewal retention; existing scanner badges combine active locked quantity with token supply to show its percentage. There is no new Solana timelock contract per game and no cookie analytics. This is an off-chain game-policy mapping, not an on-chain GameID registry; the same wallet can qualify for two games accepting its mint and rules, so their counts are not additive as ecosystem-unique wallets.
+
+Holders give up the ability to transfer or use the locked amount until expiry to obtain qualifying character access; this is the economic tradeoff measured, independently of rounds played.
+
+This report preserves the dated read-only program snapshot, game-policy calculation and optional TopShelf registrations. Publisher activity is labelled separately. Collection requested no cookies, analytics SDK, wallet signature or transaction; it does not change the existing entry flow's separate essential adult-consent cookie.
 
 ## Recorded metrics and attribution
 
@@ -13,8 +17,12 @@ This report supplies reproducible evidence of DevFridge protocol activity, the g
 | Unique locked token mints | 21 | Protocol token coverage |
 | Existing locks for the ten exact character mints | 19 | Game-token prerequisite accounts |
 | Active game-token lock accounts | 13 | Unexpired; all also pass the legacy SDK duration filter |
-| Unique wallets meeting the character-token rules | 1 | The publicly labelled Solana treasury |
-| Qualifying game wallets excluding that treasury | 0 | Current lock-prerequisite snapshot only |
+| Game-token active-lock account fraction | 68.42% | 13 active / 19 existing accepted-mint accounts; six expired-unclaimed remain in the denominator |
+| Game wallets with timelocked access | 1 | The publicly labelled Solana treasury; distinct wallet union, independent of play frequency |
+| External game wallets with timelocked access | 0 | Current access snapshot after excluding that treasury |
+| Observed renewing wallets, 7-day window | 1 | Treasury wallet; one observed same-mint renewal episode |
+| Observed renewing wallets, 30-day window | 1 | Same treasury wallet; two observed same-mint renewal episodes |
+| Observed external renewing wallets, either window | 0 | Existing-account sample after treasury exclusion; historical rate unavailable |
 | Confirmed TopShelf score-registration events | 15 | Real successful contract events |
 | Unique TopShelf participants | 1 | The current contract owner, linked to that treasury |
 | Distinct UTC registration dates for that participant | 7 | Repeated publisher registrations |
@@ -23,7 +31,27 @@ This report supplies reproducible evidence of DevFridge protocol activity, the g
 
 The four ecosystem depositor addresses are not assumed to be four independent people. The sole qualifying game-token address is the public `TREASURY` constant. The sole TopShelf participant equals `owner()` at the pinned block; `playerSolana` and `solanaPlayer` map it to the same Solana treasury. These source labels and contract relationships support the exclusion, without identifying a private person.
 
-**The data demonstrate on-chain implementation and repeated publisher use. They do not establish independent-player retention or Android usage.** They also do not establish zero overall game users: unregistered play and local practice are outside this measurement.
+**The data establish token commitment, current per-game access and repeated publisher registration.** Renewal retention concerns continued commitment after expiry, independently of how often a wallet plays. Android attribution and unregistered play are outside this measurement; zero external eligible or registered wallets does not mean zero overall game users.
+
+## Per-game policy and metric definitions
+
+A policy lists the game's accepted mints, each mint's decimals and raw-unit access threshold, plus its required original-duration predicate. Account addresses are deduplicated before qualifying raw amounts are summed **within the same wallet and mint**. Amounts from different mints never combine. A wallet qualifies if at least one accepted mint reaches its own threshold; the distinct-wallet union counts it once across all qualifying mints. These are game wallets with timelocked access, not a count of verified playing wallets or distinct people. Overlapping game policies must not be summed as globally unique wallets.
+
+The current Cold Storage policy requires 500,000 tokens for a selected character mint and uses unexpired `status.activeLocks` directly. It does not independently enforce the legacy SDK plan's one-day original-duration filter. All 13 active game-token accounts in the dated snapshot also satisfy that legacy filter; the two predicates are distinct even though this sample's results agree.
+
+The **active-lock fraction** is the count of active accepted-mint accounts divided by all existing accepted-mint accounts: `13 / 19 * 100 = 68.42%`. Its denominator includes six expired-unclaimed accounts. Claimed/closed accounts are absent. This is neither a historical renewal rate nor the badges' locked-amount / total-supply percentage.
+
+### Timelock renewal retention
+
+The product's retention metric is **continued token commitment through post-expiry renewal**. Fix an expiry cohort at each wallet's first observed loss of qualifying **same-mint commitment**: its summed active qualifying amount meets the threshold immediately before expiry and falls below it after expiry. This does not require loss of access through every other accepted mint. Count wallets whose new deposit at or after that expiry restores the same wallet/mint's qualifying aggregate to the threshold within the declared inclusive renewal window. Locks opened before expiry are not post-expiry renewals. The renewal fraction is renewing wallets / that fixed expiry cohort. All observation windows must be fully matured; a still-open window is not a failed renewal. Apply treasury/owner exclusions consistently to both numerator and denominator.
+
+There is no explicit renewal instruction in the examined program interface: the observable renewal is a new lock following an eligible prior expiry. Its existence does not establish that funds were redeemed from the old vault or reused. The current policy is applied retrospectively to preserved account timestamps; this does not prove which historical game-access rules were in effect then.
+
+In the existing-account sample, the **7-day window has one observed renewing wallet and one same-mint episode; the 30-day window has the same one wallet and two episodes**. Both are the labelled treasury. Excluding it leaves **zero observed external renewing wallets**, not a measured external historical renewal rate. The CICCIA sequence first expires on 19 August 2026 at 08:26 UTC and has a qualifying new deposit at 11:53:42 UTC that day. A second same-mint expiry at 12:53 UTC on 19 August precedes the new qualifying deposit on 7 September at 17:46:43 UTC. The first sequence fits both windows; the second fits the 30-day window. A wallet is counted once in the cohort even when multiple episodes are retained as supporting observations.
+
+The current account snapshot cannot recover already-claimed/closed locks, so it supports observed renewal sequences rather than a complete historical renewal rate. A fully covered empty cohort is N/A; incomplete history is unavailable, not 0%. The window is explicit and configurable: the dated output reports separate 7- and 30-day observations rather than silently choosing a universal product period.
+
+[Implemented offline calculator and definitions](evidence/2026-10-07/measurement/README.md), [dated calculated output](evidence/2026-10-07/measurement/game-metrics.json) and the preserved raw accounts make the policy calculations reproducible. This adds no live analytics collector or gameplay/session attribution and changes no existing game, backend or APK.
 
 ## How Solana connects to the live game
 

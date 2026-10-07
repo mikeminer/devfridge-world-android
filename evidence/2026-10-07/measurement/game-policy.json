@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "gameId": "devfridge-world",
+  "policyId": "devfridge-world-current-access-5d9ab246",
+  "historicalInterpretation": "Current pinned rules are applied uniformly to archived accounts; historical game policy versions are not reconstructed.",
+  "chain": "solana:mainnet-beta",
+  "programId": "9RY54dNPYTzDyh3TfFqDdt2b2KMM56KW1tw9erRTGQo6",
+  "aggregation": "sum-per-wallet-per-mint",
+  "minimumOriginalSeconds": 0,
+  "minimumRemainingSeconds": 0,
+  "thresholdMeaning": "500000 tokens of any one accepted mint, summed across unique unexpired lock accounts",
+  "sources": {
+    "mintManifest": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/topshelf/engine/tokens.json",
+    "program": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/programs/fridge/src/lib.rs",
+    "publicCompiledGame": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/public/world/game/assets/index-BRorhYzL.js",
+    "accessSourceExcerpt": "../badges/source-excerpts/access.ts",
+    "accessSourceCommit": "5d9ab2464014bdef53dd129a6148c8e1d4364949",
+    "accessSourceSha256Lf": "73ff7821891d32c63dad5611be9a640b885e7871d5ba457e769b21f47780beef",
+    "sourceManifest": "../badges/sources-manifest.json"
+  },
+  "excludedWallets": [
+    {
+      "wallet": "GxPoKNX26GCisuH8Sdr8rtfZY98L5t5eegKtDzSA9P6W",
+      "label": "Public DevFridge treasury",
+      "source": "https://github.com/mikeminer/devfridge/blob/2e0064cc37f21187bd89c0e3768f3257000c3fdb/scan/lib/constants.ts#L12"
+    }
+  ],
+  "acceptedMints": [
+    { "tier": 1, "symbol": "RUGARUGO", "mint": "An91P3ZkntqPoQJrYbLdZkbwbdMfCCVzLt8HVA2Mpump", "decimals": 6, "minimumRaw": "500000000000" },
+    { "tier": 2, "symbol": "APE", "mint": "B31GwpFQco9R4HX1GrfyXgdmLArBN9pBBinqRn8Jpump", "decimals": 6, "minimumRaw": "500000000000" },
+    { "tier": 3, "symbol": "FIFO", "mint": "3Pg4b7wtcYTGacRzyRFGLBG4s6eeJ2d5jxK2jjz4pump", "decimals": 6, "minimumRaw": "500000000000" },
+    { "tier": 4, "symbol": "FUSILLI", "mint": "4ZbHvh5xPMB3vTbURzQfDPPH6iy5KNXg7pTdySNtpump", "decimals": 6, "minimumRaw": "500000000000" },
+    { "tier": 5, "symbol": "LAMBOCELLO", "mint": "HAUTWMn41Qg1RvtwLFC3SEK7JSc19gns2vJL7TgRpump", "decimals": 6, "minimumRaw": "500000000000" },
+    { "tier": 6, "symbol": "GMGN", "mint": "8RBcBZkdM8U4eoAi1MsftW7RcXYryobawfPz3Nuupump", "decimals": 6, "minimumRaw": "500000000000" },
+    { "tier": 7, "symbol": "SESU", "mint": "AHZMcoqA53trX8JcuoCRsQqWpeSk415cE4p7AsrZpump", "decimals": 6, "minimumRaw": "500000000000" },
+    { "tier": 8, "symbol": "MOONZARELL", "mint": "6ZbWBzH9TyQdGhhxjJ573M9p59SVfRaX25FCFY3spump", "decimals": 6, "minimumRaw": "500000000000" },
+    { "tier": 9, "symbol": "BONKATINO", "mint": "HivTCtHY1GbC8ws9jwCh3Km5EH4CGtnTdDeo3SdKpump", "decimals": 6, "minimumRaw": "500000000000" },
+    { "tier": 10, "symbol": "CICCIA", "mint": "CvjWYRkV7iFftU8PKsa7Lyyz7hhWKTj6nG1rk2mMpump", "decimals": 6, "minimumRaw": "500000000000" }
+  ]
+}
