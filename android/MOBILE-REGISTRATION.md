@@ -17,6 +17,10 @@ The app never requests, imports, or exports a recovery phrase. Solana private ke
 
 Android bridge code is in `mobile/native-bridge.js`, `mobile/native-signing.ts`, and `mobile/registration-handoff.js`. The dedicated-page bootstrap is `mobile/registration-page.ts`; it is bundled with the pre-existing registration UI in production. The server handoff and page were deployed through [devfridge PR 55](https://github.com/mikeminer/devfridge/pull/55), production commit `5e7758be59823a1f5bfa1cd32b9c78f19f73e105`.
 
+Wallet requests use the supported KTX `timeout` parameter of 300 seconds per RPC. The JavaScript bridge allows 330 seconds for connection/disconnection and 630 seconds for message signing, which reauthorizes before its signing RPC; both budgets include 30 seconds for the native reply. Other native actions keep their 120-second deadline. These changes are implemented in the unpublished beta.3 candidate; the previously published beta.2 APK keeps its original timeouts.
+
+A native reply clears its JavaScript timer and pending entry. A bridge timeout rejects the request and removes the pending entry, so an expired reply cannot resolve it or grant a JavaScript wallet account and a fresh request can be made. The JavaScript deadline does not itself cancel a wallet prompt or revoke an authorization. The native `walletBusy` guard is released in `finally` when the SDK operation finishes or is cancelled; current-document and account checks remain in place.
+
 The generated production registration bundle is not stored in this repository. Therefore, three browser integration tests are skipped by default. Set `REGISTRATION_BUNDLE` to that built JavaScript file to run them. The native handoff and wallet-signing bridge tests are included in the normal Android JavaScript test suite.
 
 ## Verification limits

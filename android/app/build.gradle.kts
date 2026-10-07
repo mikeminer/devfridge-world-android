@@ -11,8 +11,8 @@ android {
         applicationId = "cool.devfridge.world"
         minSdk = 28
         targetSdk = 36
-        versionCode = 9
-        versionName = "0.3.2-beta.2"
+        versionCode = 10
+        versionName = "0.3.2-beta.3"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

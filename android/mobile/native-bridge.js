@@ -12,13 +12,21 @@
     };
   }
   const pending = new Map();
+  const MWA_RPC_TIMEOUT_MS = 300000;
+  const MWA_REPLY_GRACE_MS = 30000;
+  const WALLET_REQUEST_TIMEOUT_MS = MWA_RPC_TIMEOUT_MS + MWA_REPLY_GRACE_MS;
+  // KTX signing reauthorizes the account before sending the signing RPC.
+  const SIGN_MESSAGE_TIMEOUT_MS = 2 * MWA_RPC_TIMEOUT_MS + MWA_REPLY_GRACE_MS;
+  const NATIVE_ACTION_TIMEOUT_MS = 120000;
   const encode = bytes => btoa(Array.from(bytes, n => String.fromCharCode(n)).join(''));
   const decode = value => Uint8Array.from(atob(value), c => c.charCodeAt(0));
   function request(method, params = {}) {
     if (pending.size >= 8) return Promise.reject(new Error('Finish the current action first.'));
     const id = crypto.randomUUID();
+    const timeoutMs = method === 'signMessage' ? SIGN_MESSAGE_TIMEOUT_MS
+      : method === 'connect' || method === 'disconnect' ? WALLET_REQUEST_TIMEOUT_MS : NATIVE_ACTION_TIMEOUT_MS;
     return new Promise((resolve, reject) => {
-      const timeout = setTimeout(() => { pending.delete(id); reject(new Error('The mobile request timed out. Return from your wallet and try again.')); }, 120000);
+      const timeout = setTimeout(() => { pending.delete(id); reject(new Error('The mobile request timed out. Return from your wallet and try again.')); }, timeoutMs);
       pending.set(id, { resolve, reject, timeout });
       try { port.postMessage(JSON.stringify({ id, method, params })); }
       catch (error) { clearTimeout(timeout); pending.delete(id); reject(error); }

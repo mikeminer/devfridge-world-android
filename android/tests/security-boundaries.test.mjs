@@ -4,16 +4,55 @@ import vm from 'node:vm';
 import { readFile } from 'node:fs/promises';
 import { createHash, webcrypto } from 'node:crypto';
 import { createRequire } from 'node:module';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 // These are hostile synthetic inputs, never live-wallet or player/demo evidence.
-// The inspector binds the bytes executed here to the exact published signed APK.
-const receipt = JSON.parse(await readFile(new URL('../../evidence/2026-10-07/audit/signed-beta2-boundaries.json', import.meta.url), 'utf8'));
-const release = JSON.parse(await readFile(new URL('../../evidence/2026-10-06/beta2-release.json', import.meta.url), 'utf8'));
+// Default receipts remain the exact published beta.2; never relabel them for a new APK.
+// To test a local signed candidate, set ALL FOUR explicit absolute/working-directory paths:
+// SECURITY_BOUNDARIES_RECEIPT, SECURITY_RELEASE_RECEIPT, SECURITY_ASSETS_DIR, SECURITY_SIGNED_APK.
+// The candidate inspector must verify the publisher signature, compiled build bytes and assets.
+const candidateNames = ['SECURITY_BOUNDARIES_RECEIPT', 'SECURITY_RELEASE_RECEIPT', 'SECURITY_ASSETS_DIR', 'SECURITY_SIGNED_APK'];
+const candidateCount = candidateNames.filter(name => process.env[name]).length;
+assert.ok(candidateCount === 0 || candidateCount === candidateNames.length, 'Candidate verification requires all four explicit paths; partial overrides are forbidden');
+const candidate = candidateCount > 0;
+const receiptPath = candidate ? resolve(process.env.SECURITY_BOUNDARIES_RECEIPT) : new URL('../../evidence/2026-10-07/audit/signed-beta2-boundaries.json', import.meta.url);
+const releasePath = candidate ? resolve(process.env.SECURITY_RELEASE_RECEIPT) : new URL('../../evidence/2026-10-06/beta2-release.json', import.meta.url);
+const assetsPath = candidate ? resolve(process.env.SECURITY_ASSETS_DIR) : fileURLToPath(new URL('../app/src/main/assets/game/', import.meta.url));
+const receipt = JSON.parse(await readFile(receiptPath, 'utf8'));
+const release = JSON.parse(await readFile(releasePath, 'utf8'));
+assert.equal(release.packageName, 'cool.devfridge.world');
+assert.equal(release.certificateSha256, '2acabfed1ae887ed90e650a4446e5ef747de096f0fd6ea75a8948b75b06071ca');
+assert.equal(release.signatureVerifiedV3, true);
 assert.equal(receipt.apkSha256, release.sha256);
+assert.equal(receipt.apkBytes, release.bytes);
+assert.ok(Object.keys(receipt.checks).length > 0, 'An empty inspection receipt is not verification');
 assert.ok(Object.values(receipt.checks).every(value => value === true));
+for (const name of ['expected_package_version', 'one_exported_launcher_activity', 'test_receipt_and_invoker_activities_absent',
+  'providers_non_exported', 'share_provider_authority_and_scoped_permission', 'exported_receiver_has_dump_permission',
+  'backup_disabled', 'application_cleartext_disabled', 'manifest_references_inspected_share_paths',
+  'manifest_references_inspected_network_policy', 'only_share_cache_is_exposed', 'network_default_cleartext_disabled',
+  'only_loopback_cleartext_exception', 'no_custom_release_trust_anchors']) {
+  assert.equal(receipt.checks[name], true, 'Required signed APK boundary inspection: ' + name);
+}
+if (candidate) {
+  assert.equal(receipt.artifactKind, 'local-signed-candidate');
+  assert.equal(release.artifactKind, 'local-signed-candidate');
+  assert.equal(receipt.versionCode, release.versionCode);
+  assert.equal(receipt.versionName, release.versionName);
+  assert.equal(receipt.checks.publisher_certificate_verified, true);
+  assert.equal(receipt.checks.compiled_classes_match_build, true);
+  const apk = await readFile(resolve(process.env.SECURITY_SIGNED_APK));
+  assert.equal(apk.length, release.bytes, 'The supplied signed candidate must match the inspected APK size');
+  assert.equal(createHash('sha256').update(apk).digest('hex'), release.sha256, 'The supplied signed candidate must match the inspected APK hash');
+}
+console.info('Signed APK boundary test binding:', JSON.stringify({ versionName: release.versionName,
+  versionCode: release.versionCode, apkSha256: release.sha256, artifactKind: candidate ? 'local-signed-candidate' : 'published-beta.2' }));
 async function packaged(path) {
-  const bytes = await readFile(new URL('../app/src/main/assets/game/' + path, import.meta.url));
-  assert.equal(createHash('sha256').update(bytes).digest('hex'), receipt.assets[path].sha256, 'Tested bytes must match signed beta.2: ' + path);
+  assert.equal(receipt.checks['asset_matches_signed_apk:' + path], true, 'Inspector must compare this exact packaged asset: ' + path);
+  const bytes = await readFile(resolve(assetsPath, path));
+  assert.equal(bytes.length, receipt.assets[path].bytes, 'Tested asset size must match the inspected signed APK: ' + path);
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), receipt.assets[path].sha256, 'Tested bytes must match the inspected signed APK: ' + path);
   return bytes.toString('utf8');
 }
 const handoff = await packaged('registration-handoff.js');

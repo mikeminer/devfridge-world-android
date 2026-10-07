@@ -25,12 +25,26 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.currentCoroutineContext
+import kotlinx.coroutines.isActive
 import org.json.JSONObject
 import java.io.File
 import java.io.ByteArrayOutputStream
 import java.net.URL
 import java.util.Locale
 import javax.net.ssl.HttpsURLConnection
+
+private const val MWA_RPC_TIMEOUT_MS = 300_000
+
+/** A cancelled wallet future is recoverable; a cancelled Activity job or replaced document is not. */
+internal suspend fun replyToCurrentWalletCancellation(
+    failure: CancellationException,
+    requestIsCurrent: () -> Boolean,
+    respond: () -> Unit
+) {
+    if (!currentCoroutineContext().isActive || !requestIsCurrent()) throw failure
+    respond()
+}
 
 class MainActivity : ComponentActivity() {
     private lateinit var web: WebView
@@ -53,9 +67,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         pendingRegistrationReturn = BridgePolicy.registrationReturn(intent?.data?.toString())
         sender = ActivityResultSender(this)
-        wallet = MobileWalletAdapter(ConnectionIdentity(
-            Uri.parse(BridgePolicy.ORIGIN), Uri.parse("/world/game-v2/favicon.svg"), "DevFridge World"
-        )).apply { blockchain = Solana.Mainnet }
+        wallet = MobileWalletAdapter(
+            connectionIdentity = ConnectionIdentity(
+                Uri.parse(BridgePolicy.ORIGIN), Uri.parse("/world/game-v2/favicon.svg"), "DevFridge World"
+            ),
+            timeout = MWA_RPC_TIMEOUT_MS
+        ).apply { blockchain = Solana.Mainnet }
 
         val root = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
@@ -133,7 +150,11 @@ class MainActivity : ComponentActivity() {
                 walletBusy = true
                 lifecycleScope.launch {
                     try { respond(walletRequest(method, req.optJSONObject("params") ?: JSONObject(), epoch)) }
-                    catch (e: CancellationException) { throw e }
+                    catch (e: CancellationException) {
+                        replyToCurrentWalletCancellation(e, { walletDocumentIsCurrent(epoch) }) {
+                            respond(error = "The wallet request was cancelled. Return from your wallet and try again.")
+                        }
+                    }
                     catch (e: Exception) { respond(error = e.message ?: "The wallet request was not completed.") }
                     finally { walletBusy = false }
                 }
